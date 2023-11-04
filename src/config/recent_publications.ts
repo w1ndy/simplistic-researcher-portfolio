@@ -1,11 +1,21 @@
 import { Paper } from '../types/paper'
 
+import GeoChronImage from '../assets/img/papers/geochron.png'
+import GeoChronPDF from '../assets/pdf/geochron.pdf'
+import NL2RigelImage from '../assets/img/papers/nl2rigel.jpg'
+import NL2RigelPDF from '../assets/pdf/nl2rigel.pdf'
+import NeighVizImage from '../assets/img/papers/neighviz.png'
+import NeighVizPDF from '../assets/pdf/neighviz.pdf'
+import GeoCameraImage from '../assets/img/papers/geocamera.png'
+import GeoNetverseImage from '../assets/img/papers/geonetverse.png'
+import GeoNetversePDF from '../assets/pdf/geonetverse.pdf'
+
 export default [
   {
     tag: 'IEEE TVCG 2023',
     papers: [
       {
-        image: (await import('../assets/img/papers/nl2rigel.jpg')).default,
+        image: NL2RigelImage,
         authors: [
           'Yanwei Huang',
           'Yunfan Zhou',
@@ -20,10 +30,10 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
         doi: '10.1109/TVCG.2023.3329120',
-        pdf: (await import('../assets/pdf/nl2rigel.pdf')).default,
+        pdf: NL2RigelPDF,
       },
       {
-        image: (await import('../assets/img/papers/geonetverse.png')).default,
+        image: GeoNetverseImage,
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -38,7 +48,7 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
         doi: '10.1109/TVCG.2022.3229953',
-        pdf: (await import('../assets/pdf/geonetverse.pdf')).default,
+        pdf: GeoNetversePDF,
       },
     ],
   },
@@ -46,7 +56,7 @@ export default [
     tag: 'IEEE VIS 2023',
     papers: [
       {
-        image: (await import('../assets/img/papers/geochron.png')).default,
+        image: GeoChronImage,
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -62,10 +72,10 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (also appears in IEEE VIS 2023)',
         doi: '10.1109/TVCG.2023.3327162',
-        pdf: (await import('../assets/pdf/geochron.pdf')).default,
+        pdf: GeoChronPDF,
       },
       {
-        image: (await import('../assets/img/papers/neighviz.png')).default,
+        image: NeighVizImage,
         authors: [
           'Yue Yu',
           'Yifang Wang',
@@ -81,6 +91,7 @@ export default [
         venue:
           '9th Symposium on Visualization in Data Science (VDS @ IEEE VIS 2023), 2023',
         doi: '10.48550/arXiv.2309.11454',
+        pdf: NeighVizPDF,
       },
     ],
   },
@@ -88,7 +99,7 @@ export default [
     tag: 'ACM CHI 2023',
     papers: [
       {
-        image: (await import('../assets/img/papers/geocamera.png')).default,
+        image: GeoCameraImage,
         authors: [
           'Wenchao Li',
           'Zhan Wang',

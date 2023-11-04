@@ -1,11 +1,39 @@
 import { Paper } from '../types/paper'
 
+import GeoChronImage from '../assets/img/papers/geochron.png'
+import GeoChronPDF from '../assets/pdf/geochron.pdf'
+import RelaQImage from '../assets/img/papers/relaq.jpg'
+import NL2RigelImage from '../assets/img/papers/nl2rigel.jpg'
+import NL2RigelPDF from '../assets/pdf/nl2rigel.pdf'
+import NeighVizImage from '../assets/img/papers/neighviz.png'
+import NeighVizPDF from '../assets/pdf/neighviz.pdf'
+import DecomImage from '../assets/img/papers/decom.jpg'
+import GeoCameraImage from '../assets/img/papers/geocamera.png'
+import GeoNetverseImage from '../assets/img/papers/geonetverse.png'
+import GeoNetversePDF from '../assets/pdf/geonetverse.pdf'
+import ECoalVisImage from '../assets/img/papers/ecoalvis.png'
+import RigelImage from '../assets/img/papers/rigel.png'
+import UrbanSurveyImage from '../assets/img/papers/urbansurvey.png'
+import CT3Image from '../assets/img/papers/ct3.png'
+import NebulaImage from '../assets/img/papers/nebula.png'
+import VisCasImage from '../assets/img/papers/viscas.png'
+import OrderMonitorImage from '../assets/img/papers/ordermonitor.png'
+import CompassImage from '../assets/img/papers/compass.png'
+import IndustrialSurveyImage from '../assets/img/papers/industrial_survey.png'
+import CorVizorImage from '../assets/img/papers/corvizor.png'
+import BNVAImage from '../assets/img/papers/bnva.png'
+import MCRSImage from '../assets/img/papers/mcrs.png'
+import HomeFinderImage from '../assets/img/papers/homefinder.png'
+import SmartAdPImage from '../assets/img/papers/smartadp.png'
+import AirVisImage from '../assets/img/papers/airvis.png'
+import SRVisImage from '../assets/img/papers/srvis.png'
+
 export default [
   {
     year: '2024',
     papers: [
       {
-        image: (await import('../assets/img/papers/geochron.png')).default,
+        image: GeoChronImage,
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -21,7 +49,7 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (also appears in IEEE VIS 2023)',
         doi: '10.1109/TVCG.2023.3327162',
-        pdf: (await import('../assets/pdf/geochron.pdf')).default,
+        pdf: GeoChronPDF,
       },
     ],
   },
@@ -29,7 +57,7 @@ export default [
     year: '2023',
     papers: [
       {
-        image: (await import('../assets/img/papers/relaq.jpg')).default,
+        image: RelaQImage,
         authors: [
           'Shuhan Liu',
           'Yuan Tian',
@@ -45,7 +73,7 @@ export default [
         doi: '10.48550/arXiv.2310.19311',
       },
       {
-        image: (await import('../assets/img/papers/nl2rigel.jpg')).default,
+        image: NL2RigelImage,
         authors: [
           'Yanwei Huang',
           'Yunfan Zhou',
@@ -60,10 +88,10 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
         doi: '10.1109/TVCG.2023.3329120',
-        pdf: (await import('../assets/pdf/nl2rigel.pdf')).default,
+        pdf: NL2RigelPDF,
       },
       {
-        image: (await import('../assets/img/papers/neighviz.png')).default,
+        image: NeighVizImage,
         authors: [
           'Yue Yu',
           'Yifang Wang',
@@ -79,9 +107,10 @@ export default [
         venue:
           '9th Symposium on Visualization in Data Science (VDS @ IEEE VIS 2023), 2023',
         doi: '10.48550/arXiv.2309.11454',
+        pdf: NeighVizPDF,
       },
       {
-        image: (await import('../assets/img/papers/decom.jpg')).default,
+        image: DecomImage,
         authors: [
           'Fangkai Yang',
           'Jue Zhang',
@@ -103,7 +132,7 @@ export default [
         doi: '10.1145/3580305.3599794',
       },
       {
-        image: (await import('../assets/img/papers/geocamera.png')).default,
+        image: GeoCameraImage,
         authors: [
           'Wenchao Li',
           'Zhan Wang',
@@ -121,7 +150,7 @@ export default [
         doi: '10.1145/3544548.3581470',
       },
       {
-        image: (await import('../assets/img/papers/geonetverse.png')).default,
+        image: GeoNetverseImage,
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -136,10 +165,10 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
         doi: '10.1109/TVCG.2022.3229953',
-        pdf: (await import('../assets/pdf/geonetverse.pdf')).default,
+        pdf: GeoNetversePDF,
       },
       {
-        image: (await import('../assets/img/papers/ecoalvis.png')).default,
+        image: ECoalVisImage,
         authors: [
           'Shuhan Liu',
           'Di Weng',
@@ -159,7 +188,7 @@ export default [
         doi: '10.1109/TVCG.2022.3209430',
       },
       {
-        image: (await import('../assets/img/papers/rigel.png')).default,
+        image: RigelImage,
         authors: [
           'Ran Chen',
           'Di Weng',
@@ -176,7 +205,7 @@ export default [
         doi: '10.1109/TVCG.2022.3209385',
       },
       {
-        image: (await import('../assets/img/papers/urbansurvey.png')).default,
+        image: UrbanSurveyImage,
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -192,7 +221,7 @@ export default [
         doi: '10.1007/s41095-022-0275-7',
       },
       {
-        image: (await import('../assets/img/papers/ct3.png')).default,
+        image: CT3Image,
         authors: ['Zikun Deng', 'Di Weng', 'Yingcai Wu'],
         corresponding_authors: ['Di Weng'],
         title:
@@ -206,7 +235,7 @@ export default [
     year: '2022',
     papers: [
       {
-        image: (await import('../assets/img/papers/nebula.png')).default,
+        image: NebulaImage,
         authors: [
           'Ran Chen',
           'Xinhuan Shu',
@@ -222,7 +251,7 @@ export default [
         doi: '10.1109/TVCG.2021.3076222',
       },
       {
-        image: (await import('../assets/img/papers/viscas.png')).default,
+        image: VisCasImage,
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -239,7 +268,7 @@ export default [
         doi: '10.1109/TVCG.2021.3071387',
       },
       {
-        image: (await import('../assets/img/papers/ordermonitor.png')).default,
+        image: OrderMonitorImage,
         authors: [
           'Junxiu Tang',
           'Yuhua Zhou',
@@ -257,7 +286,7 @@ export default [
         doi: '10.1109/TVCG.2021.3114878',
       },
       {
-        image: (await import('../assets/img/papers/compass.png')).default,
+        image: CompassImage,
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -279,8 +308,7 @@ export default [
     year: '2021',
     papers: [
       {
-        image: (await import('../assets/img/papers/industrial_survey.png'))
-          .default,
+        image: IndustrialSurveyImage,
         authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
         title: 'A Review on Industrial Data Visual Analytics',
         venue:
@@ -288,7 +316,7 @@ export default [
         doi: '10.12146/j.issn.2095-3135.20210630003',
       },
       {
-        image: (await import('../assets/img/papers/corvizor.png')).default,
+        image: CorVizorImage,
         authors: [
           'Yingcai Wu',
           'Di Weng',
@@ -307,7 +335,7 @@ export default [
         doi: '10.1109/TITS.2020.2983226',
       },
       {
-        image: (await import('../assets/img/papers/bnva.png')).default,
+        image: BNVAImage,
         authors: [
           'Di Weng',
           'Chengbo Zheng',
@@ -324,7 +352,7 @@ export default [
         doi: '10.1109/TVCG.2020.3030458',
       },
       {
-        image: (await import('../assets/img/papers/mcrs.png')).default,
+        image: MCRSImage,
         authors: [
           'Di Weng',
           'Ran Chen',
@@ -345,7 +373,7 @@ export default [
     year: 'Earlier',
     papers: [
       {
-        image: (await import('../assets/img/papers/airvis.png')).default,
+        image: AirVisImage,
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -362,7 +390,7 @@ export default [
         doi: '10.1109/TVCG.2019.2934670',
       },
       {
-        image: (await import('../assets/img/papers/srvis.png')).default,
+        image: SRVisImage,
         authors: [
           'Di Weng',
           'Ran Chen',
@@ -378,7 +406,7 @@ export default [
         doi: '10.1109/TVCG.2018.2865126',
       },
       {
-        image: (await import('../assets/img/papers/homefinder.png')).default,
+        image: HomeFinderImage,
         authors: ['Di Weng', 'Heming Zhu', 'Jie Bao', 'Yu Zheng', 'Yingcai Wu'],
         title:
           'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
@@ -387,7 +415,7 @@ export default [
         doi: '10.1145/3173574.3173821',
       },
       {
-        image: (await import('../assets/img/papers/smartadp.png')).default,
+        image: SmartAdPImage,
         authors: [
           'Dongyu Liu',
           'Di Weng',
