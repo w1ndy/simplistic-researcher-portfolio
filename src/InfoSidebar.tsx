@@ -5,7 +5,7 @@ import Info from './config/info'
 
 export function InfoSidebar(props: { class: string }) {
   return (
-    <div class={`w-96 h-screen p-10 flex flex-col gap-5 ${props.class}`}>
+    <div class={`w-96 sm:h-screen p-10 flex flex-col gap-5 ${props.class}`}>
       <div class="uppercase tracking-wider font-bold">{Info.name}</div>
 
       <For each={Info.affiliations}>
@@ -36,10 +36,10 @@ export function InfoSidebar(props: { class: string }) {
 
       <div innerHTML={Info.group}></div>
 
-      <div class="flex-auto"></div>
+      <div class="sm:flex-auto"></div>
 
       <div
-        class="text-gray-500"
+        class="text-gray-500 hidden sm:block"
         innerHTML={Info.footnote}
       ></div>
     </div>

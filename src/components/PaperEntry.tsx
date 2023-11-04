@@ -40,7 +40,7 @@ export function PaperEntry(props: { paper: Paper }) {
     <div class="mt-3 flex">
       <div class="flex-0 mr-3">
         <img
-          class="border border-gray-300 w-40 h-28 object-cover"
+          class="border border-gray-300 w-24 h-18 sm:w-40 sm:h-28 object-cover"
           src={props.paper.image}
         />
       </div>

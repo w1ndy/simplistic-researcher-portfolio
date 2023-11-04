@@ -10,13 +10,13 @@ interface VitaEntry {
 export function Section(props: { name: string; entries: VitaEntry[] }) {
   return (
     <div class="mt-3 mb-7">
-      <div class="uppercase tracking-wider text-gray-500 ml-48">
+      <div class="uppercase tracking-wider text-gray-500 ml-24 sm:ml-48">
         {props.name}
       </div>
       <For each={props.entries}>
         {(entry) => (
           <div class="flex mt-3">
-            <div class="text-gray-500 w-48 pr-3 flex-none text-right uppercase tracking-wider">
+            <div class="text-gray-500 w-24 sm:w-48 pr-3 flex-none text-right uppercase tracking-wider">
               {entry.when}
             </div>
             <div>

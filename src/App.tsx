@@ -4,6 +4,8 @@ import { Routes, Route, Navigate } from '@solidjs/router'
 import { InfoSidebar } from './InfoSidebar'
 import { Nav } from './Nav'
 
+import Info from './config/info'
+
 const About = lazy(() => import('./pages/About'))
 const Publications = lazy(() => import('./pages/Publications'))
 const Students = lazy(() => import('./pages/Students'))
@@ -11,9 +13,9 @@ const Vita = lazy(() => import('./pages/Vita'))
 
 function App() {
   return (
-    <div class="flex">
+    <div class="sm:flex">
       <InfoSidebar class="flex-none" />
-      <div class="ml-2 h-screen flex-grow flex flex-col">
+      <div class="px-10 sm:px-0 sm:ml-2 sm:h-screen flex-grow flex flex-col">
         <Nav class="flex-none" />
         <Routes>
           <Route
@@ -38,6 +40,10 @@ function App() {
           />
         </Routes>
       </div>
+      <div
+        class="px-10 pb-10 text-gray-500 sm:hidden"
+        innerHTML={Info.footnote}
+      ></div>
     </div>
   )
 }
