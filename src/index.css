@@ -28,3 +28,7 @@ a {
 a:hover {
   color: teal;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
