@@ -11,17 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
-        with:
-          version: 7.3.0
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
           cache: 'pnpm'
       - run: |
           pnpm install --frozen-lockfile
           pnpm run build
           echo 'dwe.ng' > dist/CNAME
-      - uses: JamesIves/github-pages-deploy-action@v4.4.1
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           token: ${{ secrets.DEPLOYMENT_TOKEN }}
