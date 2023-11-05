@@ -21,6 +21,10 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm run build
           echo 'dwe.ng' > dist/CNAME
+          cp dist/index.html dist/about.html
+          cp dist/index.html dist/publications.html
+          cp dist/index.html dist/students.html
+          cp dist/index.html dist/vita.html
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
