@@ -36,6 +36,7 @@ a:hover {
 @media (prefers-color-scheme: dark) {
   html {
     background-color: #000a0a;
+    color: #ddd;
   }
   a {
     color: #99cccc;
