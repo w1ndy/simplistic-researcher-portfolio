@@ -15,7 +15,7 @@ function App() {
   return (
     <div class="sm:flex">
       <InfoSidebar class="flex-none" />
-      <div class="px-10 sm:px-0 sm:ml-2 sm:h-screen flex-grow flex flex-col">
+      <div class="px-10 sm:px-0 sm:ml-2 sm:pr-10 sm:h-screen flex-grow flex flex-col">
         <Nav class="flex-none" />
         <Routes>
           <Route
