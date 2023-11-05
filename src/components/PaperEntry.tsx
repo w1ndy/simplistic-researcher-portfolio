@@ -1,6 +1,6 @@
 import { Paper } from '../types/paper'
 import AuthorHomepages from '../config/authors'
-import { For, Show } from 'solid-js'
+import { For } from 'solid-js'
 
 export function homepage(author: string) {
   return (original: string) => {
