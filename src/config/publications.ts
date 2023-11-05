@@ -1,39 +1,11 @@
 import { Paper } from '../types/paper'
 
-import GeoChronImage from '../assets/img/papers/geochron.png'
-import GeoChronPDF from '../assets/pdf/geochron.pdf'
-import RelaQImage from '../assets/img/papers/relaq.jpg'
-import NL2RigelImage from '../assets/img/papers/nl2rigel.jpg'
-import NL2RigelPDF from '../assets/pdf/nl2rigel.pdf'
-import NeighVizImage from '../assets/img/papers/neighviz.png'
-import NeighVizPDF from '../assets/pdf/neighviz.pdf'
-import DecomImage from '../assets/img/papers/decom.jpg'
-import GeoCameraImage from '../assets/img/papers/geocamera.png'
-import GeoNetverseImage from '../assets/img/papers/geonetverse.png'
-import GeoNetversePDF from '../assets/pdf/geonetverse.pdf'
-import ECoalVisImage from '../assets/img/papers/ecoalvis.png'
-import RigelImage from '../assets/img/papers/rigel.png'
-import UrbanSurveyImage from '../assets/img/papers/urbansurvey.png'
-import CT3Image from '../assets/img/papers/ct3.png'
-import NebulaImage from '../assets/img/papers/nebula.png'
-import VisCasImage from '../assets/img/papers/viscas.png'
-import OrderMonitorImage from '../assets/img/papers/ordermonitor.png'
-import CompassImage from '../assets/img/papers/compass.png'
-import IndustrialSurveyImage from '../assets/img/papers/industrial_survey.png'
-import CorVizorImage from '../assets/img/papers/corvizor.png'
-import BNVAImage from '../assets/img/papers/bnva.png'
-import MCRSImage from '../assets/img/papers/mcrs.png'
-import HomeFinderImage from '../assets/img/papers/homefinder.png'
-import SmartAdPImage from '../assets/img/papers/smartadp.png'
-import AirVisImage from '../assets/img/papers/airvis.png'
-import SRVisImage from '../assets/img/papers/srvis.png'
-
 export default [
   {
     year: '2024',
     papers: [
       {
-        image: GeoChronImage,
+        image: '/img/papers/geochron.png',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -48,8 +20,10 @@ export default [
         title: 'Visualizing Large-Scale Spatial Time Series with GeoChron',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (also appears in IEEE VIS 2023)',
-        doi: '10.1109/TVCG.2023.3327162',
-        pdf: GeoChronPDF,
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2023.3327162',
+          pdf: '/pdf/geochron.pdf',
+        },
       },
     ],
   },
@@ -57,7 +31,7 @@ export default [
     year: '2023',
     papers: [
       {
-        image: RelaQImage,
+        image: '/img/papers/relaq.jpg',
         authors: [
           'Shuhan Liu',
           'Yuan Tian',
@@ -70,10 +44,12 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Relation-driven Query of Multiple Time Series',
         venue: 'arXiv preprint (in submission), 2023',
-        doi: '10.48550/arXiv.2310.19311',
+        links: {
+          paper: 'https://arxiv.org/abs/2310.19311',
+        },
       },
       {
-        image: NL2RigelImage,
+        image: '/img/papers/nl2rigel.jpg',
         authors: [
           'Yanwei Huang',
           'Yunfan Zhou',
@@ -87,11 +63,15 @@ export default [
         title: 'Interactive Table Synthesis with Natural Language',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
-        doi: '10.1109/TVCG.2023.3329120',
-        pdf: NL2RigelPDF,
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2023.3329120',
+          pdf: '/pdf/nl2rigel.pdf',
+          appendix: '/pdf/nl2rigel_appendix.pdf',
+          video: 'https://youtu.be/qjjKAykyDZU',
+        },
       },
       {
-        image: NeighVizImage,
+        image: '/img/papers/neighviz.png',
         authors: [
           'Yue Yu',
           'Yifang Wang',
@@ -106,11 +86,13 @@ export default [
           'NeighViz: Towards Better Understanding of Neighborhood Effects on Social Groups with Spatial Data',
         venue:
           '9th Symposium on Visualization in Data Science (VDS @ IEEE VIS 2023), 2023',
-        doi: '10.48550/arXiv.2309.11454',
-        pdf: NeighVizPDF,
+        links: {
+          paper: 'https://arxiv.org/abs/2309.11454',
+          pdf: '/pdf/neighviz.pdf',
+        },
       },
       {
-        image: DecomImage,
+        image: '/img/papers/decom.jpg',
         authors: [
           'Fangkai Yang',
           'Jue Zhang',
@@ -129,10 +111,12 @@ export default [
           'Contextual Self-attentive Temporal Point Process for Physical Decommissioning Prediction of Cloud Assets',
         venue:
           'ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023',
-        doi: '10.1145/3580305.3599794',
+        links: {
+          paper: 'https://doi.org/10.1145/3447548.3467232',
+        },
       },
       {
-        image: GeoCameraImage,
+        image: '/img/papers/geocamera.png',
         authors: [
           'Wenchao Li',
           'Zhan Wang',
@@ -147,10 +131,14 @@ export default [
           'GeoCamera: Telling Stories in Geographic Visualizations with Camera Movements',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2023',
-        doi: '10.1145/3544548.3581470',
+        links: {
+          paper: 'https://doi.org/10.1145/3544548.3581470',
+          pdf: '/pdf/geocamera.pdf',
+          video: 'https://youtu.be/SFBmBSHjKpA?si=jzOIhS7yADsegrh3',
+        },
       },
       {
-        image: GeoNetverseImage,
+        image: '/img/papers/geonetverse.png',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -164,11 +152,14 @@ export default [
         title: 'Multilevel Visual Analysis of Aggregate Geo-Networks',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
-        doi: '10.1109/TVCG.2022.3229953',
-        pdf: GeoNetversePDF,
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2022.3229953',
+          pdf: '/pdf/geonetverse.pdf',
+          video: 'https://youtu.be/-GXWCpf9oqY?si=akBGTiyq-LYt0o0K',
+        },
       },
       {
-        image: ECoalVisImage,
+        image: '/img/papers/ecoalvis.png',
         authors: [
           'Shuhan Liu',
           'Di Weng',
@@ -185,10 +176,14 @@ export default [
           'ECoalVis: Visual Analysis of Control Strategies in Coal-fired Power Plants',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023 (also appears in IEEE VIS 2022)',
-        doi: '10.1109/TVCG.2022.3209430',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2022.3209430',
+          pdf: '/pdf/ecoalvis.pdf',
+          video: 'https://youtu.be/XsqdJd2y6Z0?si=56smTEjYuX706YgF',
+        },
       },
       {
-        image: RigelImage,
+        image: '/img/papers/rigel.png',
         authors: [
           'Ran Chen',
           'Di Weng',
@@ -202,10 +197,17 @@ export default [
         title: 'Rigel: Transforming Tabular Data by Declarative Mapping',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023 (also appears in IEEE VIS 2022)',
-        doi: '10.1109/TVCG.2022.3209385',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2022.3209385',
+          pdf: '/pdf/rigel.pdf',
+          appendix: 'https://observablehq.com/@rigel/appendix',
+          video: 'https://youtu.be/fvM_W-1n7N4?si=2BoDyGzgakzS9BB9',
+          code: 'https://github.com/rigel-js',
+          demo: 'https://rigel-system.github.io/rigel-system/',
+        },
       },
       {
-        image: UrbanSurveyImage,
+        image: '/img/papers/urbansurvey.png',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -218,16 +220,22 @@ export default [
         title:
           'A survey of urban visual analytics: Advances and future directions',
         venue: 'Computational Visual Media, 2023',
-        doi: '10.1007/s41095-022-0275-7',
+        links: {
+          paper: 'https://doi.org/10.1007/s41095-022-0275-7',
+          pdf: '/pdf/urbansurvey.pdf',
+        },
       },
       {
-        image: CT3Image,
+        image: '/img/papers/ct3.png',
         authors: ['Zikun Deng', 'Di Weng', 'Yingcai Wu'],
         corresponding_authors: ['Di Weng'],
         title:
           'You are experienced: interactive tour planning with crowdsourcing tour data from web',
         venue: 'Journal of Visualization, vol. 26, pp. 385–401, 2023',
-        doi: '10.1007/s12650-022-00884-1',
+        links: {
+          paper: 'https://doi.org/10.1007/s12650-022-00884-1',
+          pdf: '/pdf/ct3.pdf',
+        },
       },
     ],
   },
@@ -235,7 +243,7 @@ export default [
     year: '2022',
     papers: [
       {
-        image: NebulaImage,
+        image: '/img/papers/nebula.png',
         authors: [
           'Ran Chen',
           'Xinhuan Shu',
@@ -248,10 +256,14 @@ export default [
         title: 'Nebula: A Coordinating Grammar of Graphics',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 12, pp. 4127-4140, 2022',
-        doi: '10.1109/TVCG.2021.3076222',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2021.3114876',
+          pdf: '/pdf/nebula.pdf',
+          appendix: 'https://nebula-vis.github.io/examples',
+        },
       },
       {
-        image: VisCasImage,
+        image: '/img/papers/viscas.png',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -265,10 +277,14 @@ export default [
         title: 'Visual Cascade Analytics of Large-Scale Spatiotemporal Data',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 6, pp. 2486-2499, 2022',
-        doi: '10.1109/TVCG.2021.3071387',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2021.3071387',
+          pdf: '/pdf/viscas.pdf',
+          video: 'https://youtu.be/IVSf0BNRC_c?si=rKDdtSy0wPJFIXPJ',
+        },
       },
       {
-        image: OrderMonitorImage,
+        image: '/img/papers/ordermonitor.png',
         authors: [
           'Junxiu Tang',
           'Yuhua Zhou',
@@ -283,10 +299,12 @@ export default [
           'A Visualization Approach for Monitoring Order Processing in E-Commerce Warehouse',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 1, pp. 857-867, 2022',
-        doi: '10.1109/TVCG.2021.3114878',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2021.3114878',
+        },
       },
       {
-        image: CompassImage,
+        image: '/img/papers/compass.png',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -300,7 +318,10 @@ export default [
         title: 'Compass: Towards Better Causal Analysis of Urban Time Series',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 1, pp. 1051-1061, 2022',
-        doi: '10.1109/TVCG.2021.3114875',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2021.3114875',
+          pdf: '/pdf/compass.pdf',
+        },
       },
     ],
   },
@@ -308,15 +329,17 @@ export default [
     year: '2021',
     papers: [
       {
-        image: IndustrialSurveyImage,
+        image: '/img/papers/industrial_survey.png',
         authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
         title: 'A Review on Industrial Data Visual Analytics',
         venue:
           'Journal of Integration Technology, vol. 11, no. 6, pp. 3-19, 2021',
-        doi: '10.12146/j.issn.2095-3135.20210630003',
+        links: {
+          paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
+        },
       },
       {
-        image: CorVizorImage,
+        image: '/img/papers/corvizor.png',
         authors: [
           'Yingcai Wu',
           'Di Weng',
@@ -332,10 +355,12 @@ export default [
           'Towards Better Detection and Analysis of Massive Spatiotemporal Co-Occurrence Patterns',
         venue:
           'IEEE Transactions on Intelligent Transportation Systems, vol. 22, no. 6, pp. 3387-3402, 2021',
-        doi: '10.1109/TITS.2020.2983226',
+        links: {
+          paper: 'https://doi.org/10.1109/TITS.2020.2983226',
+        },
       },
       {
-        image: BNVAImage,
+        image: '/img/papers/bnva.png',
         authors: [
           'Di Weng',
           'Chengbo Zheng',
@@ -349,10 +374,12 @@ export default [
         title: 'Towards Better Bus Networks: A Visual Analytics Approach',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 27, no. 2, pp. 817-827, 2021',
-        doi: '10.1109/TVCG.2020.3030458',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2020.3030458',
+        },
       },
       {
-        image: MCRSImage,
+        image: '/img/papers/mcrs.png',
         authors: [
           'Di Weng',
           'Ran Chen',
@@ -365,7 +392,9 @@ export default [
           'Pareto-Optimal Transit Route Planning With Multi-Objective Monte-Carlo Tree Search',
         venue:
           'IEEE Transactions on Intelligent Transportation Systems, vol. 22, no. 2, pp. 1185-1195, 2021',
-        doi: '10.1109/TITS.2020.2964012',
+        links: {
+          paper: 'https://doi.org/10.1109/TITS.2020.2964012',
+        },
       },
     ],
   },
@@ -373,7 +402,7 @@ export default [
     year: 'Earlier',
     papers: [
       {
-        image: AirVisImage,
+        image: '/img/papers/airvis.png',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -387,10 +416,12 @@ export default [
         title: 'AirVis: Visual Analytics of Air Pollution Propagation',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 26, no. 1, pp. 800-810, 2020',
-        doi: '10.1109/TVCG.2019.2934670',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2019.2934670',
+        },
       },
       {
-        image: SRVisImage,
+        image: '/img/papers/srvis.png',
         authors: [
           'Di Weng',
           'Ran Chen',
@@ -403,19 +434,23 @@ export default [
           'SRVis: Towards Better Spatial Integration in Ranking Visualization',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 25, no. 1, pp. 459-469, 2019',
-        doi: '10.1109/TVCG.2018.2865126',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2018.2865126',
+        },
       },
       {
-        image: HomeFinderImage,
+        image: '/img/papers/homefinder.png',
         authors: ['Di Weng', 'Heming Zhu', 'Jie Bao', 'Yu Zheng', 'Yingcai Wu'],
         title:
           'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
         venue:
           "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18), Paper 247, 1–12",
-        doi: '10.1145/3173574.3173821',
+        links: {
+          paper: 'https://doi.org/10.1145/3173574.3173821',
+        },
       },
       {
-        image: SmartAdPImage,
+        image: '/img/papers/smartadp.png',
         authors: [
           'Dongyu Liu',
           'Di Weng',
@@ -429,7 +464,9 @@ export default [
           'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Selecting Billboard Locations',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics, vol. 23, no. 1, pp. 1-10, 2017',
-        doi: '10.1109/TVCG.2016.2598432',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2016.2598432',
+        },
       },
     ],
   },

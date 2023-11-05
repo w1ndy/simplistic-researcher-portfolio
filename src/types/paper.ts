@@ -4,6 +4,5 @@ export interface Paper {
   corresponding_authors?: string[]
   title: string
   venue: string
-  doi: string
-  pdf?: string
+  links: Record<string, string>
 }

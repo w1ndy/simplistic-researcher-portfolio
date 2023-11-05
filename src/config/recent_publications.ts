@@ -1,21 +1,11 @@
 import { Paper } from '../types/paper'
 
-import GeoChronImage from '../assets/img/papers/geochron.png'
-import GeoChronPDF from '../assets/pdf/geochron.pdf'
-import NL2RigelImage from '../assets/img/papers/nl2rigel.jpg'
-import NL2RigelPDF from '../assets/pdf/nl2rigel.pdf'
-import NeighVizImage from '../assets/img/papers/neighviz.png'
-import NeighVizPDF from '../assets/pdf/neighviz.pdf'
-import GeoCameraImage from '../assets/img/papers/geocamera.png'
-import GeoNetverseImage from '../assets/img/papers/geonetverse.png'
-import GeoNetversePDF from '../assets/pdf/geonetverse.pdf'
-
 export default [
   {
     tag: 'IEEE TVCG 2023',
     papers: [
       {
-        image: NL2RigelImage,
+        image: '/img/papers/nl2rigel.jpg',
         authors: [
           'Yanwei Huang',
           'Yunfan Zhou',
@@ -29,11 +19,15 @@ export default [
         title: 'Interactive Table Synthesis with Natural Language',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
-        doi: '10.1109/TVCG.2023.3329120',
-        pdf: NL2RigelPDF,
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2023.3329120',
+          pdf: '/pdf/nl2rigel.pdf',
+          appendix: '/pdf/nl2rigel_appendix.pdf',
+          video: 'https://youtu.be/qjjKAykyDZU',
+        },
       },
       {
-        image: GeoNetverseImage,
+        image: '/img/papers/geonetverse.png',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -47,8 +41,11 @@ export default [
         title: 'Multilevel Visual Analysis of Aggregate Geo-Networks',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023',
-        doi: '10.1109/TVCG.2022.3229953',
-        pdf: GeoNetversePDF,
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2022.3229953',
+          pdf: '/pdf/geonetverse.pdf',
+          video: 'https://youtu.be/-GXWCpf9oqY?si=akBGTiyq-LYt0o0K',
+        },
       },
     ],
   },
@@ -56,7 +53,7 @@ export default [
     tag: 'IEEE VIS 2023',
     papers: [
       {
-        image: GeoChronImage,
+        image: '/img/papers/geochron.png',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -71,11 +68,13 @@ export default [
         title: 'Visualizing Large-Scale Spatial Time Series with GeoChron',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (also appears in IEEE VIS 2023)',
-        doi: '10.1109/TVCG.2023.3327162',
-        pdf: GeoChronPDF,
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2023.3327162',
+          pdf: '/pdf/geochron.pdf',
+        },
       },
       {
-        image: NeighVizImage,
+        image: '/img/papers/neighviz.png',
         authors: [
           'Yue Yu',
           'Yifang Wang',
@@ -90,8 +89,10 @@ export default [
           'NeighViz: Towards Better Understanding of Neighborhood Effects on Social Groups with Spatial Data',
         venue:
           '9th Symposium on Visualization in Data Science (VDS @ IEEE VIS 2023), 2023',
-        doi: '10.48550/arXiv.2309.11454',
-        pdf: NeighVizPDF,
+        links: {
+          paper: 'https://arxiv.org/abs/2309.11454',
+          pdf: '/pdf/neighviz.pdf',
+        },
       },
     ],
   },
@@ -99,7 +100,7 @@ export default [
     tag: 'ACM CHI 2023',
     papers: [
       {
-        image: GeoCameraImage,
+        image: '/img/papers/geocamera.png',
         authors: [
           'Wenchao Li',
           'Zhan Wang',
@@ -114,7 +115,11 @@ export default [
           'GeoCamera: Telling Stories in Geographic Visualizations with Camera Movements',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2023',
-        doi: '10.1145/3544548.3581470',
+        links: {
+          paper: 'https://doi.org/10.1145/3544548.3581470',
+          pdf: '/pdf/geocamera.pdf',
+          video: 'https://youtu.be/SFBmBSHjKpA?si=jzOIhS7yADsegrh3',
+        },
       },
     ],
   },

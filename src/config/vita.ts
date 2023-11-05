@@ -20,7 +20,7 @@ export default {
   ],
   employment: [
     {
-      when: '2022.03 - ',
+      when: '2023.03 - ',
       what: 'Zhejiang University',
       where: 'Ningbo, China',
       descriptions: [

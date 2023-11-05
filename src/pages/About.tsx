@@ -3,7 +3,6 @@ import { For } from 'solid-js'
 import { News } from '../components/News'
 import NewsEntries from '../config/news'
 import { RecentPublications } from '../components/RecentPublications'
-import Photo from '../assets/img/me.jpg'
 
 import Info from '../config/info'
 
@@ -15,7 +14,7 @@ export default function About() {
           <div innerHTML={Info.bio}></div>
           <div class="flex-none  hidden sm:block">
             <img
-              src={Photo}
+              src="/img/me.jpg"
               class="w-44 h-52 object-cover ml-4"
             ></img>
           </div>

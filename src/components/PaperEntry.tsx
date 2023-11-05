@@ -1,6 +1,6 @@
 import { Paper } from '../types/paper'
 import AuthorHomepages from '../config/authors'
-import { Show } from 'solid-js'
+import { For, Show } from 'solid-js'
 
 export function homepage(author: string) {
   return (original: string) => {
@@ -59,22 +59,18 @@ export function PaperEntry(props: { paper: Paper }) {
             )
             .join(', ')}
         />
-        . <span class="italic">{props.paper.venue}</span>.{' '}
-        <a
-          href={`https://doi.org/${props.paper.doi}`}
-          target="_blank"
-        >
-          [Paper]
-        </a>
-        <Show when={props.paper.pdf}>
-          <a
-            href={props.paper.pdf}
-            target="_blank"
-            class="ml-1"
-          >
-            [PDF]
-          </a>
-        </Show>
+        . <span class="italic">{props.paper.venue}</span>.
+        <For each={Object.entries(props.paper.links)}>
+          {([name, link]) => (
+            <a
+              href={link}
+              target="_blank"
+              class="ml-2 uppercase tracking-wider"
+            >
+              [{name}]
+            </a>
+          )}
+        </For>
       </div>
     </div>
   )
