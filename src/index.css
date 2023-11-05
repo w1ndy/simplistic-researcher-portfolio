@@ -29,6 +29,27 @@ a:hover {
   color: teal;
 }
 
+.red-text {
+  color: darkred;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #000a0a;
+  }
+  a {
+    color: #99cccc;
+  }
+
+  a:hover {
+    color: #cce6e6;
+  }
+
+  .red-text {
+    color: #ff9999;
+  }
+}
+
 *::-webkit-scrollbar {
   display: none;
 }

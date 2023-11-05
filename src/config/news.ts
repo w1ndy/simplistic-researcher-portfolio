@@ -1,7 +1,7 @@
 export default [
   {
     date: 'Mar 6, 2023 - Pinned',
-    content: `I've joined School of Software Technology, Zhejiang University as a full-time tenure-track assistant professor and I'm <b style="color: darkred">looking for motivated PhD and master students!</b> Please drop me an email if you are interested.`,
+    content: `I've joined School of Software Technology, Zhejiang University as a full-time tenure-track assistant professor and I'm <b class="red-text">looking for motivated PhD and master students!</b> Please drop me an email if you are interested.`,
   },
   {
     date: 'Nov 11, 2023',
