@@ -67,10 +67,11 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Visualizing Large-Scale Spatial Time Series with GeoChron',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (also appears in IEEE VIS 2023)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (IEEE VIS 2023)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2023.3327162',
           pdf: '/pdf/geochron.pdf',
+          video: 'https://youtu.be/jc7aeiszPQM?si=SeRLpmTIg4z7GDFN',
         },
       },
       {

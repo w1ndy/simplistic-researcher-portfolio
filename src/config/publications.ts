@@ -19,10 +19,11 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Visualizing Large-Scale Spatial Time Series with GeoChron',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (also appears in IEEE VIS 2023)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (IEEE VIS 2023)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2023.3327162',
           pdf: '/pdf/geochron.pdf',
+          video: 'https://youtu.be/jc7aeiszPQM?si=SeRLpmTIg4z7GDFN',
         },
       },
     ],
@@ -175,7 +176,7 @@ export default [
         title:
           'ECoalVis: Visual Analysis of Control Strategies in Coal-fired Power Plants',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023 (also appears in IEEE VIS 2022)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023 (IEEE VIS 2022)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2022.3209430',
           pdf: '/pdf/ecoalvis.pdf',
@@ -196,7 +197,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Rigel: Transforming Tabular Data by Declarative Mapping',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023 (also appears in IEEE VIS 2022)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023 (IEEE VIS 2022)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2022.3209385',
           pdf: '/pdf/rigel.pdf',
@@ -231,7 +232,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title:
           'You are experienced: interactive tour planning with crowdsourcing tour data from web',
-        venue: 'Journal of Visualization, vol. 26, pp. 385–401, 2023',
+        venue: 'Journal of Visualization, 2023',
         links: {
           paper: 'https://doi.org/10.1007/s12650-022-00884-1',
           pdf: '/pdf/ct3.pdf',
@@ -255,7 +256,7 @@ export default [
         ],
         title: 'Nebula: A Coordinating Grammar of Graphics',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 12, pp. 4127-4140, 2022',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2021.3114876',
           pdf: '/pdf/nebula.pdf',
@@ -276,7 +277,7 @@ export default [
         ],
         title: 'Visual Cascade Analytics of Large-Scale Spatiotemporal Data',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 6, pp. 2486-2499, 2022',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2021.3071387',
           pdf: '/pdf/viscas.pdf',
@@ -298,9 +299,10 @@ export default [
         title:
           'A Visualization Approach for Monitoring Order Processing in E-Commerce Warehouse',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 1, pp. 857-867, 2022',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022 (IEEE VIS 2021)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2021.3114878',
+          pdf: '/pdf/ordermonitor.pdf',
         },
       },
       {
@@ -317,10 +319,11 @@ export default [
         ],
         title: 'Compass: Towards Better Causal Analysis of Urban Time Series',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 1, pp. 1051-1061, 2022',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022 (IEEE VIS 2021)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2021.3114875',
           pdf: '/pdf/compass.pdf',
+          video: 'https://youtu.be/QxvGC9F9PaY?si=QI_rCpex5qVvBlpx',
         },
       },
     ],
@@ -332,8 +335,7 @@ export default [
         image: '/img/papers/industrial_survey.png',
         authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
         title: 'A Review on Industrial Data Visual Analytics',
-        venue:
-          'Journal of Integration Technology, vol. 11, no. 6, pp. 3-19, 2021',
+        venue: 'Journal of Integration Technology, 2021',
         links: {
           paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
         },
@@ -353,10 +355,11 @@ export default [
         ],
         title:
           'Towards Better Detection and Analysis of Massive Spatiotemporal Co-Occurrence Patterns',
-        venue:
-          'IEEE Transactions on Intelligent Transportation Systems, vol. 22, no. 6, pp. 3387-3402, 2021',
+        venue: 'IEEE Transactions on Intelligent Transportation Systems, 2021',
         links: {
           paper: 'https://doi.org/10.1109/TITS.2020.2983226',
+          pdf: '/pdf/corvizor.pdf',
+          video: 'https://youtu.be/0T0xe-rppSo?si=jToHX2CDGnCrv8Ch',
         },
       },
       {
@@ -373,9 +376,10 @@ export default [
         ],
         title: 'Towards Better Bus Networks: A Visual Analytics Approach',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 27, no. 2, pp. 817-827, 2021',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 27, no. 2, pp. 817-827, 2021',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2020.3030458',
+          pdf: '/pdf/bnva.pdf',
         },
       },
       {
@@ -390,10 +394,10 @@ export default [
         ],
         title:
           'Pareto-Optimal Transit Route Planning With Multi-Objective Monte-Carlo Tree Search',
-        venue:
-          'IEEE Transactions on Intelligent Transportation Systems, vol. 22, no. 2, pp. 1185-1195, 2021',
+        venue: 'IEEE Transactions on Intelligent Transportation Systems, 2021',
         links: {
           paper: 'https://doi.org/10.1109/TITS.2020.2964012',
+          pdf: '/pdf/mcrs.pdf',
         },
       },
     ],
@@ -415,7 +419,7 @@ export default [
         ],
         title: 'AirVis: Visual Analytics of Air Pollution Propagation',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 26, no. 1, pp. 800-810, 2020',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2020 (IEEE VIS 2019)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2019.2934670',
         },
@@ -433,7 +437,7 @@ export default [
         title:
           'SRVis: Towards Better Spatial Integration in Ranking Visualization',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 25, no. 1, pp. 459-469, 2019',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2019 (IEEE VIS 2018)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2018.2865126',
         },
@@ -444,7 +448,7 @@ export default [
         title:
           'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
         venue:
-          "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18), Paper 247, 1–12",
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2018',
         links: {
           paper: 'https://doi.org/10.1145/3173574.3173821',
         },
@@ -463,7 +467,7 @@ export default [
         title:
           'SmartAdP: Visual Analytics of Large-scale Taxi Trajectories for Selecting Billboard Locations',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics, vol. 23, no. 1, pp. 1-10, 2017',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2017 (IEEE VIS 2016)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2016.2598432',
         },
