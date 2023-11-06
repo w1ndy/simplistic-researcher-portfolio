@@ -261,6 +261,7 @@ export default [
           paper: 'https://doi.org/10.1109/TVCG.2021.3114876',
           pdf: '/pdf/nebula.pdf',
           appendix: 'https://nebula-vis.github.io/examples',
+          video: 'https://youtu.be/oMgO0BVX8rY?si=jCEGo6GaLzW_jhax',
         },
       },
       {
@@ -338,6 +339,7 @@ export default [
         venue: 'Journal of Integration Technology, 2021',
         links: {
           paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
+          'cn pdf': '/pdf/industrial_survey.pdf',
         },
       },
       {
@@ -380,6 +382,7 @@ export default [
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2020.3030458',
           pdf: '/pdf/bnva.pdf',
+          video: 'https://youtu.be/DEAfK8F2dQE?si=CY-voxqmRa5TIAYL',
         },
       },
       {
@@ -422,6 +425,8 @@ export default [
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2020 (IEEE VIS 2019)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2019.2934670',
+          pdf: '/pdf/airvis.pdf',
+          video: 'https://youtu.be/orjRmmGVT-4?si=bFQCE8HFcnh3-WMM',
         },
       },
       {
@@ -440,6 +445,8 @@ export default [
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2019 (IEEE VIS 2018)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2018.2865126',
+          pdf: '/pdf/srvis.pdf',
+          video: 'https://youtu.be/lenSZci4gy4?si=1JCtSimnpNTyTzGS',
         },
       },
       {
@@ -472,6 +479,8 @@ export default [
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2017 (IEEE VIS 2016)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2016.2598432',
+          pdf: '/pdf/smartadp.pdf',
+          video: 'https://youtu.be/7vkYubflVuo?si=3cfFncTFbUHmsh1n',
         },
       },
     ],
