@@ -17,7 +17,8 @@ export default {
   'Xiangyu Zhu':
     'https://scholar.google.com.hk/citations?user=OanBHCwAAAAJ&hl=zh-CN',
   'Xianyuan Zhan': 'https://zhanxianyuan.xyz/',
-  'Ran Chen': 'https://crcrcry.notion.site/',
+  'Ran Chen':
+    'https://crcrcry.notion.site/crcrcry/Ran-CHEN-6853eea1a35e4738aaf15ba570b92716',
   'Yanwei Huang': 'https://yhuang.top/',
   'Xinhuan Shu': 'https://shuxinhuan.github.io/',
   'Jiayi Zhou':
