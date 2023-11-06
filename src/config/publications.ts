@@ -451,6 +451,8 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2018',
         links: {
           paper: 'https://doi.org/10.1145/3173574.3173821',
+          pdf: '/pdf/reach.pdf',
+          video: 'https://youtu.be/WcjMXAfuygg?si=f3Xv_zBl_o9UiYhF',
         },
       },
       {
