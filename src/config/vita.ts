@@ -76,8 +76,8 @@ export default {
     },
     {
       when: '2019',
-      what: 'Luzengyong CAD&CG High Technology Award',
-      where: 'Third Prize',
+      what: 'Luzengyong CAD&CG High Technology Award, Third Prize',
+      where: 'State Key Lab of CAD&CG',
     },
     {
       when: '2018',
