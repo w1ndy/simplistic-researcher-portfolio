@@ -14,7 +14,7 @@ export default function About() {
           <div innerHTML={Info.bio}></div>
           <div class="flex-none hidden md:block">
             <img
-              src="/img/me.jpg"
+              src="/img/me.avif"
               class="w-44 h-52 object-cover ml-4"
               alt={`Photo of ${Info.name}`}
             ></img>
