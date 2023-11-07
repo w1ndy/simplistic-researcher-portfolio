@@ -5,7 +5,7 @@ export default [
     year: '2024',
     papers: [
       {
-        image: '/img/papers/geochron.png',
+        image: '/img/papers/geochron.avif',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -32,7 +32,7 @@ export default [
     year: '2023',
     papers: [
       {
-        image: '/img/papers/relaq.jpg',
+        image: '/img/papers/relaq.avif',
         authors: [
           'Shuhan Liu',
           'Yuan Tian',
@@ -50,7 +50,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/nl2rigel.jpg',
+        image: '/img/papers/nl2rigel.avif',
         authors: [
           'Yanwei Huang',
           'Yunfan Zhou',
@@ -72,7 +72,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/neighviz.png',
+        image: '/img/papers/neighviz.avif',
         authors: [
           'Yue Yu',
           'Yifang Wang',
@@ -93,7 +93,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/decom.jpg',
+        image: '/img/papers/decom.avif',
         authors: [
           'Fangkai Yang',
           'Jue Zhang',
@@ -117,7 +117,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/geocamera.png',
+        image: '/img/papers/geocamera.avif',
         authors: [
           'Wenchao Li',
           'Zhan Wang',
@@ -139,7 +139,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/geonetverse.png',
+        image: '/img/papers/geonetverse.avif',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -160,7 +160,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/ecoalvis.png',
+        image: '/img/papers/ecoalvis.avif',
         authors: [
           'Shuhan Liu',
           'Di Weng',
@@ -184,7 +184,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/rigel.png',
+        image: '/img/papers/rigel.avif',
         authors: [
           'Ran Chen',
           'Di Weng',
@@ -208,7 +208,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/urbansurvey.png',
+        image: '/img/papers/urbansurvey.avif',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -227,7 +227,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/ct3.png',
+        image: '/img/papers/ct3.avif',
         authors: ['Zikun Deng', 'Di Weng', 'Yingcai Wu'],
         corresponding_authors: ['Di Weng'],
         title:
@@ -244,7 +244,7 @@ export default [
     year: '2022',
     papers: [
       {
-        image: '/img/papers/nebula.png',
+        image: '/img/papers/nebula.avif',
         authors: [
           'Ran Chen',
           'Xinhuan Shu',
@@ -265,7 +265,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/viscas.png',
+        image: '/img/papers/viscas.avif',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -286,7 +286,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/ordermonitor.png',
+        image: '/img/papers/ordermonitor.avif',
         authors: [
           'Junxiu Tang',
           'Yuhua Zhou',
@@ -307,7 +307,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/compass.png',
+        image: '/img/papers/compass.avif',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -333,7 +333,7 @@ export default [
     year: '2021',
     papers: [
       {
-        image: '/img/papers/industrial_survey.png',
+        image: '/img/papers/industrial_survey.avif',
         authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
         title: 'A Review on Industrial Data Visual Analytics',
         venue: 'Journal of Integration Technology, 2021',
@@ -343,7 +343,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/corvizor.png',
+        image: '/img/papers/corvizor.avif',
         authors: [
           'Yingcai Wu',
           'Di Weng',
@@ -365,7 +365,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/bnva.png',
+        image: '/img/papers/bnva.avif',
         authors: [
           'Di Weng',
           'Chengbo Zheng',
@@ -386,7 +386,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/mcrs.png',
+        image: '/img/papers/mcrs.avif',
         authors: [
           'Di Weng',
           'Ran Chen',
@@ -409,7 +409,7 @@ export default [
     year: 'Earlier',
     papers: [
       {
-        image: '/img/papers/airvis.png',
+        image: '/img/papers/airvis.avif',
         authors: [
           'Zikun Deng',
           'Di Weng',
@@ -430,7 +430,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/srvis.png',
+        image: '/img/papers/srvis.avif',
         authors: [
           'Di Weng',
           'Ran Chen',
@@ -450,7 +450,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/homefinder.png',
+        image: '/img/papers/homefinder.avif',
         authors: ['Di Weng', 'Heming Zhu', 'Jie Bao', 'Yu Zheng', 'Yingcai Wu'],
         title:
           'HomeFinder Revisited: Finding Ideal Homes with Reachability-Centric Multi-Criteria Decision Making',
@@ -463,7 +463,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/smartadp.png',
+        image: '/img/papers/smartadp.avif',
         authors: [
           'Dongyu Liu',
           'Di Weng',

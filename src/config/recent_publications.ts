@@ -5,7 +5,7 @@ export default [
     tag: 'IEEE TVCG 2023',
     papers: [
       {
-        image: '/img/papers/nl2rigel.jpg',
+        image: '/img/papers/nl2rigel.avif',
         authors: [
           'Yanwei Huang',
           'Yunfan Zhou',
@@ -27,7 +27,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/geonetverse.png',
+        image: '/img/papers/geonetverse.avif',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -53,7 +53,7 @@ export default [
     tag: 'IEEE VIS 2023',
     papers: [
       {
-        image: '/img/papers/geochron.png',
+        image: '/img/papers/geochron.avif',
         authors: [
           'Zikun Deng',
           'Shifu Chen',
@@ -75,7 +75,7 @@ export default [
         },
       },
       {
-        image: '/img/papers/neighviz.png',
+        image: '/img/papers/neighviz.avif',
         authors: [
           'Yue Yu',
           'Yifang Wang',
@@ -101,7 +101,7 @@ export default [
     tag: 'ACM CHI 2023',
     papers: [
       {
-        image: '/img/papers/geocamera.png',
+        image: '/img/papers/geocamera.avif',
         authors: [
           'Wenchao Li',
           'Zhan Wang',
