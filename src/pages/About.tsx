@@ -16,6 +16,7 @@ export default function About() {
             <img
               src="/img/me.jpg"
               class="w-44 h-52 object-cover ml-4"
+              alt={`Photo of ${Info.name}`}
             ></img>
           </div>
         </div>

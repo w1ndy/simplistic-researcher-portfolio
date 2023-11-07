@@ -42,6 +42,7 @@ export function PaperEntry(props: { paper: Paper }) {
         <img
           class="border border-gray-300 w-24 h-18 sm:w-40 sm:h-28 object-cover"
           src={props.paper.image}
+          alt={`Teaser image of paper "${props.paper.title}"`}
         />
       </div>
 
