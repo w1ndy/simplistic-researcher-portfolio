@@ -52,4 +52,6 @@ export default {
   'Qingwei Lin': 'https://www.microsoft.com/en-us/research/people/qlin/',
   'Dongmei Zhang': 'https://www.microsoft.com/en-us/research/people/dongmeiz/',
   'Weiwei Cui': 'https://www.microsoft.com/en-us/research/people/weiweicu/',
+  'Yunfan Zhou': 'https://zyfzd123.github.io/',
+  'Lingyu Meng': 'https://kevinmeng49.github.io/',
 } as { [key: string]: string }
