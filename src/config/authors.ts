@@ -54,4 +54,5 @@ export default {
   'Weiwei Cui': 'https://www.microsoft.com/en-us/research/people/weiweicu/',
   'Yunfan Zhou': 'https://zyfzd123.github.io/',
   'Lingyu Meng': 'https://kevinmeng49.github.io/',
+  'Zhongsu Luo': 'https://zhongsuluo.github.io/',
 } as { [key: string]: string }
