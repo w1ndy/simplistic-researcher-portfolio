@@ -55,4 +55,7 @@ export default {
   'Yunfan Zhou': 'https://zyfzd123.github.io/',
   'Lingyu Meng': 'https://kevinmeng49.github.io/',
   'Zhongsu Luo': 'https://zhongsuluo.github.io/',
+  'Kai Xiong': 'https://xkkevin.github.io/',
+  'Yongheng Wang':
+    'https://en.zhejianglab.com/institutescenters/Faculty/202112/t20211209_2924.shtml',
 } as { [key: string]: string }
