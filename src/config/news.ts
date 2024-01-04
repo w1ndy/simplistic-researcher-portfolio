@@ -4,7 +4,7 @@ export default [
     content: `I've joined School of Software Technology, Zhejiang University as a full-time tenure-track assistant professor and I'm <b class="red-text">looking for motivated PhD and master students!</b> Please drop me an email if you are interested.`,
   },
   {
-    date: 'Jan 4, 2023',
+    date: 'Jan 4, 2024',
     content:
       'Our paper "A Deep Spatiotemporal Trajectory Representation Learning Framework for Clustering" has been accepted by IEEE Transactions on Intelligent Transportation Systems!',
   },
