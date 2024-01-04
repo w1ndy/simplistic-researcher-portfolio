@@ -2,6 +2,29 @@ import { Paper } from '../types/paper'
 
 export default [
   {
+    tag: 'IEEE ITS 2024',
+    papers: [
+      {
+        image: '/img/papers/dstc.avif',
+        authors: [
+          'Chao Wang',
+          'Jiahui Huang',
+          'Yongheng Wang',
+          'Zhengxuan Lin',
+          'Xiongnan Jin',
+          'Xing Jin',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        title:
+          'A Deep Spatiotemporal Trajectory Representation Learning Framework for Clustering',
+        venue:
+          'IEEE Transactions on Intelligent Transportation Systems (ITS), 2024',
+        links: {},
+      },
+    ],
+  },
+  {
     tag: 'IEEE PacificVis 2024',
     papers: [
       {

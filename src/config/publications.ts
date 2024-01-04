@@ -5,6 +5,24 @@ export default [
     year: '2024',
     papers: [
       {
+        image: '/img/papers/dstc.avif',
+        authors: [
+          'Chao Wang',
+          'Jiahui Huang',
+          'Yongheng Wang',
+          'Zhengxuan Lin',
+          'Xiongnan Jin',
+          'Xing Jin',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        title:
+          'A Deep Spatiotemporal Trajectory Representation Learning Framework for Clustering',
+        venue:
+          'IEEE Transactions on Intelligent Transportation Systems (ITS), 2024',
+        links: {},
+      },
+      {
         image: '/img/papers/jsoncurer.avif',
         authors: [
           'Kai Xiong',
