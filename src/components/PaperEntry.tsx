@@ -1,6 +1,6 @@
 import { Paper } from '../types/paper'
 import AuthorHomepages from '../config/authors'
-import { For } from 'solid-js'
+import { For, Show } from 'solid-js'
 
 export function homepage(author: string) {
   return (original: string) => {
@@ -47,31 +47,37 @@ export function PaperEntry(props: { paper: Paper }) {
       </div>
 
       <div class="flex-1">
-        <span class="font-bold">{props.paper.title}.</span>{' '}
-        <span
-          innerHTML={props.paper.authors
-            .map((author) =>
-              homepage(author)(
-                corresponding(
-                  author,
-                  props.paper.corresponding_authors
-                )(me(author)(author))
+        <div>
+          <span class="font-bold">{props.paper.title}.</span>{' '}
+          <span
+            innerHTML={props.paper.authors
+              .map((author) =>
+                homepage(author)(
+                  corresponding(
+                    author,
+                    props.paper.corresponding_authors
+                  )(me(author)(author))
+                )
               )
-            )
-            .join(', ')}
-        />
-        . <span class="italic">{props.paper.venue}</span>.
-        <For each={Object.entries(props.paper.links)}>
-          {([name, link]) => (
-            <a
-              href={link}
-              target="_blank"
-              class="ml-2 uppercase tracking-wider"
-            >
-              [{name}]
-            </a>
-          )}
-        </For>
+              .join(', ')}
+          />
+          . <span class="italic">{props.paper.venue}</span>
+        </div>
+        <Show when={props.paper.links}>
+          <div>
+            <For each={Object.entries(props.paper.links)}>
+              {([name, link]) => (
+                <a
+                  href={link}
+                  target="_blank"
+                  class="mr-2 uppercase tracking-wider"
+                >
+                  [{name}]
+                </a>
+              )}
+            </For>
+          </div>
+        </Show>
       </div>
     </div>
   )
