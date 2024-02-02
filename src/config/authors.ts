@@ -12,7 +12,7 @@ export default {
   'Guodao Sun': 'https://godoorsun.org/',
   'Mingliang Xu':
     'https://scholar.google.com.hk/citations?user=u-8x34cAAAAJ&hl=zh-CN',
-  'Shuhan Liu': 'https://scholar.google.com/citations?user=ApD3iicAAAAJ&hl=en',
+  'Shuhan Liu': 'https://susicaliu.github.io/',
   'Haoran Xu': 'https://ryanxhr.github.io/',
   'Xiangyu Zhu':
     'https://scholar.google.com.hk/citations?user=OanBHCwAAAAJ&hl=zh-CN',
