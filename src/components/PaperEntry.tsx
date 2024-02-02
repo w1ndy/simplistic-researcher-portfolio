@@ -61,7 +61,7 @@ export function PaperEntry(props: { paper: Paper }) {
               )
               .join(', ')}
           />
-          . <span class="italic">{props.paper.venue}</span>
+          . <span class="italic">{props.paper.venue}</span>.
         </div>
         <Show when={props.paper.links}>
           <div>

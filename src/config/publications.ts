@@ -5,6 +5,23 @@ export default [
     year: '2024',
     papers: [
       {
+        image: '/img/papers/table_illustrator.avif',
+        authors: [
+          'Yanwei Huang',
+          'Yurun Yang',
+          'Xinhuan Shu',
+          'Ran Chen',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Table Illustrator: Puzzle-based interactive authoring of plain tables',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2024',
+        links: {},
+      },
+      {
         image: '/img/papers/dstc.avif',
         authors: [
           'Chao Wang',
@@ -20,7 +37,10 @@ export default [
           'A Deep Spatiotemporal Trajectory Representation Learning Framework for Clustering',
         venue:
           'IEEE Transactions on Intelligent Transportation Systems (ITS), 2024',
-        links: {},
+        links: {
+          paper: 'https://ieeexplore.ieee.org/document/10403544/',
+          pdf: '/pdf/dstc.pdf',
+        },
       },
       {
         image: '/img/papers/jsoncurer.avif',
@@ -122,7 +142,8 @@ export default [
         venue:
           '9th Symposium on Visualization in Data Science (VDS @ IEEE VIS 2023), 2023',
         links: {
-          paper: 'https://arxiv.org/abs/2309.11454',
+          paper:
+            'https://www.computer.org/csdl/proceedings-article/vds/2023/302000a001/1SYJieOzwOs',
           pdf: '/pdf/neighviz.pdf',
         },
       },

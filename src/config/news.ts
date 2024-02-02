@@ -4,6 +4,11 @@ export default [
     content: `I've joined School of Software Technology, Zhejiang University as a full-time tenure-track assistant professor and I'm <b class="red-text">looking for motivated PhD and master students!</b> Please drop me an email if you are interested.`,
   },
   {
+    date: 'Jan 19, 2024',
+    content:
+      'Our paper "Table Illustrator: Puzzle-based interactive authoring of plain tables" has been accepted by ACM Conference on Human Factors in Computing Systems!',
+  },
+  {
     date: 'Jan 4, 2024',
     content:
       'Our paper "A Deep Spatiotemporal Trajectory Representation Learning Framework for Clustering" has been accepted by IEEE Transactions on Intelligent Transportation Systems!',
