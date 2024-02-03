@@ -2,7 +2,7 @@ import { Paper } from '../types/paper'
 
 export default [
   {
-    tag: 'IEEE ITS 2024',
+    tag: 'ACM CHI 2024',
     papers: [
       {
         image: '/img/papers/table_illustrator.avif',
@@ -21,6 +21,11 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2024',
         links: {},
       },
+    ],
+  },
+  {
+    tag: 'IEEE ITS 2024',
+    papers: [
       {
         image: '/img/papers/dstc.avif',
         authors: [
