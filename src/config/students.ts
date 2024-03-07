@@ -76,10 +76,6 @@ export default {
       {
         name: 'Zhenning Chen',
       },
-      {
-        name: 'Xiaoran Guo',
-        description: 'incoming (fall 2024)',
-      },
     ],
   },
   undergraduates: {
