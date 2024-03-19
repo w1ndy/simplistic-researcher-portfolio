@@ -11,7 +11,7 @@ export default function Publications() {
         </div>
         <For each={PublicationEntries}>
           {(rp) => (
-            <div class="mb-4">
+            <div class="mb-6">
               <div class="text-gray-500 font-bold">{rp.year}</div>
               <For each={rp.papers}>
                 {(paper) => <PaperEntry paper={paper} />}

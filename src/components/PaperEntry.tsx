@@ -1,6 +1,18 @@
 import { Paper } from '../types/paper'
 import AuthorHomepages from '../config/authors'
 import { For, Show } from 'solid-js'
+import Fa from 'solid-fa'
+import { faPaperclip, faFilePdf, IconDefinition, faVideo, faFile, faCode, faDesktop } from '@fortawesome/free-solid-svg-icons'
+
+const IconMapping: Record<string, IconDefinition> = {
+  'paper': faPaperclip,
+  'pdf': faFilePdf,
+  'cn pdf': faFilePdf,
+  'video': faVideo,
+  'appendix': faFile,
+  'code': faCode,
+  'demo': faDesktop,
+}
 
 export function homepage(author: string) {
   return (original: string) => {
@@ -37,7 +49,7 @@ function corresponding(
 
 export function PaperEntry(props: { paper: Paper }) {
   return (
-    <div class="mt-3 flex">
+    <div class="mt-4 flex">
       <div class="flex-0 mr-3">
         <img
           class="border border-gray-300 w-24 h-18 sm:w-40 sm:h-28 object-cover"
@@ -70,9 +82,12 @@ export function PaperEntry(props: { paper: Paper }) {
                 <a
                   href={link}
                   target="_blank"
-                  class="mr-2 uppercase tracking-wider"
+                  class="mr-3 uppercase tracking-wider text-sm underline"
                 >
-                  [{name}]
+                  <Show when={IconMapping[name]}>
+                    <Fa icon={IconMapping[name]} class="inline-block mr-1"></Fa>
+                  </Show>
+                  {name}
                 </a>
               )}
             </For>

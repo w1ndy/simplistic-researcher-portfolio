@@ -7,7 +7,7 @@ import { PaperEntry } from './PaperEntry'
 export function RecentPublications() {
   return (
     <div class="py-8">
-      <div class="mb-3">
+      <div class="mb-4">
         <span class="uppercase tracking-wider font-bold">
           Recent Publications
         </span>
@@ -20,7 +20,7 @@ export function RecentPublications() {
       </div>
       <For each={RecentPublicationEntries}>
         {(rp) => (
-          <div class="mb-4">
+          <div class="mb-6">
             <div class="text-gray-500 font-bold">{rp.tag}</div>
             <For each={rp.papers}>
               {(paper) => <PaperEntry paper={paper} />}

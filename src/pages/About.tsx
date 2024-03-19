@@ -15,7 +15,7 @@ export default function About() {
           <div class="flex-none hidden md:block">
             <img
               src="/img/me.avif"
-              class="w-44 h-52 object-cover ml-4"
+              class="w-44 h-60 object-cover ml-4"
               alt={`Photo of ${Info.name}`}
             ></img>
           </div>

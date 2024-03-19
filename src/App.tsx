@@ -13,7 +13,7 @@ const Vita = lazy(() => import('./pages/Vita'))
 
 function App() {
   return (
-    <div class="sm:flex">
+    <div class="sm:flex leading-6">
       <InfoSidebar class="flex-none" />
       <div class="px-10 sm:px-0 sm:ml-2 sm:pr-10 sm:h-screen flex-grow flex flex-col">
         <Nav class="flex-none" />

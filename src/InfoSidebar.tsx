@@ -5,7 +5,7 @@ import Info from './config/info'
 
 export function InfoSidebar(props: { class: string }) {
   return (
-    <div class={`w-96 sm:h-screen p-10 flex flex-col gap-5 ${props.class}`}>
+    <div class={`w-96 sm:h-screen p-10 flex flex-col gap-6 ${props.class}`}>
       <div class="uppercase tracking-wider font-bold">{Info.name}</div>
 
       <For each={Info.affiliations}>
