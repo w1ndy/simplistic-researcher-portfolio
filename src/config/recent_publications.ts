@@ -66,7 +66,10 @@ export default [
           'JsonCurer: Data Quality Management for JSON Based on an Aggregated Schema',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (IEEE PacificVis 2024 TVCG Journal Track)',
-        links: {},
+        links: {
+          pdf: '/pdf/jsoncurer.pdf',
+          code: 'https://github.com/changevis/JsonCurer',
+        },
       },
     ],
   },
