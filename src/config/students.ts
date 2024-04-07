@@ -25,6 +25,15 @@ export default {
         description: 'interactive data transformation',
       },
       {
+        name: 'Yangtian Liu',
+        coadvised: true,
+        description: 'time series visual analytics',
+      },
+      {
+        name: 'Zhenning Chen',
+        description: 'urban visual analytics',
+      },
+      {
         name: 'Yunfan Zhou',
         coadvised: true,
         description: 'incoming (fall 2024)',
@@ -65,16 +74,19 @@ export default {
       },
       {
         name: 'Jie Yu',
+        description: 'urban visual analytics',
       },
       {
         name: 'Xiaodan Miao',
+        description: 'urban visual analytics',
       },
       {
-        name: 'Yangtian Liu',
-        coadvised: true,
+        name: 'Jiabin Xu',
+        description: 'incoming (fall 2024)',
       },
       {
-        name: 'Zhenning Chen',
+        name: 'Zelin Li',
+        description: 'incoming (fall 2024)',
       },
     ],
   },

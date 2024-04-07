@@ -4,6 +4,11 @@ export default [
     content: `I've joined School of Software Technology, Zhejiang University as a full-time tenure-track assistant professor and I'm <b class="red-text">looking for motivated PhD and master students!</b> Please drop me an email if you are interested.`,
   },
   {
+    date: 'Apr 7, 2024',
+    content:
+      'I will chair the "AI and Visual Analytics" session at the upcoming <a href="https://pacificvis.github.io/pvis2024/" target="_blank">IEEE PacificVis 2024</a> conference.',
+  },
+  {
     date: 'Jan 19, 2024',
     content:
       'Our paper "Table Illustrator: Puzzle-based interactive authoring of plain tables" has been accepted by ACM Conference on Human Factors in Computing Systems!',
