@@ -3,7 +3,7 @@ import VitaEntries from '../config/vita'
 
 export default function Vita() {
   return (
-    <div>
+    <div class="overflow-y-scroll">
       <Section
         name="Education"
         entries={VitaEntries.education}
