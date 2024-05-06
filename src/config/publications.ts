@@ -5,6 +5,24 @@ export default [
     year: '2024',
     papers: [
       {
+        image: '/img/papers/relaq.avif',
+        authors: [
+          'Shuhan Liu',
+          'Yuan Tian',
+          'Zikun Deng',
+          'Weiwei Cui',
+          'Haidong Zhang',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'Relation-driven Query of Multiple Time Series',
+        venue: 'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024',
+        links: {
+          paper: 'https://arxiv.org/abs/2310.19311',
+        },
+      },
+      {
         image: '/img/papers/table_illustrator.avif',
         authors: [
           'Yanwei Huang',
@@ -19,7 +37,10 @@ export default [
           'Table Illustrator: Puzzle-based interactive authoring of plain tables',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2024',
-        links: {},
+        links:  {
+          paper: 'https://programs.sigchi.org/chi/2024/program/content/147780',
+          pdf: '/pdf/table_illustrator.pdf',
+        },
       },
       {
         image: '/img/papers/dstc.avif',
@@ -88,24 +109,6 @@ export default [
   {
     year: '2023',
     papers: [
-      {
-        image: '/img/papers/relaq.avif',
-        authors: [
-          'Shuhan Liu',
-          'Yuan Tian',
-          'Zikun Deng',
-          'Weiwei Cui',
-          'Haidong Zhang',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title: 'Relation-driven Query of Multiple Time Series',
-        venue: 'arXiv preprint (in submission), 2023',
-        links: {
-          paper: 'https://arxiv.org/abs/2310.19311',
-        },
-      },
       {
         image: '/img/papers/nl2rigel.avif',
         authors: [

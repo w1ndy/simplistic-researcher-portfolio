@@ -89,6 +89,7 @@ export default {
     {
       when: 'Session Chair',
       descriptions: [
+        'AI & Visual Analytics, <a href="https://pacificvis.github.io/pvis2024/" target="_blank">IEEE PacificVis 2024</a>',
         'GeoVis session, <a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
         'Application I session, <a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
       ],
@@ -96,6 +97,7 @@ export default {
     {
       when: 'PC Member',
       descriptions: [
+        '<a href="https://ieeevis.org/year/2024/welcome" target="_blank">IEEE VIS 2024</a>',
         '<a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
         '<a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
         '<a href="https://www.cgs-network.org/cgi23/" target="_blank">Computer Graphics International (CGI) 2023</a>',

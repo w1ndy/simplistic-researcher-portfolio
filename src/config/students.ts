@@ -82,10 +82,19 @@ export default {
       },
       {
         name: 'Jiabin Xu',
+        coadvised: true,
+        description: 'incoming (fall 2024)',
+      },
+      {
+        name: 'Jiawen Zhu',
         description: 'incoming (fall 2024)',
       },
       {
         name: 'Zelin Li',
+        description: 'incoming (fall 2024)',
+      },
+      {
+        name: 'Kaicheng Shao',
         description: 'incoming (fall 2024)',
       },
     ],
