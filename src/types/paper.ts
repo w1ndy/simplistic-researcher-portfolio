@@ -5,4 +5,5 @@ export interface Paper {
   title: string
   venue: string
   links: Record<string, string>
+  featured_category?: string
 }

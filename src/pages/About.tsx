@@ -2,7 +2,7 @@ import { For } from 'solid-js'
 
 import { News } from '../components/News'
 import NewsEntries from '../config/news'
-import { RecentPublications } from '../components/RecentPublications'
+import { FeaturedPublications } from '../components/FeaturedPublications'
 
 import Info from '../config/info'
 
@@ -20,7 +20,7 @@ export default function About() {
             ></img>
           </div>
         </div>
-        <RecentPublications />
+        <FeaturedPublications />
       </div>
       <div class="pb-10 lg:w-96 flex-none">
         <div class="uppercase tracking-wider font-bold">News</div>

@@ -97,6 +97,11 @@ export default {
         name: 'Kaicheng Shao',
         description: 'incoming (fall 2024)',
       },
+      {
+        name: 'Qiming Shi',
+        coadvised: true,
+        description: 'incoming (fall 2024)',
+      },
     ],
   },
   undergraduates: {

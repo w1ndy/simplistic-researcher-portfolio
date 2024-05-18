@@ -1,5 +1,14 @@
 import { Paper } from '../types/paper'
 
+enum FeaturedCategory {
+  IEEE_TVCG_2024 = 'IEEE TVCG 2024',
+  ACM_CHI_2024 = 'ACM CHI 2024',
+  IEEE_ITS_2024 = 'IEEE ITS 2024',
+  IEEE_PACIFICVIS_2024 = 'IEEE PacificVis 2024',
+  IEEE_TVCG_2023 = 'IEEE TVCG 2023',
+  IEEE_VIS_2023 = 'IEEE VIS 2023',
+}
+
 export default [
   {
     year: '2024',
@@ -17,10 +26,13 @@ export default [
         ],
         corresponding_authors: ['Di Weng'],
         title: 'Relation-driven Query of Multiple Time Series',
-        venue: 'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024',
         links: {
-          paper: 'https://arxiv.org/abs/2310.19311',
+          paper: 'https://ieeexplore.ieee.org/document/10521861',
+          pdf: '/pdf/relaq.pdf',
         },
+        featured_category: FeaturedCategory.IEEE_TVCG_2024,
       },
       {
         image: '/img/papers/table_illustrator.avif',
@@ -37,10 +49,14 @@ export default [
           'Table Illustrator: Puzzle-based interactive authoring of plain tables',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2024',
-        links:  {
-          paper: 'https://programs.sigchi.org/chi/2024/program/content/147780',
+        links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3613904.3642415',
           pdf: '/pdf/table_illustrator.pdf',
+          video: 'https://www.youtube.com/watch?v=OrFKL5-Fc1Y',
+          code: 'https://github.com/Ais0n/tableshop',
+          demo: 'https://yhuang.top/tableshop/',
         },
+        featured_category: FeaturedCategory.ACM_CHI_2024,
       },
       {
         image: '/img/papers/dstc.avif',
@@ -62,6 +78,7 @@ export default [
           paper: 'https://ieeexplore.ieee.org/document/10403544/',
           pdf: '/pdf/dstc.pdf',
         },
+        featured_category: FeaturedCategory.IEEE_ITS_2024,
       },
       {
         image: '/img/papers/jsoncurer.avif',
@@ -78,9 +95,11 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (IEEE PacificVis 2024 TVCG Journal Track)',
         links: {
+          paper: 'https://ieeexplore.ieee.org/document/10499847/',
           pdf: '/pdf/jsoncurer.pdf',
           code: 'https://github.com/changevis/JsonCurer',
         },
+        featured_category: FeaturedCategory.IEEE_PACIFICVIS_2024,
       },
       {
         image: '/img/papers/geochron.avif',
@@ -103,6 +122,7 @@ export default [
           pdf: '/pdf/geochron.pdf',
           video: 'https://youtu.be/jc7aeiszPQM?si=SeRLpmTIg4z7GDFN',
         },
+        featured_category: FeaturedCategory.IEEE_VIS_2023,
       },
     ],
   },
@@ -130,6 +150,7 @@ export default [
           appendix: '/pdf/nl2rigel_appendix.pdf',
           video: 'https://youtu.be/qjjKAykyDZU',
         },
+        featured_category: FeaturedCategory.IEEE_TVCG_2023,
       },
       {
         image: '/img/papers/neighviz.avif',
@@ -152,6 +173,7 @@ export default [
             'https://www.computer.org/csdl/proceedings-article/vds/2023/302000a001/1SYJieOzwOs',
           pdf: '/pdf/neighviz.pdf',
         },
+        featured_category: FeaturedCategory.IEEE_VIS_2023,
       },
       {
         image: '/img/papers/decom.avif',
