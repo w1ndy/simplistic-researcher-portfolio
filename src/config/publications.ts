@@ -14,6 +14,25 @@ export default [
     year: '2024',
     papers: [
       {
+        image: '/img/papers/kg.avif',
+        authors: [
+          'Xiwen Cai',
+          'Di Weng',
+          'Taotao Fu',
+          'Siwei Fu',
+          'Yongheng Wang',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'Linking Text and Visualizations via Contextual Knowledge Graph',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024',
+        links: {
+          paper: 'https://ieeexplore.ieee.org/document/10553360',
+        },
+        featured_category: FeaturedCategory.IEEE_TVCG_2024,
+      },
+      {
         image: '/img/papers/relaq.avif',
         authors: [
           'Shuhan Liu',

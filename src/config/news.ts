@@ -4,6 +4,11 @@ export default [
     content: `I've joined School of Software Technology, Zhejiang University as a full-time tenure-track assistant professor and I'm <b class="red-text">looking for motivated PhD and master students!</b> Please drop me an email if you are interested.`,
   },
   {
+    date: 'Jun 12, 2024',
+    content:
+      'Our paper "<a href="https://ieeexplore.ieee.org/document/10553360" target="_blank">Linking Text and Visualizations via Contextual Knowledge Graph</a>" has been accepted by IEEE TVCG. Congrats to Xiwen!',
+  },
+  {
     date: 'May 6, 2024',
     content:
       'Our paper "<a href="https://arxiv.org/abs/2310.19311" target="_blank">Relation-driven Query of Multiple Time Series</a>" has been accepted by IEEE TVCG!',
