@@ -9,6 +9,11 @@ export default [
       'Our paper "Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts" has been accepted by IEEE VIS 2024. Congrats to Zhongsu!',
   },
   {
+    date: 'Jun 20, 2024',
+    content:
+      'Our paper "Towards Better Illegal Chemical Facility Detection with Hazardous Chemicals Transportation Trajectories" has been accepted by ChinaVis 2024. Congrats to Junxiu!',
+  },
+  {
     date: 'Jun 12, 2024',
     content:
       'Our paper "<a href="https://ieeexplore.ieee.org/document/10553360" target="_blank">Linking Text and Visualizations via Contextual Knowledge Graph</a>" has been accepted by IEEE TVCG. Congrats to Xiwen!',

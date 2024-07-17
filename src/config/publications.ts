@@ -34,6 +34,25 @@ export default [
         featured_category: FeaturedCategory.IEEE_VIS_2024,
       },
       {
+        image: '/img/papers/icfinder.avif',
+        authors: [
+          'Junxiu Tang',
+          'Huimin Ren',
+          'Zikun Deng',
+          'Di Weng',
+          'Tan Tang',
+          'Lingyun Yu',
+          'Jie Bao',
+          'Yu Zheng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Towards Better Illegal Chemical Facility Detection with Hazardous Chemicals Transportation Trajectories',
+        venue: 'ChinaVis 2024',
+        links: {},
+      },
+      {
         image: '/img/papers/kg.avif',
         authors: [
           'Xiwen Cai',
