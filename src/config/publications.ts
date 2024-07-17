@@ -1,6 +1,7 @@
 import { Paper } from '../types/paper'
 
 enum FeaturedCategory {
+  IEEE_VIS_2024 = 'IEEE VIS 2024',
   IEEE_TVCG_2024 = 'IEEE TVCG 2024',
   ACM_CHI_2024 = 'ACM CHI 2024',
   IEEE_ITS_2024 = 'IEEE ITS 2024',
@@ -13,6 +14,25 @@ export default [
   {
     year: '2024',
     papers: [
+      {
+        image: '/img/papers/ferry.avif',
+        authors: [
+          'Zhongsu Luo',
+          'Kai Xiong',
+          'Jiajun Zhu',
+          'Ran Chen',
+          'Xinhuan Shu',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (IEEE VIS 2024)',
+        links: {},
+        featured_category: FeaturedCategory.IEEE_VIS_2024,
+      },
       {
         image: '/img/papers/kg.avif',
         authors: [

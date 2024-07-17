@@ -54,7 +54,8 @@ export default {
   'Weiwei Cui': 'https://www.microsoft.com/en-us/research/people/weiweicu/',
   'Yunfan Zhou': 'https://zyfzd123.github.io/',
   'Lingyu Meng': 'https://kevinmeng49.github.io/',
-  'Zhongsu Luo': 'https://zhongsuluo.github.io/',
+  'Zhongsu Luo':
+    'https://maple-possum-c4d.notion.site/Zhongsu-LUO-9a76b04931a848179b6f8488033b3a2a',
   'Kai Xiong': 'https://xkkevin.github.io/',
   'Yongheng Wang':
     'https://en.zhejianglab.com/institutescenters/Faculty/202112/t20211209_2924.shtml',

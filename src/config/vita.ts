@@ -97,10 +97,10 @@ export default {
     {
       when: 'PC Member',
       descriptions: [
+        '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2024</a>',
         '<a href="https://ieeevis.org/year/2024/welcome" target="_blank">IEEE VIS 2024</a>',
-        '<a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
         '<a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
-        '<a href="https://www.cgs-network.org/cgi23/" target="_blank">Computer Graphics International (CGI) 2023</a>',
+        '<a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
       ],
     },
     {
@@ -113,6 +113,7 @@ export default {
         '<a href="https://www.springer.com/journal/12650" target="_blank">Journal of Visualization</a>',
         '<a href="https://chinavis.org/" target="_blank">ChinaVis</a>',
         '<a href="https://www.sciencedirect.com/journal/visual-informatics" target="_blank">Visual Informatics</a>',
+        '<a href="https://www.cgs-network.org/cgi24/" target="_blank">Computer Graphics International (CGI)</a>',
       ],
     },
   ],
