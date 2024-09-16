@@ -12,12 +12,12 @@ export default {
       {
         name: 'Shuhan Liu',
         coadvised: true,
-        description: 'time series visual analysis',
+        description: 'time series visual analytics',
       },
       {
         name: 'Lingyu Meng',
         coadvised: true,
-        description: 'time series visual analysis',
+        description: 'time series visual analytics',
       },
       {
         name: 'Zhongsu Luo',
@@ -36,22 +36,17 @@ export default {
       {
         name: 'Yunfan Zhou',
         coadvised: true,
-        description: 'incoming (fall 2024)',
+        description: 'interactive data transformation',
       },
       {
         name: 'Zihan Xu',
         coadvised: true,
-        description: 'incoming (fall 2024)',
+        description: 'time series visual analytics',
       },
     ],
   },
   master: {
     current: [
-      {
-        name: 'Shifu Chen',
-        coadvised: true,
-        description: 'trajectory visualization',
-      },
       {
         name: 'Xinjing Yi',
         coadvised: true,
@@ -68,11 +63,6 @@ export default {
         description: 'energy visual analytics',
       },
       {
-        name: 'Yuchen Yang',
-        coadvised: true,
-        description: 'urban visual analytics',
-      },
-      {
         name: 'Jie Yu',
         description: 'urban visual analytics',
       },
@@ -83,24 +73,31 @@ export default {
       {
         name: 'Jiabin Xu',
         coadvised: true,
-        description: 'incoming (fall 2024)',
-      },
-      {
-        name: 'Jiawen Zhu',
-        description: 'incoming (fall 2024)',
-      },
-      {
-        name: 'Zelin Li',
-        description: 'incoming (fall 2024)',
-      },
-      {
-        name: 'Kaicheng Shao',
-        description: 'incoming (fall 2024)',
       },
       {
         name: 'Qiming Shi',
         coadvised: true,
-        description: 'incoming (fall 2024)',
+      },
+      {
+        name: 'Jiawen Zhu',
+      },
+      {
+        name: 'Zelin Li',
+      },
+      {
+        name: 'Kaicheng Shao',
+      },
+    ],
+    past: [
+      {
+        name: 'Shifu Chen',
+        coadvised: true,
+        description: 'urban visual analytics',
+      },
+      {
+        name: 'Yuchen Yang',
+        coadvised: true,
+        description: 'urban visual analytics',
       },
     ],
   },
@@ -111,6 +108,9 @@ export default {
       },
       {
         name: 'Yan Miao',
+      },
+      {
+        name: 'Sina A',
       },
     ],
   },

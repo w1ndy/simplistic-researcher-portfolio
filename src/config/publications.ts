@@ -30,7 +30,10 @@ export default [
           'Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (IEEE VIS 2024)',
-        links: {},
+        links: {
+          paper: 'https://ieeexplore.ieee.org/abstract/document/10670464',
+          pdf: '/pdf/ferry.pdf',
+        },
         featured_category: FeaturedCategory.IEEE_VIS_2024,
       },
       {
