@@ -101,6 +101,7 @@ export default {
         '<a href="https://ieeevis.org/year/2024/welcome" target="_blank">IEEE VIS 2024</a>',
         '<a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
         '<a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
+        '<a href="https://chinavis.org/2022/" target="_blank">ChinaVis 2022</a>',
       ],
     },
     {

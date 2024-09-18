@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  font-family: 'Atkinson Hyperlegible', system-ui, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.3rem;
 
   color-scheme: light dark;
@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: #004040;
+  color: #006060;
 }
 
 a:hover {
