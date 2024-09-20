@@ -56,10 +56,22 @@ export default function Publications() {
             {([key, { name }]) => (
               <span
                 class="ml-2 cursor-pointer select-none"
-                classList={{ 'text-teal-700': filterActive[key] }}
+                classList={{
+                  'text-teal-700': filterActive[key],
+                  'text-gray-400': !filterActive[key],
+                }}
                 onClick={() => setFilterActive(key, !filterActive[key])}
               >
-                [{name} ({filterCounts()[key]})]
+                [
+                <span
+                  classList={{
+                    'text-teal-700': filterActive[key],
+                    'text-black': !filterActive[key],
+                  }}
+                >
+                  {name}
+                </span>{' '}
+                ({filterCounts()[key]})]
               </span>
             )}
           </For>

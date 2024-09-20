@@ -179,7 +179,7 @@ export default [
         corresponding_authors: ['Di Weng', 'Yingcai Wu'],
         title: 'Multilevel Visual Analysis of Aggregate Geo-Networks',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 7, pp. 3135-3150, 2023',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 7, pp. 3135-3150, 2024',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2022.3229953',
           pdf: '/pdf/geonetverse.pdf',
