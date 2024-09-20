@@ -68,7 +68,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Linking Text and Visualizations via Contextual Knowledge Graph',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (Early Access)',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/10553360',
         },
@@ -88,7 +88,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Relation-driven Query of Multiple Time Series',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (Early Access)',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/10521861',
           pdf: '/pdf/relaq.pdf',
@@ -109,7 +109,7 @@ export default [
         title:
           'Table Illustrator: Puzzle-based interactive authoring of plain tables',
         venue:
-          'ACM Conference on Human Factors in Computing Systems (CHI), 2024',
+          'ACM Conference on Human Factors in Computing Systems (CHI), no. 186, pp. 1-18, 2024',
         links: {
           paper: 'https://dl.acm.org/doi/10.1145/3613904.3642415',
           pdf: '/pdf/table_illustrator.pdf',
@@ -134,7 +134,7 @@ export default [
         title:
           'A Deep Spatiotemporal Trajectory Representation Learning Framework for Clustering',
         venue:
-          'IEEE Transactions on Intelligent Transportation Systems (ITS), 2024',
+          'IEEE Transactions on Intelligent Transportation Systems (ITS), vol. 25, no. 7, pp. 7687-7700, 2024',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/10403544/',
           pdf: '/pdf/dstc.pdf',
@@ -154,7 +154,7 @@ export default [
         title:
           'JsonCurer: Data Quality Management for JSON Based on an Aggregated Schema',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (IEEE PacificVis 2024 TVCG Journal Track)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 6, pp. 3008-3021, 2024 (IEEE PacificVis 2024 TVCG Journal Track)',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/10499847/',
           pdf: '/pdf/jsoncurer.pdf',
