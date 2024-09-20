@@ -10,6 +10,10 @@ export const Filters: Record<
       paper.corresponding_authors?.includes('Di Weng') ||
       paper.authors[0] == 'Di Weng',
   },
+  vis: {
+    name: 'IEEE VIS',
+    matcher: (paper: Paper) => paper.venue.includes('IEEE VIS'),
+  },
   tvcg: {
     name: 'TVCG',
     matcher: (paper: Paper) => paper.venue.includes('TVCG'),
