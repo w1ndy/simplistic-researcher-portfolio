@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import type { Paper } from '~/types/paper'
+import { useTranslator } from '~/config/locale'
 import AuthorHomepages from '~/config/authors'
 
 const Fa = clientOnly(() => import('solid-fa'))
@@ -59,11 +60,12 @@ function corresponding(
 }
 
 export function PaperEntry(props: { paper: Paper }) {
+  const t = useTranslator()
   return (
-    <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+    <div class="flex flex-col gap-3 sm:flex-row">
       <div class="flex-0">
         <img
-          class="border border-gray-300 w-24 h-18 sm:w-40 sm:h-28 object-cover"
+          class="border border-gray-300 mt-1 w-24 h-18 sm:w-40 sm:h-28 object-cover"
           src={props.paper.image}
           alt={`Teaser image of paper "${props.paper.title}"`}
         />
@@ -101,7 +103,7 @@ export function PaperEntry(props: { paper: Paper }) {
                       class="inline-block mr-1"
                     ></Fa>
                   </Show>
-                  {name}
+                  {t(name as any)}
                 </a>
               )}
             </For>
