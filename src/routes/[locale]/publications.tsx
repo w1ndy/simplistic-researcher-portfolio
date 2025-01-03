@@ -1,7 +1,6 @@
 import { createMemo, For } from 'solid-js'
 import { clientOnly } from '@solidjs/start'
 import { createStore } from 'solid-js/store'
-import _ from 'lodash'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 import { PaperEntry } from '~/components/PaperEntry'
@@ -17,7 +16,7 @@ export default function Publications() {
   const t = useTranslator()
 
   const [filterActive, setFilterActive] = createStore(
-    _.mapValues(Filters, () => false)
+    Object.fromEntries(Object.keys(Filters).map((key) => [key, false]))
   )
 
   const filteredPublications = createMemo(() =>
@@ -35,7 +34,9 @@ export default function Publications() {
   )
 
   const filterCounts = createMemo(() => {
-    const counts = _.mapValues(Filters, () => 0)
+    const counts = Object.fromEntries(
+      Object.keys(Filters).map((key) => [key, 0])
+    )
     filteredPublications().forEach((year) => {
       year.papers.forEach((paper) => {
         for (const filter in Filters) {

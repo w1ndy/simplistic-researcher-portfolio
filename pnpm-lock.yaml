@@ -29,15 +29,9 @@ importers:
       '@solidjs/start':
         specifier: ^1.0.10
         version: 1.0.10(solid-js@1.9.3)(vinxi@0.4.3(@types/node@22.10.2)(ioredis@5.4.1)(terser@5.37.0)(typescript@5.7.2))(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))
-      '@types/lodash':
-        specifier: ^4.17.13
-        version: 4.17.13
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.20(postcss@8.4.49)
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
       postcss:
         specifier: ^8.4.38
         version: 8.4.49
@@ -1062,9 +1056,6 @@ packages:
 
   '@types/http-proxy@1.17.15':
     resolution: {integrity: sha512-25g5atgiVNTIv0LBDTg1H74Hvayx0ajtJPLLcYE3whFv75J0pWNtOBzaXJQgDTmrX1bx5U9YC2w/n65BN1HwRQ==}
-
-  '@types/lodash@4.17.13':
-    resolution: {integrity: sha512-lfx+dftrEZcdBPczf9d0Qv0x+j/rfNCMuC6OcfXmO8gkfeNAY88PgKUbvG56whcN23gc27yenwF6oJZXGFpYxg==}
 
   '@types/micromatch@4.0.9':
     resolution: {integrity: sha512-7V+8ncr22h4UoYRLnLXSpTxjQrNUXtWHGeMPRJt1nULXI57G9bIcpyrHlmrQ7QK24EyyuXvYcSSWAM8GA9nqCg==}
@@ -3657,8 +3648,6 @@ snapshots:
   '@types/http-proxy@1.17.15':
     dependencies:
       '@types/node': 22.10.2
-
-  '@types/lodash@4.17.13': {}
 
   '@types/micromatch@4.0.9':
     dependencies:
