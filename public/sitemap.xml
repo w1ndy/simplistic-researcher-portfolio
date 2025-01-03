@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://dwe.ng/about</loc>
+      <loc>https://dwe.ng/en/about</loc>
    </url>
    <url>
-      <loc>https://dwe.ng/publications</loc>
+      <loc>https://dwe.ng/en/publications</loc>
    </url>
    <url>
-      <loc>https://dwe.ng/students</loc>
+      <loc>https://dwe.ng/en/students</loc>
    </url>
    <url>
-      <loc>https://dwe.ng/vita</loc>
+      <loc>https://dwe.ng/en/vita</loc>
+   </url>
+   <url>
+      <loc>https://dwe.ng/zh/about</loc>
+   </url>
+   <url>
+      <loc>https://dwe.ng/zh/publications</loc>
+   </url>
+   <url>
+      <loc>https://dwe.ng/zh/students</loc>
+   </url>
+   <url>
+      <loc>https://dwe.ng/zh/vita</loc>
    </url>
 </urlset>

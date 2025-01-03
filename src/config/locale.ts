@@ -4,7 +4,7 @@ import { createMemo, createResource } from 'solid-js'
 
 import type en from '~/i18n/en.json'
 
-type Locale = 'en' | 'zh'
+export type Locale = 'en' | 'zh'
 
 const useLocale = () => {
   return createMemo((): Locale => {

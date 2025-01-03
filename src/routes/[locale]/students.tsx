@@ -33,7 +33,7 @@ export default function Students() {
   const students = useStudents()
   const t = useTranslator()
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <>
       <div
         class="mb-8 text-gray-500 italic"
         innerHTML={students()?.notes}
@@ -68,6 +68,6 @@ export default function Students() {
             : []
         )}
       ></Section>
-    </Suspense>
+    </>
   )
 }
