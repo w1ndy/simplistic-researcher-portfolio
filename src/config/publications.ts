@@ -476,17 +476,17 @@ export default [
   {
     year: '2021',
     papers: [
-      {
-        image: '/img/papers/industrial_survey.avif',
-        authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
-        title: 'A Review on Industrial Data Visual Analytics',
-        venue:
-          'Journal of Integration Technology, vol. 10, no. 6, pp. 3-19, 2021',
-        links: {
-          paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
-          'cn pdf': '/pdf/industrial_survey.pdf',
-        },
-      },
+      // {
+      //   image: '/img/papers/industrial_survey.avif',
+      //   authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
+      //   title: 'A Review on Industrial Data Visual Analytics',
+      //   venue:
+      //     'Journal of Integration Technology, vol. 10, no. 6, pp. 3-19, 2021',
+      //   links: {
+      //     paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
+      //     'cn pdf': '/pdf/industrial_survey.pdf',
+      //   },
+      // },
       {
         image: '/img/papers/corvizor.avif',
         authors: [
