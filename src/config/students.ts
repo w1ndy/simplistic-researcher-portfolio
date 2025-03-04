@@ -121,6 +121,8 @@ const students: Record<
         {
           name: 'Yan Miao',
         },
+      ],
+      past: [
         {
           name: 'Sina A',
         },
@@ -225,6 +227,8 @@ const students: Record<
         {
           name: '缪延',
         },
+      ],
+      past: [
         {
           name: '阿斯娜',
         },

@@ -3,6 +3,7 @@ import { A } from '@solidjs/router'
 
 import Publications from '~/config/publications'
 import { PaperEntry } from '~/components/PaperEntry'
+import { FeaturedCategories } from '~/config/featured'
 import { useTranslator } from '~/config/locale'
 import { Paper } from '~/types/paper'
 
@@ -38,12 +39,12 @@ export default function FeaturedPublications() {
         </A>
       </div>
       <div class="flex flex-col gap-6">
-        <For each={Object.entries(groups())}>
-          {(rp) => (
+        <For each={FeaturedCategories}>
+          {(f) => (
             <div>
-              <div class="text-gray-500 font-bold mb-4">{rp[0]}</div>
+              <div class="text-gray-500 font-bold mb-4">{f}</div>
               <div class="flex flex-col gap-4">
-                <For each={rp[1]}>
+                <For each={groups()[f]}>
                   {(paper) => <PaperEntry paper={paper} />}
                 </For>
               </div>

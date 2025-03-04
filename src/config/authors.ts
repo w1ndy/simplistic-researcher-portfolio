@@ -57,4 +57,6 @@ export default {
   'Kai Xiong': 'https://xkkevin.github.io/',
   'Yongheng Wang':
     'https://en.zhejianglab.com/institutescenters/Faculty/202112/t20211209_2924.shtml',
+  'Adam Perer': 'https://hcii.cmu.edu/people/adam-perer',
+  'Haotian Li': 'https://haotian-li.com/',
 } as { [key: string]: string }

@@ -1,40 +1,30 @@
 import { Paper } from '../types/paper'
-
-enum FeaturedCategory {
-  IEEE_VIS_2024 = 'IEEE VIS 2024',
-  IEEE_TVCG_2024 = 'IEEE TVCG 2024',
-  ACM_CHI_2024 = 'ACM CHI 2024',
-  IEEE_ITS_2024 = 'IEEE ITS 2024',
-  IEEE_PACIFICVIS_2024 = 'IEEE PacificVis 2024',
-  IEEE_TVCG_2023 = 'IEEE TVCG 2023',
-  IEEE_VIS_2023 = 'IEEE VIS 2023',
-}
+import { FeaturedCategory } from './featured'
 
 export default [
   {
-    year: '2024',
+    year: '2025',
     papers: [
       {
-        image: '/img/papers/ferry.avif',
+        image: '/img/papers/hypnos.avif',
         authors: [
-          'Zhongsu Luo',
+          'Xiwen Cai',
+          'Xiaodong Ge',
           'Kai Xiong',
-          'Jiajun Zhu',
-          'Ran Chen',
-          'Xinhuan Shu',
+          'Shuainan Ye',
           'Di Weng',
+          'Ke Xu',
+          'Datong Wei',
+          'Jiang Long',
           'Yingcai Wu',
         ],
-        corresponding_authors: ['Di Weng'],
+        corresponding_authors: ['Di Weng', 'Ke Xu'],
         title:
-          'Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts',
+          'HYPNOS: Interactive Data Lineage Tracing for Data Transformation Scripts',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (IEEE VIS 2024)',
-        links: {
-          paper: 'https://ieeexplore.ieee.org/abstract/document/10670464',
-          pdf: '/pdf/ferry.pdf',
-        },
-        featured_category: FeaturedCategory.IEEE_VIS_2024,
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (Early Access)',
+        links: {},
+        featured_category: FeaturedCategory.IEEE_TVCG_2025,
       },
       {
         image: '/img/papers/icfinder.avif',
@@ -52,9 +42,96 @@ export default [
         corresponding_authors: ['Di Weng'],
         title:
           'Towards Better Illegal Chemical Facility Detection with Hazardous Chemicals Transportation Trajectories',
-        venue: 'ChinaVis 2024',
-        links: {},
+        venue: 'Journal of Visualization, 2025 (ChinaVis 2024)',
+        links: {
+          paper: 'https://link.springer.com/article/10.1007/s12650-025-01055-8',
+          pdf: '/pdf/icfinder.pdf',
+        },
       },
+      {
+        image: '/img/papers/structvizor.avif',
+        authors: [
+          'Yanwei Huang',
+          'Yan Miao',
+          'Di Weng',
+          'Adam Perer',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'StructVizor: Interactive profiling of semi-structured textual data',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
+        links: {},
+        featured_category: FeaturedCategory.ACM_CHI_2025,
+      },
+      {
+        image: '/img/papers/ridgebuilder.avif',
+        authors: [
+          'Shuhan Liu',
+          'Yangtian Liu',
+          'Junxin Li',
+          'Yanwei Huang',
+          'Yue Shangguan',
+          'Zikun Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
+        links: {},
+        featured_category: FeaturedCategory.ACM_CHI_2025,
+      },
+      {
+        image: '/img/papers/xavier.avif',
+        authors: [
+          'Yunfan Zhou',
+          'Xiwen Cai',
+          'Qiming Shi',
+          'Yanwei Huang',
+          'Haotian Li',
+          'Huamin Qu',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
+        links: {},
+        featured_category: FeaturedCategory.ACM_CHI_2025,
+      },
+      {
+        image: '/img/papers/ferry.avif',
+        authors: [
+          'Zhongsu Luo',
+          'Kai Xiong',
+          'Jiajun Zhu',
+          'Ran Chen',
+          'Xinhuan Shu',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 1, pp. 1202-1212, 2025 (IEEE VIS 2024)',
+        links: {
+          paper: 'https://ieeexplore.ieee.org/abstract/document/10670464',
+          pdf: '/pdf/ferry.pdf',
+        },
+        featured_category: FeaturedCategory.IEEE_VIS_2024,
+      },
+    ],
+  },
+  {
+    year: '2024',
+    papers: [
       {
         image: '/img/papers/kg.avif',
         authors: [
