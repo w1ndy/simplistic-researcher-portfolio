@@ -102,7 +102,10 @@ export default [
           'Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
-        links: {},
+        links: {
+          paper: 'https://arxiv.org/abs/2503.02639',
+          pdf: '/pdf/xavier.pdf',
+        },
         featured_category: FeaturedCategory.ACM_CHI_2025,
       },
       {
