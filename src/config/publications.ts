@@ -1,5 +1,6 @@
 import { Paper } from '../types/paper'
 import { FeaturedCategory } from './featured'
+import { PaperTopic } from './filters'
 
 export default [
   {
@@ -25,6 +26,7 @@ export default [
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (Early Access)',
         links: {},
         featured_category: FeaturedCategory.IEEE_TVCG_2025,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/icfinder.avif',
@@ -47,6 +49,7 @@ export default [
           paper: 'https://link.springer.com/article/10.1007/s12650-025-01055-8',
           pdf: '/pdf/icfinder.pdf',
         },
+        topics: ['geospatial visual analysis'],
       },
       {
         image: '/img/papers/structvizor.avif',
@@ -67,6 +70,7 @@ export default [
           pdf: '/pdf/structvizor.pdf',
         },
         featured_category: FeaturedCategory.ACM_CHI_2025,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/ridgebuilder.avif',
@@ -87,6 +91,7 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
         links: {},
         featured_category: FeaturedCategory.ACM_CHI_2025,
+        topics: [PaperTopic.VisualizationAuthoring],
       },
       {
         image: '/img/papers/xavier.avif',
@@ -110,6 +115,7 @@ export default [
           pdf: '/pdf/xavier.pdf',
         },
         featured_category: FeaturedCategory.ACM_CHI_2025,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/ferry.avif',
@@ -132,6 +138,7 @@ export default [
           pdf: '/pdf/ferry.pdf',
         },
         featured_category: FeaturedCategory.IEEE_VIS_2024,
+        topics: [PaperTopic.DataWrangling],
       },
     ],
   },
@@ -157,6 +164,7 @@ export default [
           pdf: '/pdf/tvl.pdf',
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
+        topics: [PaperTopic.VisualizationAuthoring],
       },
       {
         image: '/img/papers/relaq.avif',
@@ -178,6 +186,7 @@ export default [
           pdf: '/pdf/relaq.pdf',
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
         image: '/img/papers/table_illustrator.avif',
@@ -202,6 +211,7 @@ export default [
           demo: 'https://yhuang.top/tableshop/',
         },
         featured_category: FeaturedCategory.ACM_CHI_2024,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/dstc.avif',
@@ -224,6 +234,7 @@ export default [
           pdf: '/pdf/dstc.pdf',
         },
         featured_category: FeaturedCategory.IEEE_ITS_2024,
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/nl2rigel.avif',
@@ -247,6 +258,7 @@ export default [
           video: 'https://youtu.be/qjjKAykyDZU',
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/geonetverse.avif',
@@ -269,6 +281,7 @@ export default [
           video: 'https://youtu.be/-GXWCpf9oqY?si=akBGTiyq-LYt0o0K',
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/jsoncurer.avif',
@@ -290,6 +303,7 @@ export default [
           code: 'https://github.com/changevis/JsonCurer',
         },
         featured_category: FeaturedCategory.IEEE_PACIFICVIS_2024,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/geochron.avif',
@@ -312,6 +326,10 @@ export default [
           pdf: '/pdf/geochron.pdf',
           video: 'https://youtu.be/jc7aeiszPQM?si=SeRLpmTIg4z7GDFN',
         },
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.TimeSeriesVisualAnalysis,
+        ],
       },
     ],
   },
@@ -339,6 +357,7 @@ export default [
             'https://www.computer.org/csdl/proceedings-article/vds/2023/302000a001/1SYJieOzwOs',
           pdf: '/pdf/neighviz.pdf',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/decom.avif',
@@ -363,6 +382,7 @@ export default [
         links: {
           paper: 'https://doi.org/10.1145/3447548.3467232',
         },
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
         image: '/img/papers/geocamera.avif',
@@ -385,6 +405,10 @@ export default [
           pdf: '/pdf/geocamera.pdf',
           video: 'https://youtu.be/SFBmBSHjKpA?si=jzOIhS7yADsegrh3',
         },
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.VisualizationAuthoring,
+        ],
       },
       {
         image: '/img/papers/ecoalvis.avif',
@@ -409,6 +433,7 @@ export default [
           pdf: '/pdf/ecoalvis.pdf',
           video: 'https://youtu.be/XsqdJd2y6Z0?si=56smTEjYuX706YgF',
         },
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
         image: '/img/papers/rigel.avif',
@@ -433,6 +458,7 @@ export default [
           code: 'https://github.com/rigel-js',
           demo: 'https://rigel-system.github.io/rigel-system/',
         },
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/urbansurvey.avif',
@@ -452,6 +478,7 @@ export default [
           paper: 'https://doi.org/10.1007/s41095-022-0275-7',
           pdf: '/pdf/urbansurvey.pdf',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/ct3.avif',
@@ -464,6 +491,7 @@ export default [
           paper: 'https://doi.org/10.1007/s12650-022-00884-1',
           pdf: '/pdf/ct3.pdf',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
     ],
   },
@@ -490,6 +518,7 @@ export default [
           appendix: 'https://nebula-vis.github.io/examples',
           video: 'https://youtu.be/oMgO0BVX8rY?si=jCEGo6GaLzW_jhax',
         },
+        topics: [PaperTopic.VisualizationAuthoring],
       },
       {
         image: '/img/papers/viscas.avif',
@@ -511,6 +540,7 @@ export default [
           pdf: '/pdf/viscas.pdf',
           video: 'https://youtu.be/IVSf0BNRC_c?si=rKDdtSy0wPJFIXPJ',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/ordermonitor.avif',
@@ -532,6 +562,7 @@ export default [
           paper: 'https://doi.org/10.1109/TVCG.2021.3114878',
           pdf: '/pdf/ordermonitor.pdf',
         },
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
         image: '/img/papers/compass.avif',
@@ -553,6 +584,10 @@ export default [
           pdf: '/pdf/compass.pdf',
           video: 'https://youtu.be/QxvGC9F9PaY?si=QI_rCpex5qVvBlpx',
         },
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.TimeSeriesVisualAnalysis,
+        ],
       },
     ],
   },
@@ -592,6 +627,10 @@ export default [
           pdf: '/pdf/corvizor.pdf',
           video: 'https://youtu.be/0T0xe-rppSo?si=jToHX2CDGnCrv8Ch',
         },
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.TimeSeriesVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/bnva.avif',
@@ -613,6 +652,7 @@ export default [
           pdf: '/pdf/bnva.pdf',
           video: 'https://youtu.be/DEAfK8F2dQE?si=CY-voxqmRa5TIAYL',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/mcrs.avif',
@@ -632,6 +672,7 @@ export default [
           paper: 'https://doi.org/10.1109/TITS.2020.2964012',
           pdf: '/pdf/mcrs.pdf',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
     ],
   },
@@ -658,6 +699,10 @@ export default [
           pdf: '/pdf/airvis.pdf',
           video: 'https://youtu.be/orjRmmGVT-4?si=bFQCE8HFcnh3-WMM',
         },
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.TimeSeriesVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/srvis.avif',
@@ -678,6 +723,7 @@ export default [
           pdf: '/pdf/srvis.pdf',
           video: 'https://youtu.be/lenSZci4gy4?si=1JCtSimnpNTyTzGS',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/homefinder.avif',
@@ -691,6 +737,7 @@ export default [
           pdf: '/pdf/reach.pdf',
           video: 'https://youtu.be/WcjMXAfuygg?si=f3Xv_zBl_o9UiYhF',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/smartadp.avif',
@@ -712,6 +759,7 @@ export default [
           pdf: '/pdf/smartadp.pdf',
           video: 'https://youtu.be/7vkYubflVuo?si=3cfFncTFbUHmsh1n',
         },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
     ],
   },

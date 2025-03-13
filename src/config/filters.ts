@@ -1,5 +1,12 @@
 import { Paper } from '../types/paper'
 
+export enum PaperTopic {
+  DataWrangling = 'Data wrangling',
+  GeospatialVisualAnalysis = 'Geospatial visual analysis',
+  TimeSeriesVisualAnalysis = 'Time series visual analysis',
+  VisualizationAuthoring = 'Visualization authoring',
+}
+
 export const Filters: Record<
   string,
   { name: { en: string; zh: string }; matcher: (paper: Paper) => boolean }
@@ -22,8 +29,8 @@ export const Filters: Record<
   },
   tvcg: {
     name: {
-      en: 'TVCG',
-      zh: 'TVCG',
+      en: 'IEEE TVCG',
+      zh: 'IEEE TVCG',
     },
     matcher: (paper: Paper) => paper.venue.includes('TVCG'),
   },
@@ -41,4 +48,16 @@ export const Filters: Record<
     },
     matcher: (paper: Paper) => paper.venue.includes('KDD'),
   },
+  ...Object.fromEntries(
+    Object.values(PaperTopic).map((topic) => [
+      topic,
+      {
+        name: {
+          en: topic,
+          zh: topic,
+        },
+        matcher: (paper: Paper) => paper.topics?.includes(topic),
+      },
+    ])
+  ),
 }
