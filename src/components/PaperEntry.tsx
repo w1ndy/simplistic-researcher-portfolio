@@ -18,6 +18,7 @@ const Fa = clientOnly(() => import('solid-fa'))
 
 const IconMapping: Record<string, IconDefinition> = {
   paper: faPaperclip,
+  preprint: faPaperclip,
   pdf: faFilePdf,
   'cn pdf': faFilePdf,
   video: faVideo,

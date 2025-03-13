@@ -62,7 +62,10 @@ export default [
           'StructVizor: Interactive profiling of semi-structured textual data',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
-        links: {},
+        links: {
+          preprint: 'https://arxiv.org/abs/2503.06500',
+          pdf: '/pdf/structvizor.pdf',
+        },
         featured_category: FeaturedCategory.ACM_CHI_2025,
       },
       {
@@ -103,7 +106,7 @@ export default [
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
         links: {
-          paper: 'https://arxiv.org/abs/2503.02639',
+          preprint: 'https://arxiv.org/abs/2503.02639',
           pdf: '/pdf/xavier.pdf',
         },
         featured_category: FeaturedCategory.ACM_CHI_2025,
