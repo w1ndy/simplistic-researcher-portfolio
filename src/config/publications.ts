@@ -7,6 +7,45 @@ export default [
     year: '2025',
     papers: [
       {
+        image: '/img/papers/codelin.avif',
+        authors: [
+          'Xiwen Cai',
+          'Kai Xiong',
+          'Zhongsu Luo',
+          'Di Weng',
+          'Shuainan Ye',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'CodeLin: An in situ visualization method for understanding data transformation scripts',
+        venue: 'Visual Informatics, 2025',
+        links: {
+          paper:
+            'https://www.sciencedirect.com/science/article/pii/S2468502X25000087',
+        },
+        topics: [PaperTopic.DataWrangling],
+      },
+      {
+        image: '/img/papers/dkpvva.avif',
+        authors: [
+          'Xinjing Yi',
+          'Yurun Yang',
+          'Yin Song',
+          'Baozhu Zhou',
+          'Cheng Li',
+          'Shuhan Liu',
+          'Dazhen Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'A Domain Knowledge-Driven Visual Analytics System for Photovoltaic Power Time Series Forecasting',
+        venue: 'Journal of Visualization, 2025',
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
+      },
+      {
         image: '/img/papers/hypnos.avif',
         authors: [
           'Xiwen Cai',
@@ -49,7 +88,7 @@ export default [
           paper: 'https://link.springer.com/article/10.1007/s12650-025-01055-8',
           pdf: '/pdf/icfinder.pdf',
         },
-        topics: ['geospatial visual analysis'],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/structvizor.avif',
