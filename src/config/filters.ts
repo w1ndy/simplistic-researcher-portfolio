@@ -41,6 +41,13 @@ export const Filters: Record<
     },
     matcher: (paper: Paper) => paper.venue.includes('CHI'),
   },
+  uist: {
+    name: {
+      en: 'UIST',
+      zh: 'UIST',
+    },
+    matcher: (paper: Paper) => paper.venue.includes('UIST'),
+  },
   kdd: {
     name: {
       en: 'KDD',

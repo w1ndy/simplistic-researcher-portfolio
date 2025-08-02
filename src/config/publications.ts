@@ -7,6 +7,83 @@ export default [
     year: '2025',
     papers: [
       {
+        image: '/img/papers/visegpt.avif',
+        authors: [
+          'Jiajun Zhu',
+          'Xinyu Cheng',
+          'Zhongsu Luo',
+          'Yunfan Zhou',
+          'Xinhuan Shu',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Xinhuan Shu', 'Di Weng'],
+        title:
+          'ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts',
+        venue:
+          'ACM Symposium on User Interface Software and Technology (UIST), 2025',
+        links: {
+          pdf: '/pdf/visegpt.pdf',
+        },
+        topics: [PaperTopic.DataWrangling],
+        featured_category: FeaturedCategory.ACM_UIST_2025,
+      },
+      {
+        image: '/img/papers/scroller.avif',
+        authors: [
+          'Renzhong Li',
+          'Weiwei Cui',
+          'Yuchen Yang',
+          'Xinyu Mao',
+          'Di Weng',
+          'Haidong Zhang',
+          'Yingcai Wu',
+        ],
+        title:
+          'Scroller: A WYSIWYG System for Creating Expressive Scrollytelling',
+        venue: 'ChinaVis 2025',
+        links: {
+          paper:
+            'https://chinavis.org/2025/papers/Scroller%20A%20WYSIWYG%20System%20for%20Creating%20Expressive%20Scrollytelling.pdf',
+        },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
+      },
+      {
+        image: '/img/papers/geoanimation.avif',
+        authors: ['Jie Yu', 'Zhenning Chen', 'Di Weng', 'Yingcai Wu'],
+        corresponding_authors: ['Di Weng'],
+        title: 'GeoAnimation: A Grammar for Animated Geographic Visualization',
+        venue: 'ChinaVis 2025',
+        links: {
+          paper:
+            'https://chinavis.org/2025/papers/GeoAnimation%20A%20Grammar%20for%20Animated%20Geographic%20Visualization.pdf',
+        },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
+      },
+      {
+        image: '/img/papers/pvesight.avif',
+        authors: [
+          'Yurun Yang',
+          'Xinjing Yi',
+          'Yingqiang Jin',
+          'Sen Li',
+          'Kang Ma',
+          'Shuhan Liu',
+          'Dazhen Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'PVeSight: Dimensionality reduction-based anomaly detection and visual analysis of photovoltaic strings',
+        venue: 'Visual Informatics, 100233, 2025 (In press)',
+        links: {
+          paper:
+            'https://www.sciencedirect.com/science/article/pii/S2468502X25000269',
+        },
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
+      },
+      {
         image: '/img/papers/codelin.avif',
         authors: [
           'Xiwen Cai',
@@ -19,7 +96,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title:
           'CodeLin: An in situ visualization method for understanding data transformation scripts',
-        venue: 'Visual Informatics, 2025',
+        venue: 'Visual Informatics, vol. 9, no. 2, 100233, 2025',
         links: {
           paper:
             'https://www.sciencedirect.com/science/article/pii/S2468502X25000087',
@@ -42,7 +119,10 @@ export default [
         corresponding_authors: ['Di Weng'],
         title:
           'A Domain Knowledge-Driven Visual Analytics System for Photovoltaic Power Time Series Forecasting',
-        venue: 'Journal of Visualization, 2025',
+        venue: 'Journal of Visualization, vol. 28, pp. 895-915, 2025',
+        links: {
+          paper: 'https://link.springer.com/article/10.1007/s12650-025-01067-4',
+        },
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
@@ -63,7 +143,9 @@ export default [
           'HYPNOS: Interactive Data Lineage Tracing for Data Transformation Scripts',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (Early Access)',
-        links: {},
+        links: {
+          paper: 'https://ieeexplore.ieee.org/abstract/document/10930714',
+        },
         featured_category: FeaturedCategory.IEEE_TVCG_2025,
         topics: [PaperTopic.DataWrangling],
       },
@@ -83,7 +165,8 @@ export default [
         corresponding_authors: ['Di Weng'],
         title:
           'Towards Better Illegal Chemical Facility Detection with Hazardous Chemicals Transportation Trajectories',
-        venue: 'Journal of Visualization, 2025 (ChinaVis 2024)',
+        venue:
+          'Journal of Visualization, vol. 28, pp. 535-551, 2025 (also accepted by ChinaVis 2024)',
         links: {
           paper: 'https://link.springer.com/article/10.1007/s12650-025-01055-8',
           pdf: '/pdf/icfinder.pdf',
@@ -171,7 +254,7 @@ export default [
         title:
           'Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 1, pp. 1202-1212, 2025 (IEEE VIS 2024)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 1, pp. 1202-1212, 2025 (also accepted by IEEE VIS 2024)',
         links: {
           paper: 'https://ieeexplore.ieee.org/abstract/document/10670464',
           pdf: '/pdf/ferry.pdf',
@@ -359,7 +442,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Visualizing Large-Scale Spatial Time Series with GeoChron',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 1, pp. 1194-1204, 2024 (IEEE VIS 2023)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 1, pp. 1194-1204, 2024 (also accepted by IEEE VIS 2023)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2023.3327162',
           pdf: '/pdf/geochron.pdf',
@@ -466,7 +549,7 @@ export default [
         title:
           'ECoalVis: Visual Analysis of Control Strategies in Coal-fired Power Plants',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 29, no. 1, pp. 1091-1101, 2023 (IEEE VIS 2022)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 29, no. 1, pp. 1091-1101, 2023 (also accepted by IEEE VIS 2022)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2022.3209430',
           pdf: '/pdf/ecoalvis.pdf',
@@ -488,7 +571,7 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'Rigel: Transforming Tabular Data by Declarative Mapping',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 29, no. 1, pp. 128-138, 2023 (IEEE VIS 2022)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 29, no. 1, pp. 128-138, 2023 (also accepted by IEEE VIS 2022)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2022.3209385',
           pdf: '/pdf/rigel.pdf',
@@ -596,7 +679,7 @@ export default [
         title:
           'A Visualization Approach for Monitoring Order Processing in E-Commerce Warehouse',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 28, no. 1, pp. 857-867, 2022 (IEEE VIS 2021)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 28, no. 1, pp. 857-867, 2022 (also accepted by IEEE VIS 2021)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2021.3114878',
           pdf: '/pdf/ordermonitor.pdf',
@@ -617,7 +700,7 @@ export default [
         ],
         title: 'Compass: Towards Better Causal Analysis of Urban Time Series',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 28, no. 1, pp. 1051-1061, 2022 (IEEE VIS 2021)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 28, no. 1, pp. 1051-1061, 2022 (also accepted by IEEE VIS 2021)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2021.3114875',
           pdf: '/pdf/compass.pdf',
@@ -732,7 +815,7 @@ export default [
         ],
         title: 'AirVis: Visual Analytics of Air Pollution Propagation',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 26, no. 1, pp. 800-810, 2020 (IEEE VIS 2019)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 26, no. 1, pp. 800-810, 2020 (also accepted by IEEE VIS 2019)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2019.2934670',
           pdf: '/pdf/airvis.pdf',

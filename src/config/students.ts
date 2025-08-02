@@ -11,21 +11,23 @@ const students: Record<
   Locale,
   {
     notes: string
-    phd: { current: Student[]; past?: Student[] }
-    master: { current: Student[]; past?: Student[] }
-    undergraduates: { current: Student[]; past?: Student[] }
+    phd: Record<string, Student[]>
+    master: Record<string, Student[]>
+    undergraduates: Record<string, Student[]>
   }
 > = {
   en: {
     notes:
       '*: co-advised with <a href="http://www.ycwu.org" target="_blank">Prof. Yingcai Wu</a>.',
     phd: {
-      current: [
+      '2021': [
         {
           name: 'Shuhan Liu',
           coadvised: true,
           description: 'time series visual analytics',
         },
+      ],
+      '2023': [
         {
           name: 'Lingyu Meng',
           coadvised: true,
@@ -36,6 +38,8 @@ const students: Record<
           coadvised: true,
           description: 'interactive data transformation',
         },
+      ],
+      '2024': [
         {
           name: 'Yangtian Liu',
           coadvised: true,
@@ -43,7 +47,7 @@ const students: Record<
         },
         {
           name: 'Zhenning Chen',
-          description: 'urban visual analytics',
+          description: 'visualization for LLMs',
         },
         {
           name: 'Yunfan Zhou',
@@ -56,35 +60,28 @@ const students: Record<
           description: 'time series visual analytics',
         },
       ],
+      '2025': [
+        {
+          name: 'Jiawen Zhu',
+        },
+      ],
     },
     master: {
-      current: [
+      '2024': [
         {
-          name: 'Xinjing Yi',
+          name: 'Zhiyu Zhu',
+        },
+        {
+          name: 'Guobin Tu',
+        },
+        {
+          name: 'Yan Gu',
           coadvised: true,
-          description: 'energy visual analytics',
         },
-        {
-          name: 'Yanwei Huang',
-          coadvised: true,
-          description: 'interactive data transformation',
-        },
-        {
-          name: 'Yurun Yang',
-          coadvised: true,
-          description: 'energy visual analytics',
-        },
-        {
-          name: 'Jie Yu',
-          description: 'urban visual analytics',
-        },
-        {
-          name: 'Xiaodan Miao',
-          description: 'urban visual analytics',
-        },
+      ],
+      '2023': [
         {
           name: 'Jiabin Xu',
-          coadvised: true,
         },
         {
           name: 'Qiming Shi',
@@ -100,7 +97,32 @@ const students: Record<
           name: 'Kaicheng Shao',
         },
       ],
+      '2022': [
+        {
+          name: 'Jie Yu',
+          description: 'urban visual analytics',
+        },
+        {
+          name: 'Xiaodan Miao',
+          description: 'urban visual analytics',
+        },
+      ],
       past: [
+        {
+          name: 'Xinjing Yi',
+          coadvised: true,
+          description: 'energy visual analytics',
+        },
+        {
+          name: 'Yanwei Huang',
+          coadvised: true,
+          description: 'interactive data transformation',
+        },
+        {
+          name: 'Yurun Yang',
+          coadvised: true,
+          description: 'energy visual analytics',
+        },
         {
           name: 'Shifu Chen',
           coadvised: true,

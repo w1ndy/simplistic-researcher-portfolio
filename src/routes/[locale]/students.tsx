@@ -17,12 +17,10 @@ function generateEntries(when?: string, students?: Student[]) {
       when: when ?? '',
       descriptions: students.map(
         (entry) =>
-          `<b>${homepage(entry.name)(entry.name)}</b>${
-            entry.coadvised ? '*' : ''
-          } ${
-            entry.description !== undefined
-              ? `&mdash; ${entry.description}`
-              : ''
+          `<b>${homepage(entry.name)(entry.name)}</b>${entry.coadvised ? '*' : ''
+          } ${entry.description !== undefined
+            ? `&mdash; ${entry.description}`
+            : ''
           }`
       ),
     },
@@ -40,22 +38,11 @@ export default function Students() {
       ></div>
       <Section
         name={t('phd_students')}
-        entries={generateEntries(t('current'), students()?.phd.current).concat(
-          students()?.phd.past
-            ? generateEntries(t('past'), students()?.phd.past)
-            : []
-        )}
+        entries={Object.entries(students()?.phd).map(([key, stu]) => generateEntries(key, stu)).flat()}
       ></Section>
       <Section
         name={t('master_students')}
-        entries={generateEntries(
-          t('current'),
-          students()?.master.current
-        ).concat(
-          students()?.master.past
-            ? generateEntries(t('past'), students()?.master.past)
-            : []
-        )}
+        entries={Object.entries(students()?.master).map(([key, stu]) => generateEntries(key, stu)).flat()}
       ></Section>
       <Section
         name={t('undergraduate_students')}
