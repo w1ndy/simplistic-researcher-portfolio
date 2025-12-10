@@ -13,7 +13,6 @@ const students: Record<
     notes: string
     phd: Record<string, Student[]>
     master: Record<string, Student[]>
-    undergraduates: Record<string, Student[]>
   }
 > = {
   en: {
@@ -24,45 +23,43 @@ const students: Record<
         {
           name: 'Shuhan Liu',
           coadvised: true,
-          description: 'time series visual analytics',
         },
       ],
       '2023': [
         {
           name: 'Lingyu Meng',
           coadvised: true,
-          description: 'time series visual analytics',
         },
         {
           name: 'Zhongsu Luo',
           coadvised: true,
-          description: 'interactive data transformation',
         },
       ],
       '2024': [
         {
           name: 'Yangtian Liu',
           coadvised: true,
-          description: 'time series visual analytics',
         },
         {
           name: 'Zhenning Chen',
-          description: 'visualization for LLMs',
         },
         {
           name: 'Yunfan Zhou',
           coadvised: true,
-          description: 'interactive data transformation',
         },
         {
           name: 'Zihan Xu',
           coadvised: true,
-          description: 'time series visual analytics',
         },
       ],
       '2025': [
         {
           name: 'Jiawen Zhu',
+        },
+      ],
+      '2026': [
+        {
+          name: 'Yan Miao',
         },
       ],
     },
@@ -78,6 +75,14 @@ const students: Record<
           name: 'Yan Gu',
           coadvised: true,
         },
+        {
+          name: 'Zehao Fan',
+          coadvised: true,
+        },
+        {
+          name: 'Hanbei Zhan',
+          coadvised: true,
+        },
       ],
       '2024': [
         {
@@ -86,9 +91,6 @@ const students: Record<
         {
           name: 'Qiming Shi',
           coadvised: true,
-        },
-        {
-          name: 'Jiawen Zhu',
         },
         {
           name: 'Zelin Li',
@@ -100,53 +102,38 @@ const students: Record<
       '2023': [
         {
           name: 'Jie Yu',
-          description: 'urban visual analytics',
         },
         {
           name: 'Xiaodan Miao',
-          description: 'urban visual analytics',
         },
       ],
       past: [
         {
-          name: 'Xinjing Yi',
-          coadvised: true,
-          description: 'energy visual analytics',
-        },
-        {
           name: 'Yanwei Huang',
           coadvised: true,
-          description: 'interactive data transformation',
+          description: 'graduated in 2025, pursuing PhD at HKUST',
+        },
+        {
+          name: 'Xinjing Yi',
+          coadvised: true,
+          description: 'graduated in 2025',
         },
         {
           name: 'Yurun Yang',
           coadvised: true,
-          description: 'energy visual analytics',
+          description: 'graduated in 2025',
         },
         {
           name: 'Shifu Chen',
           coadvised: true,
-          description: 'urban visual analytics',
+          description:
+            'transferred in 2024, pursuing PhD at Zhejiang University',
         },
         {
           name: 'Yuchen Yang',
           coadvised: true,
-          description: 'urban visual analytics',
-        },
-      ],
-    },
-    undergraduates: {
-      current: [
-        {
-          name: 'Jiajun Zhu',
-        },
-        {
-          name: 'Yan Miao',
-        },
-      ],
-      past: [
-        {
-          name: 'Sina A',
+          description:
+            'transferred in 2024, pursuing PhD at Zhejiang University',
         },
       ],
     },
@@ -155,12 +142,14 @@ const students: Record<
     notes:
       '*：与<a href="http://www.ycwu.org" target="_blank">巫英才教授</a>共同指导。',
     phd: {
-      current: [
+      '2021': [
         {
           name: '刘书含',
           coadvised: true,
           description: '时序数据可视分析',
         },
+      ],
+      '2023': [
         {
           name: '孟令雨',
           coadvised: true,
@@ -171,6 +160,8 @@ const students: Record<
           coadvised: true,
           description: '交互式数据治理',
         },
+      ],
+      '2024': [
         {
           name: '刘阳天',
           coadvised: true,
@@ -178,7 +169,7 @@ const students: Record<
         },
         {
           name: '陈振宁',
-          description: '地理数据可视分析',
+          description: '大语言模型可视化',
         },
         {
           name: '周云帆',
@@ -191,68 +182,89 @@ const students: Record<
           description: '时序数据可视分析',
         },
       ],
+      '2025': [
+        {
+          name: '朱甲文',
+        },
+      ],
+      '2026': [
+        {
+          name: '缪延',
+          coadvised: true,
+        },
+      ],
     },
     master: {
-      current: [
+      '2025': [
         {
-          name: '伊心静',
+          name: '朱之钰',
+        },
+        {
+          name: '涂国彬',
+        },
+        {
+          name: '顾岩',
           coadvised: true,
         },
         {
-          name: '黄彦玮',
+          name: '范泽昊',
           coadvised: true,
         },
         {
-          name: '杨雨润',
+          name: '詹含蓓',
           coadvised: true,
         },
-        {
-          name: '喻洁',
-        },
-        {
-          name: '苗潇丹',
-        },
+      ],
+      '2024': [
         {
           name: '许嘉斌',
-          coadvised: true,
         },
         {
           name: '史启明',
           coadvised: true,
         },
         {
-          name: '朱甲文',
-        },
-        {
           name: '李泽霖',
         },
         {
-          name: '卲楷城',
+          name: '邵楷城',
+        },
+      ],
+      '2023': [
+        {
+          name: '喻洁',
+          description: '城市可视分析',
+        },
+        {
+          name: '苗潇丹',
+          description: '城市可视分析',
         },
       ],
       past: [
         {
+          name: '伊心静',
+          coadvised: true,
+          description: '能源可视分析',
+        },
+        {
+          name: '黄彦玮',
+          coadvised: true,
+          description: '交互式数据治理',
+        },
+        {
+          name: '杨雨润',
+          coadvised: true,
+          description: '能源可视分析',
+        },
+        {
           name: '陈时富',
           coadvised: true,
+          description: '城市可视分析',
         },
         {
           name: '杨雨辰',
           coadvised: true,
-        },
-      ],
-    },
-    undergraduates: {
-      current: [
-        {
-          name: '朱家骏',
-        },
-        {
-          name: '缪延',
-        },
-      ],
-      past: [
-        {
-          name: '阿斯娜',
+          description: '城市可视分析',
         },
       ],
     },

@@ -25,6 +25,7 @@ export default [
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2025.3602273',
           pdf: '/pdf/chronodeck.pdf',
+          code: 'https://github.com/ChronoDeck/ChronoDeck',
         },
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
         featured_category: FeaturedCategory.IEEE_TVCG_2025,

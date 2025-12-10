@@ -12,7 +12,6 @@ export default {
   'Guodao Sun': 'https://godoorsun.org/',
   'Mingliang Xu':
     'https://scholar.google.com.hk/citations?user=u-8x34cAAAAJ&hl=zh-CN',
-  'Shuhan Liu': 'https://susicaliu.github.io/',
   'Haoran Xu': 'https://ryanxhr.github.io/',
   'Xiangyu Zhu':
     'https://scholar.google.com.hk/citations?user=OanBHCwAAAAJ&hl=zh-CN',
@@ -51,7 +50,6 @@ export default {
   'Dongmei Zhang': 'https://www.microsoft.com/en-us/research/people/dongmeiz/',
   'Weiwei Cui': 'https://www.microsoft.com/en-us/research/people/weiweicu/',
   'Yunfan Zhou': 'https://zyfzd123.github.io/',
-  'Lingyu Meng': 'https://kevinmeng49.github.io/',
   'Zhongsu Luo':
     'https://maple-possum-c4d.notion.site/Zhongsu-LUO-9a76b04931a848179b6f8488033b3a2a',
   'Kai Xiong': 'https://xkkevin.github.io/',
@@ -59,4 +57,6 @@ export default {
     'https://en.zhejianglab.com/institutescenters/Faculty/202112/t20211209_2924.shtml',
   'Adam Perer': 'https://hcii.cmu.edu/people/adam-perer',
   'Haotian Li': 'https://haotian-li.com/',
+  'Ke Xu': 'https://lukexuke.github.io/',
+  'Yuan Tian': 'https://bebinca.github.io/home/',
 } as { [key: string]: string }

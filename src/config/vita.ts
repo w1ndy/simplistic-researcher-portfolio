@@ -85,9 +85,10 @@ const vita: Record<
     ],
     teaching: [
       {
-        when: '2024 Winter',
+        when: '',
         descriptions: [
           '<b>Data Visualization Techniques</b> (PG), School of Software Tecnology, Zhejiang University',
+          '<b>Large Language Models: Principles and Techniques</b> (PG), School of Software Tecnology, Zhejiang University',
           '<b>Introduction to Data Visualization</b> (UG, co-teach), College of Computer Science, Zhejiang University',
           '<b>Cross-Media Data Visualization</b> (UG, co-teach), College of Computer Science, Zhejiang University',
         ],
@@ -117,7 +118,13 @@ const vita: Record<
     ],
     services: [
       {
-        when: 'Session Chair',
+        when: 'Journals',
+        descriptions: [
+          'Young Advisory Board Member, <a href="https://www.sciencedirect.com/journal/visual-informatics" target="_blank">Visual Informatics</a>',
+        ],
+      },
+      {
+        when: 'Session Chairs',
         descriptions: [
           'AI & Visual Analytics, <a href="https://pacificvis.github.io/pvis2024/" target="_blank">IEEE PacificVis 2024</a>',
           'GeoVis session, <a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
@@ -125,17 +132,14 @@ const vita: Record<
         ],
       },
       {
-        when: 'PC Member',
+        when: 'PC Members',
         descriptions: [
-          '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2024</a>',
-          '<a href="https://ieeevis.org/year/2024/welcome" target="_blank">IEEE VIS 2024</a>',
-          '<a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
-          '<a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
-          '<a href="https://chinavis.org/2022/" target="_blank">ChinaVis 2022</a>',
+          '<a href="https://ieeevis.org/year/2025/welcome" target="_blank">IEEE VIS 2023-2025</a>',
+          '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024</a>',
         ],
       },
       {
-        when: 'Reviewer',
+        when: 'Reviewers',
         descriptions: [
           '<a href="https://ieeevis.org" target="_blank">IEEE VIS</a>',
           '<a href="https://dl.acm.org/conference/chi" target="_blank">ACM Conference on Human Factors in Computing Systems (CHI)</a>',
@@ -212,9 +216,10 @@ const vita: Record<
     ],
     teaching: [
       {
-        when: '2024 冬',
+        when: '',
         descriptions: [
           '<b>数据可视化技术</b>（研究生），浙江大学软件学院',
+          '<b>大语言模型原理与技术</b>（研究生），浙江大学软件学院',
           '<b>数据可视化导论</b>（本科生，联合教学），浙江大学计算机科学与技术学院',
           '<b>跨媒体数据可视化</b>（本科生，联合教学），浙江大学计算机科学与技术学院',
         ],
@@ -244,6 +249,12 @@ const vita: Record<
     ],
     services: [
       {
+        when: '期刊',
+        descriptions: [
+          '青年编委, <a href="https://www.sciencedirect.com/journal/visual-informatics" target="_blank">Visual Informatics</a>',
+        ],
+      },
+      {
         when: '分论坛主持',
         descriptions: [
           'AI & Visual Analytics, <a href="https://pacificvis.github.io/pvis2024/" target="_blank">IEEE PacificVis 2024</a>',
@@ -254,11 +265,8 @@ const vita: Record<
       {
         when: '程序委员会委员',
         descriptions: [
-          '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2024</a>',
-          '<a href="https://ieeevis.org/year/2024/welcome" target="_blank">IEEE VIS 2024</a>',
-          '<a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
-          '<a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
-          '<a href="https://chinavis.org/2022/" target="_blank">ChinaVis 2022</a>',
+          '<a href="https://ieeevis.org/year/2025/welcome" target="_blank">IEEE VIS 2023-2025</a>',
+          '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024</a>',
         ],
       },
       {

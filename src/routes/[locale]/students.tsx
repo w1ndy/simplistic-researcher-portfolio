@@ -44,7 +44,7 @@ export default function Students() {
         name={t('master_students')}
         entries={Object.entries(students()?.master).map(([key, stu]) => generateEntries(key, stu)).flat()}
       ></Section>
-      <Section
+      {/* <Section
         name={t('undergraduate_students')}
         entries={generateEntries(
           t('current'),
@@ -54,7 +54,7 @@ export default function Students() {
             ? generateEntries(t('past'), students()?.undergraduates.past)
             : []
         )}
-      ></Section>
+      ></Section> */}
     </>
   )
 }
