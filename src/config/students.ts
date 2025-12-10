@@ -67,7 +67,7 @@ const students: Record<
       ],
     },
     master: {
-      '2024': [
+      '2025': [
         {
           name: 'Zhiyu Zhu',
         },
@@ -79,7 +79,7 @@ const students: Record<
           coadvised: true,
         },
       ],
-      '2023': [
+      '2024': [
         {
           name: 'Jiabin Xu',
         },
@@ -97,7 +97,7 @@ const students: Record<
           name: 'Kaicheng Shao',
         },
       ],
-      '2022': [
+      '2023': [
         {
           name: 'Jie Yu',
           description: 'urban visual analytics',

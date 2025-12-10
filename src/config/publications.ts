@@ -7,6 +7,97 @@ export default [
     year: '2025',
     papers: [
       {
+        image: '/img/papers/chronodeck.avif',
+        authors: [
+          'Lingyu Meng',
+          'Shuhan Liu',
+          'Keyi Yang',
+          'Jiabin Xu',
+          'Zikun Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'ChronoDeck: A Visual Analytics Approach for Hierarchical Time Series Analysis',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 12, pp. 10488-10502, 2025',
+        links: {
+          paper: 'https://doi.org/10.1109/TVCG.2025.3602273',
+          pdf: '/pdf/chronodeck.pdf',
+        },
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
+        featured_category: FeaturedCategory.IEEE_TVCG_2025,
+      },
+      {
+        image: '/img/papers/hypnos.avif',
+        authors: [
+          'Xiwen Cai',
+          'Xiaodong Ge',
+          'Kai Xiong',
+          'Shuainan Ye',
+          'Di Weng',
+          'Ke Xu',
+          'Datong Wei',
+          'Jiang Long',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng', 'Ke Xu'],
+        title:
+          'HYPNOS: Interactive Data Lineage Tracing for Data Transformation Scripts',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 10, pp. 7632-7646, 2025',
+        links: {
+          paper: 'https://ieeexplore.ieee.org/abstract/document/10930714',
+          pdf: '/pdf/hypnos.pdf',
+        },
+        featured_category: FeaturedCategory.IEEE_TVCG_2025,
+        topics: [PaperTopic.DataWrangling],
+      },
+      {
+        image: '/img/papers/kg.avif',
+        authors: [
+          'Xiwen Cai',
+          'Di Weng',
+          'Taotao Fu',
+          'Siwei Fu',
+          'Yongheng Wang',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'Linking Text and Visualizations via Contextual Knowledge Graph',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 9, pp. 4667-4681, 2025',
+        links: {
+          paper: 'https://ieeexplore.ieee.org/document/10553360',
+          pdf: '/pdf/tvl.pdf',
+        },
+        featured_category: FeaturedCategory.IEEE_TVCG_2024,
+        topics: [PaperTopic.VisualizationAuthoring],
+      },
+      {
+        image: '/img/papers/relaq.avif',
+        authors: [
+          'Shuhan Liu',
+          'Yuan Tian',
+          'Zikun Deng',
+          'Weiwei Cui',
+          'Haidong Zhang',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'Relation-driven Query of Multiple Time Series',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 31, no. 8, pp. 4210-4225, 2025',
+        links: {
+          paper: 'https://ieeexplore.ieee.org/document/10521861',
+          pdf: '/pdf/relaq.pdf',
+        },
+        featured_category: FeaturedCategory.IEEE_TVCG_2025,
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
+      },
+      {
         image: '/img/papers/visegpt.avif',
         authors: [
           'Jiajun Zhu',
@@ -23,6 +114,7 @@ export default [
         venue:
           'ACM Symposium on User Interface Software and Technology (UIST), 2025',
         links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3746059.3747689',
           pdf: '/pdf/visegpt.pdf',
         },
         topics: [PaperTopic.DataWrangling],
@@ -46,7 +138,7 @@ export default [
           paper:
             'https://chinavis.org/2025/papers/Scroller%20A%20WYSIWYG%20System%20for%20Creating%20Expressive%20Scrollytelling.pdf',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [PaperTopic.VisualizationAuthoring],
       },
       {
         image: '/img/papers/geoanimation.avif',
@@ -126,30 +218,6 @@ export default [
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
-        image: '/img/papers/hypnos.avif',
-        authors: [
-          'Xiwen Cai',
-          'Xiaodong Ge',
-          'Kai Xiong',
-          'Shuainan Ye',
-          'Di Weng',
-          'Ke Xu',
-          'Datong Wei',
-          'Jiang Long',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng', 'Ke Xu'],
-        title:
-          'HYPNOS: Interactive Data Lineage Tracing for Data Transformation Scripts',
-        venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025 (Early Access)',
-        links: {
-          paper: 'https://ieeexplore.ieee.org/abstract/document/10930714',
-        },
-        featured_category: FeaturedCategory.IEEE_TVCG_2025,
-        topics: [PaperTopic.DataWrangling],
-      },
-      {
         image: '/img/papers/icfinder.avif',
         authors: [
           'Junxiu Tang',
@@ -211,7 +279,10 @@ export default [
           'RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
-        links: {},
+        links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3706598.3714209',
+          pdf: '/pdf/ridgebuilder.pdf',
+        },
         featured_category: FeaturedCategory.ACM_CHI_2025,
         topics: [PaperTopic.VisualizationAuthoring],
       },
@@ -258,6 +329,8 @@ export default [
         links: {
           paper: 'https://ieeexplore.ieee.org/abstract/document/10670464',
           pdf: '/pdf/ferry.pdf',
+          code: 'https://github.com/RidgeBuilder/RidgeBuilder',
+          demo: 'https://ridgebuilder.github.io/RidgeBuilder/',
         },
         featured_category: FeaturedCategory.IEEE_VIS_2024,
         topics: [PaperTopic.DataWrangling],
@@ -267,49 +340,6 @@ export default [
   {
     year: '2024',
     papers: [
-      {
-        image: '/img/papers/kg.avif',
-        authors: [
-          'Xiwen Cai',
-          'Di Weng',
-          'Taotao Fu',
-          'Siwei Fu',
-          'Yongheng Wang',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title: 'Linking Text and Visualizations via Contextual Knowledge Graph',
-        venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (Early Access)',
-        links: {
-          paper: 'https://ieeexplore.ieee.org/document/10553360',
-          pdf: '/pdf/tvl.pdf',
-        },
-        featured_category: FeaturedCategory.IEEE_TVCG_2024,
-        topics: [PaperTopic.VisualizationAuthoring],
-      },
-      {
-        image: '/img/papers/relaq.avif',
-        authors: [
-          'Shuhan Liu',
-          'Yuan Tian',
-          'Zikun Deng',
-          'Weiwei Cui',
-          'Haidong Zhang',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title: 'Relation-driven Query of Multiple Time Series',
-        venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024 (Early Access)',
-        links: {
-          paper: 'https://ieeexplore.ieee.org/document/10521861',
-          pdf: '/pdf/relaq.pdf',
-        },
-        featured_category: FeaturedCategory.IEEE_TVCG_2024,
-        topics: [PaperTopic.TimeSeriesVisualAnalysis],
-      },
       {
         image: '/img/papers/table_illustrator.avif',
         authors: [
