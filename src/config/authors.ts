@@ -49,7 +49,7 @@ export default {
   'Qingwei Lin': 'https://www.microsoft.com/en-us/research/people/qlin/',
   'Dongmei Zhang': 'https://www.microsoft.com/en-us/research/people/dongmeiz/',
   'Weiwei Cui': 'https://www.microsoft.com/en-us/research/people/weiweicu/',
-  'Yunfan Zhou': 'https://zyfzd123.github.io/',
+  'Yunfan Zhou': 'https://yunfzhou.github.io/',
   'Zhongsu Luo':
     'https://maple-possum-c4d.notion.site/Zhongsu-LUO-9a76b04931a848179b6f8488033b3a2a',
   'Kai Xiong': 'https://xkkevin.github.io/',

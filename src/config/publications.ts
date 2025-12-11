@@ -7,6 +7,20 @@ export default [
     year: '2025',
     papers: [
       {
+        image: '/img/papers/visualtsc.avif',
+        authors: ['Yuchen Yang', 'Jie Yu', 'Zihan Xu', 'Di Weng'],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'A Visual Analytics Approach to Traffic Signal Control Optimization for Multiple Road Intersections',
+        venue:
+          'Journal of Computer-Aided Design & Computer Graphics (Early Access), 2025',
+        links: {
+          paper: 'https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2025-00260',
+          'cn pdf': '/pdf/visualtsc.pdf',
+        },
+        topics: [PaperTopic.GeospatialVisualAnalysis],
+      },
+      {
         image: '/img/papers/chronodeck.avif',
         authors: [
           'Lingyu Meng',
@@ -56,6 +70,30 @@ export default [
         topics: [PaperTopic.DataWrangling],
       },
       {
+        image: '/img/papers/visegpt.avif',
+        authors: [
+          'Jiajun Zhu',
+          'Xinyu Cheng',
+          'Zhongsu Luo',
+          'Yunfan Zhou',
+          'Xinhuan Shu',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Xinhuan Shu', 'Di Weng'],
+        title:
+          'ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts',
+        venue:
+          'ACM Symposium on User Interface Software and Technology (UIST), no. 147, pp. 1-16, 2025',
+        links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3746059.3747689',
+          pdf: '/pdf/visegpt.pdf',
+          video: 'https://www.youtube.com/watch?v=zT1rYn0vf2o',
+        },
+        topics: [PaperTopic.DataWrangling],
+        featured_category: FeaturedCategory.ACM_UIST_2025,
+      },
+      {
         image: '/img/papers/kg.avif',
         authors: [
           'Xiwen Cai',
@@ -75,6 +113,29 @@ export default [
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
         topics: [PaperTopic.VisualizationAuthoring],
+      },
+      {
+        image: '/img/papers/pvesight.avif',
+        authors: [
+          'Yurun Yang',
+          'Xinjing Yi',
+          'Yingqiang Jin',
+          'Sen Li',
+          'Kang Ma',
+          'Shuhan Liu',
+          'Dazhen Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'PVeSight: Dimensionality reduction-based anomaly detection and visual analysis of photovoltaic strings',
+        venue: 'Visual Informatics, vol. 9, no. 3, 100243, 2025',
+        links: {
+          paper: 'https://doi.org/10.1016/j.visinf.2025.100243',
+          pdf: '/pdf/pvesight.pdf',
+        },
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
         image: '/img/papers/relaq.avif',
@@ -99,29 +160,6 @@ export default [
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
-        image: '/img/papers/visegpt.avif',
-        authors: [
-          'Jiajun Zhu',
-          'Xinyu Cheng',
-          'Zhongsu Luo',
-          'Yunfan Zhou',
-          'Xinhuan Shu',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Xinhuan Shu', 'Di Weng'],
-        title:
-          'ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts',
-        venue:
-          'ACM Symposium on User Interface Software and Technology (UIST), 2025',
-        links: {
-          paper: 'https://dl.acm.org/doi/10.1145/3746059.3747689',
-          pdf: '/pdf/visegpt.pdf',
-        },
-        topics: [PaperTopic.DataWrangling],
-        featured_category: FeaturedCategory.ACM_UIST_2025,
-      },
-      {
         image: '/img/papers/scroller.avif',
         authors: [
           'Renzhong Li',
@@ -136,8 +174,7 @@ export default [
           'Scroller: A WYSIWYG System for Creating Expressive Scrollytelling',
         venue: 'ChinaVis 2025',
         links: {
-          paper:
-            'https://chinavis.org/2025/papers/Scroller%20A%20WYSIWYG%20System%20for%20Creating%20Expressive%20Scrollytelling.pdf',
+          pdf: 'https://chinavis.org/2025/papers/Scroller%20A%20WYSIWYG%20System%20for%20Creating%20Expressive%20Scrollytelling.pdf',
         },
         topics: [PaperTopic.VisualizationAuthoring],
       },
@@ -148,33 +185,9 @@ export default [
         title: 'GeoAnimation: A Grammar for Animated Geographic Visualization',
         venue: 'ChinaVis 2025',
         links: {
-          paper:
-            'https://chinavis.org/2025/papers/GeoAnimation%20A%20Grammar%20for%20Animated%20Geographic%20Visualization.pdf',
+          pdf: 'https://chinavis.org/2025/papers/GeoAnimation%20A%20Grammar%20for%20Animated%20Geographic%20Visualization.pdf',
         },
         topics: [PaperTopic.GeospatialVisualAnalysis],
-      },
-      {
-        image: '/img/papers/pvesight.avif',
-        authors: [
-          'Yurun Yang',
-          'Xinjing Yi',
-          'Yingqiang Jin',
-          'Sen Li',
-          'Kang Ma',
-          'Shuhan Liu',
-          'Dazhen Deng',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title:
-          'PVeSight: Dimensionality reduction-based anomaly detection and visual analysis of photovoltaic strings',
-        venue: 'Visual Informatics, 100233, 2025 (In press)',
-        links: {
-          paper:
-            'https://www.sciencedirect.com/science/article/pii/S2468502X25000269',
-        },
-        topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
       {
         image: '/img/papers/codelin.avif',
@@ -191,8 +204,7 @@ export default [
           'CodeLin: An in situ visualization method for understanding data transformation scripts',
         venue: 'Visual Informatics, vol. 9, no. 2, 100233, 2025',
         links: {
-          paper:
-            'https://www.sciencedirect.com/science/article/pii/S2468502X25000087',
+          paper: 'https://doi.org/10.1016/j.visinf.2025.03.002',
         },
         topics: [PaperTopic.DataWrangling],
       },
@@ -215,8 +227,81 @@ export default [
         venue: 'Journal of Visualization, vol. 28, pp. 895-915, 2025',
         links: {
           paper: 'https://link.springer.com/article/10.1007/s12650-025-01067-4',
+          pdf: '/pdf/pvva.pdf',
         },
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
+      },
+      {
+        image: '/img/papers/structvizor.avif',
+        authors: [
+          'Yanwei Huang',
+          'Yan Miao',
+          'Di Weng',
+          'Adam Perer',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'StructVizor: Interactive profiling of semi-structured textual data',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
+        links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3706598.3713484',
+          pdf: '/pdf/structvizor.pdf',
+        },
+        featured_category: FeaturedCategory.ACM_CHI_2025,
+        topics: [PaperTopic.DataWrangling],
+      },
+      {
+        image: '/img/papers/ridgebuilder.avif',
+        authors: [
+          'Shuhan Liu',
+          'Yangtian Liu',
+          'Junxin Li',
+          'Yanwei Huang',
+          'Yue Shangguan',
+          'Zikun Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
+        links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3706598.3714209',
+          pdf: '/pdf/ridgebuilder.pdf',
+          code: 'https://github.com/RidgeBuilder/RidgeBuilder',
+          demo: 'https://ridgebuilder.github.io/RidgeBuilder/',
+        },
+        featured_category: FeaturedCategory.ACM_CHI_2025,
+        topics: [PaperTopic.VisualizationAuthoring],
+      },
+      {
+        image: '/img/papers/xavier.avif',
+        authors: [
+          'Yunfan Zhou',
+          'Xiwen Cai',
+          'Qiming Shi',
+          'Yanwei Huang',
+          'Haotian Li',
+          'Huamin Qu',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
+        links: {
+          paper: 'https://dl.acm.org/doi/10.1145/3706598.3714239',
+          pdf: '/pdf/xavier.pdf',
+          code: 'https://github.com/CHI25-Xavier/Xavier',
+        },
+        featured_category: FeaturedCategory.ACM_CHI_2025,
+        topics: [PaperTopic.DataWrangling],
       },
       {
         image: '/img/papers/icfinder.avif',
@@ -243,75 +328,6 @@ export default [
         topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
-        image: '/img/papers/structvizor.avif',
-        authors: [
-          'Yanwei Huang',
-          'Yan Miao',
-          'Di Weng',
-          'Adam Perer',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title:
-          'StructVizor: Interactive profiling of semi-structured textual data',
-        venue:
-          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
-        links: {
-          preprint: 'https://arxiv.org/abs/2503.06500',
-          pdf: '/pdf/structvizor.pdf',
-        },
-        featured_category: FeaturedCategory.ACM_CHI_2025,
-        topics: [PaperTopic.DataWrangling],
-      },
-      {
-        image: '/img/papers/ridgebuilder.avif',
-        authors: [
-          'Shuhan Liu',
-          'Yangtian Liu',
-          'Junxin Li',
-          'Yanwei Huang',
-          'Yue Shangguan',
-          'Zikun Deng',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title:
-          'RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots',
-        venue:
-          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
-        links: {
-          paper: 'https://dl.acm.org/doi/10.1145/3706598.3714209',
-          pdf: '/pdf/ridgebuilder.pdf',
-        },
-        featured_category: FeaturedCategory.ACM_CHI_2025,
-        topics: [PaperTopic.VisualizationAuthoring],
-      },
-      {
-        image: '/img/papers/xavier.avif',
-        authors: [
-          'Yunfan Zhou',
-          'Xiwen Cai',
-          'Qiming Shi',
-          'Yanwei Huang',
-          'Haotian Li',
-          'Huamin Qu',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title:
-          'Xavier: Toward Better Coding Assistance in Authoring Tabular Data Wrangling Scripts',
-        venue:
-          'ACM Conference on Human Factors in Computing Systems (CHI), 2025',
-        links: {
-          preprint: 'https://arxiv.org/abs/2503.02639',
-          pdf: '/pdf/xavier.pdf',
-        },
-        featured_category: FeaturedCategory.ACM_CHI_2025,
-        topics: [PaperTopic.DataWrangling],
-      },
-      {
         image: '/img/papers/ferry.avif',
         authors: [
           'Zhongsu Luo',
@@ -330,8 +346,6 @@ export default [
         links: {
           paper: 'https://ieeexplore.ieee.org/abstract/document/10670464',
           pdf: '/pdf/ferry.pdf',
-          code: 'https://github.com/RidgeBuilder/RidgeBuilder',
-          demo: 'https://ridgebuilder.github.io/RidgeBuilder/',
         },
         featured_category: FeaturedCategory.IEEE_VIS_2024,
         topics: [PaperTopic.DataWrangling],
@@ -747,17 +761,17 @@ export default [
   {
     year: '2021',
     papers: [
-      // {
-      //   image: '/img/papers/industrial_survey.avif',
-      //   authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
-      //   title: 'A Review on Industrial Data Visual Analytics',
-      //   venue:
-      //     'Journal of Integration Technology, vol. 10, no. 6, pp. 3-19, 2021',
-      //   links: {
-      //     paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
-      //     'cn pdf': '/pdf/industrial_survey.pdf',
-      //   },
-      // },
+      {
+        image: '/img/papers/industrial_survey.avif',
+        authors: ['Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
+        title: 'A Review on Industrial Data Visual Analytics',
+        venue:
+          'Journal of Integration Technology, vol. 10, no. 6, pp. 3-19, 2021',
+        links: {
+          paper: 'https://doi.org/10.12146/j.issn.2095-3135.20210630003',
+          'cn pdf': '/pdf/industrial_survey.pdf',
+        },
+      },
       {
         image: '/img/papers/corvizor.avif',
         authors: [

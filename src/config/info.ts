@@ -31,9 +31,9 @@ const info: Record<Locale, Info> = {
       ],
     ],
     address: [
-      'E502, Teaching Building',
+      '301, Building 6',
       'Zhejiang University',
-      '1589 Jiangnan Rd., Ningbo',
+      '5 Xuefu Rd., Ningbo',
       'Zhejiang Province, P.R.China',
     ],
     contact: [
@@ -71,9 +71,9 @@ const info: Record<Locale, Info> = {
       ],
     ],
     address: [
-      '浙江省宁波市鄞州区江南路1689号',
-      '浙江大学软件学院',
-      '教学楼E502办公室',
+      '浙江省宁波市鄞州区学府路5号',
+      '浙江大学（宁波校区）',
+      '6号楼301',
     ],
     contact: [
       {
