@@ -599,6 +599,7 @@ export default [
           paper: 'https://doi.org/10.1109/TVCG.2022.3209430',
           pdf: '/pdf/ecoalvis.pdf',
           video: 'https://youtu.be/XsqdJd2y6Z0?si=56smTEjYuX706YgF',
+          code: 'https://github.com/ECoalVis/ECoalVis',
         },
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
       },
