@@ -4,7 +4,7 @@ export enum PaperTopic {
   GeospatialVisualAnalysis = 'Geospatial visual analysis',
   TimeSeriesVisualAnalysis = 'Time series visual analysis',
   DataWrangling = 'Data wrangling',
-  VisualDecisionMaking = 'Visual decision making',
+  HumanLLM = 'Human-LLM interaction',
   VisualizationAuthoring = 'Visualization authoring',
 }
 

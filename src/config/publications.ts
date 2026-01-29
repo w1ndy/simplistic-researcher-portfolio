@@ -7,6 +7,103 @@ export default [
     year: '2026',
     papers: [
       {
+        image: '/img/papers/tseditor.avif',
+        authors: [
+          'Zihan Xu',
+          'Shuhan Liu',
+          'Kaicheng Shao',
+          'Yuanzhe Jin',
+          'Xumeng Wang',
+          'Zikun Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'TSEditor: Interactive Time Series Editing for Privacy Preservation',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
+        links: {},
+        topics: [PaperTopic.DataWrangling, PaperTopic.TimeSeriesVisualAnalysis],
+      },
+      {
+        image: '/img/papers/cerebra.avif',
+        authors: [
+          'Yunfan Zhou',
+          'Qiming Shi',
+          'Zhongsu Luo',
+          'Xiwen Cai',
+          'Yanwei Huang',
+          'Dae Hyun Kim',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring',
+        venue:
+          'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
+        links: {},
+        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+      },
+      {
+        image: '/img/papers/trajgram.avif',
+        authors: [
+          'Shifu Chen',
+          'Xiaodan Miao',
+          'Zikun Deng',
+          'Dazhen Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component',
+        venue: 'PacificVis 2026',
+        links: {},
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.VisualizationAuthoring,
+        ],
+      },
+      {
+        image: '/img/papers/trajcurer.avif',
+        authors: [
+          'Xiaodan Miao',
+          'Sitong Pan',
+          'Shifu Chen',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'TrajectoryCurer: Visual Analysis of Trajectory Data Quality',
+        venue: 'PacificVis 2026',
+        links: {},
+        topics: [PaperTopic.GeospatialVisualAnalysis, PaperTopic.DataWrangling],
+      },
+      {
+        image: '/img/papers/rcinvestigator.avif',
+        authors: [
+          'Shuhan Liu',
+          'Yunfan Zhou',
+          'Jue Zhang',
+          'Shandan Zhou',
+          'Weiwei Cui',
+          'Qingwei Lin',
+          'Thomas Moscibroda',
+          'Haidong Zhang',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
+        links: {},
+        topics: [PaperTopic.TimeSeriesVisualAnalysis],
+      },
+      {
         image: '/img/papers/visualke.avif',
         authors: [
           'Zhenning Chen',
@@ -23,7 +120,7 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
         links: {},
-        topics: [PaperTopic.VisualDecisionMaking],
+        topics: [PaperTopic.HumanLLM],
       },
     ],
   },
@@ -42,10 +139,7 @@ export default [
           paper: 'https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2025-00260',
           'cn pdf': '/pdf/visualtsc.pdf',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/chronodeck.avif',
@@ -117,7 +211,7 @@ export default [
           pdf: '/pdf/visegpt.pdf',
           video: 'https://www.youtube.com/watch?v=zT1rYn0vf2o',
         },
-        topics: [PaperTopic.DataWrangling],
+        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
         featured_category: FeaturedCategory.ACM_UIST_2025,
       },
       {
@@ -214,7 +308,10 @@ export default [
         links: {
           pdf: 'https://chinavis.org/2025/papers/GeoAnimation%20A%20Grammar%20for%20Animated%20Geographic%20Visualization.pdf',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.GeospatialVisualAnalysis,
+          PaperTopic.VisualizationAuthoring,
+        ],
       },
       {
         image: '/img/papers/codelin.avif',
@@ -277,7 +374,7 @@ export default [
           pdf: '/pdf/structvizor.pdf',
         },
         featured_category: FeaturedCategory.ACM_CHI_2025,
-        topics: [PaperTopic.DataWrangling],
+        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
       },
       {
         image: '/img/papers/ridgebuilder.avif',
@@ -328,7 +425,7 @@ export default [
           code: 'https://github.com/CHI25-Xavier/Xavier',
         },
         featured_category: FeaturedCategory.ACM_CHI_2025,
-        topics: [PaperTopic.DataWrangling],
+        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
       },
       {
         image: '/img/papers/icfinder.avif',
@@ -352,10 +449,7 @@ export default [
           paper: 'https://link.springer.com/article/10.1007/s12650-025-01055-8',
           pdf: '/pdf/icfinder.pdf',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/ferry.avif',
@@ -455,7 +549,7 @@ export default [
           video: 'https://youtu.be/qjjKAykyDZU',
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
-        topics: [PaperTopic.DataWrangling],
+        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
       },
       {
         image: '/img/papers/geonetverse.avif',
@@ -689,10 +783,7 @@ export default [
           paper: 'https://doi.org/10.1007/s12650-022-00884-1',
           pdf: '/pdf/ct3.pdf',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
     ],
   },
@@ -853,10 +944,7 @@ export default [
           pdf: '/pdf/bnva.pdf',
           video: 'https://youtu.be/DEAfK8F2dQE?si=CY-voxqmRa5TIAYL',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/mcrs.avif',
@@ -927,10 +1015,7 @@ export default [
           pdf: '/pdf/srvis.pdf',
           video: 'https://youtu.be/lenSZci4gy4?si=1JCtSimnpNTyTzGS',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/homefinder.avif',
@@ -944,10 +1029,7 @@ export default [
           pdf: '/pdf/reach.pdf',
           video: 'https://youtu.be/WcjMXAfuygg?si=f3Xv_zBl_o9UiYhF',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
       {
         image: '/img/papers/smartadp.avif',
@@ -969,10 +1051,7 @@ export default [
           pdf: '/pdf/smartadp.pdf',
           video: 'https://youtu.be/7vkYubflVuo?si=3cfFncTFbUHmsh1n',
         },
-        topics: [
-          PaperTopic.VisualDecisionMaking,
-          PaperTopic.GeospatialVisualAnalysis,
-        ],
+        topics: [PaperTopic.GeospatialVisualAnalysis],
       },
     ],
   },
