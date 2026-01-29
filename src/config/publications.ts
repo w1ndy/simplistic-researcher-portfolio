@@ -4,6 +4,30 @@ import { PaperTopic } from './filters'
 
 export default [
   {
+    year: '2026',
+    papers: [
+      {
+        image: '/img/papers/visualke.avif',
+        authors: [
+          'Zhenning Chen',
+          'Hanbei Zhan',
+          'Yanwei Huang',
+          'Xin Wu',
+          'Dazhen Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'KEditVis: A Visual Analytics System for Knowledge Editing of Large Language Models',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
+        links: {},
+        topics: [PaperTopic.VisualDecisionMaking],
+      },
+    ],
+  },
+  {
     year: '2025',
     papers: [
       {
@@ -18,7 +42,10 @@ export default [
           paper: 'https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2025-00260',
           'cn pdf': '/pdf/visualtsc.pdf',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/chronodeck.avif',
@@ -325,7 +352,10 @@ export default [
           paper: 'https://link.springer.com/article/10.1007/s12650-025-01055-8',
           pdf: '/pdf/icfinder.pdf',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/ferry.avif',
@@ -463,7 +493,7 @@ export default [
         title:
           'JsonCurer: Data Quality Management for JSON Based on an Aggregated Schema',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 6, pp. 3008-3021, 2024 (IEEE PacificVis 2024 TVCG Journal Track)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 30, no. 6, pp. 3008-3021, 2024 (PacificVis 2024 TVCG Journal Track)',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/10499847/',
           pdf: '/pdf/jsoncurer.pdf',
@@ -659,7 +689,10 @@ export default [
           paper: 'https://doi.org/10.1007/s12650-022-00884-1',
           pdf: '/pdf/ct3.pdf',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
     ],
   },
@@ -820,7 +853,10 @@ export default [
           pdf: '/pdf/bnva.pdf',
           video: 'https://youtu.be/DEAfK8F2dQE?si=CY-voxqmRa5TIAYL',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/mcrs.avif',
@@ -891,7 +927,10 @@ export default [
           pdf: '/pdf/srvis.pdf',
           video: 'https://youtu.be/lenSZci4gy4?si=1JCtSimnpNTyTzGS',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/homefinder.avif',
@@ -905,7 +944,10 @@ export default [
           pdf: '/pdf/reach.pdf',
           video: 'https://youtu.be/WcjMXAfuygg?si=f3Xv_zBl_o9UiYhF',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
       {
         image: '/img/papers/smartadp.avif',
@@ -927,7 +969,10 @@ export default [
           pdf: '/pdf/smartadp.pdf',
           video: 'https://youtu.be/7vkYubflVuo?si=3cfFncTFbUHmsh1n',
         },
-        topics: [PaperTopic.GeospatialVisualAnalysis],
+        topics: [
+          PaperTopic.VisualDecisionMaking,
+          PaperTopic.GeospatialVisualAnalysis,
+        ],
       },
     ],
   },

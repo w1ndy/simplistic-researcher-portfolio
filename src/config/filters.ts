@@ -1,9 +1,10 @@
 import { Paper } from '../types/paper'
 
 export enum PaperTopic {
-  DataWrangling = 'Data wrangling',
   GeospatialVisualAnalysis = 'Geospatial visual analysis',
   TimeSeriesVisualAnalysis = 'Time series visual analysis',
+  DataWrangling = 'Data wrangling',
+  VisualDecisionMaking = 'Visual decision making',
   VisualizationAuthoring = 'Visualization authoring',
 }
 
@@ -65,6 +66,6 @@ export const Filters: Record<
         },
         matcher: (paper: Paper) => paper.topics?.includes(topic),
       },
-    ])
+    ]),
   ),
 }
