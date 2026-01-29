@@ -25,6 +25,7 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
         links: {},
         topics: [PaperTopic.DataWrangling, PaperTopic.TimeSeriesVisualAnalysis],
+        featured_category: FeaturedCategory.ACM_CHI_2026,
       },
       {
         image: '/img/papers/cerebra.avif',
@@ -45,6 +46,7 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
         links: {},
         topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        featured_category: FeaturedCategory.ACM_CHI_2026,
       },
       {
         image: '/img/papers/trajgram.avif',
@@ -102,6 +104,7 @@ export default [
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
         links: {},
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
+        featured_category: FeaturedCategory.IEEE_TVCG_2026,
       },
       {
         image: '/img/papers/visualke.avif',
@@ -121,6 +124,7 @@ export default [
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
         links: {},
         topics: [PaperTopic.HumanLLM],
+        featured_category: FeaturedCategory.IEEE_TVCG_2026,
       },
     ],
   },

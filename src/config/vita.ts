@@ -126,7 +126,7 @@ const vita: Record<
       {
         when: 'Session Chairs',
         descriptions: [
-          'AI & Visual Analytics, <a href="https://pacificvis.github.io/pvis2024/" target="_blank">IEEE PacificVis 2024</a>',
+          'AI & Visual Analytics, <a href="https://pacificvis.github.io/pvis2024/" target="_blank">PacificVis 2024</a>',
           'GeoVis session, <a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
           'Application I session, <a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
         ],
@@ -136,19 +136,9 @@ const vita: Record<
         descriptions: [
           '<a href="https://ieeevis.org/year/2025/welcome" target="_blank">IEEE VIS 2023-2025</a>',
           '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024</a>',
-        ],
-      },
-      {
-        when: 'Reviewers',
-        descriptions: [
-          '<a href="https://ieeevis.org" target="_blank">IEEE VIS</a>',
-          '<a href="https://dl.acm.org/conference/chi" target="_blank">ACM Conference on Human Factors in Computing Systems (CHI)</a>',
-          '<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</a>',
-          '<a href="https://www.computer.org/csdl/magazine/cg" target="_blank">IEEE Computer Graphics and Applications (CG&A)</a>',
-          '<a href="https://www.springer.com/journal/12650" target="_blank">Journal of Visualization</a>',
-          '<a href="https://chinavis.org/" target="_blank">ChinaVis</a>',
-          '<a href="https://www.sciencedirect.com/journal/visual-informatics" target="_blank">Visual Informatics</a>',
-          '<a href="https://www.cgs-network.org/cgi24/" target="_blank">Computer Graphics International (CGI)</a>',
+          'Computer Graphics International 2023-2026',
+          'ICHEC 2025',
+          'CCF CAD&CG 2026',
         ],
       },
     ],
@@ -267,19 +257,6 @@ const vita: Record<
         descriptions: [
           '<a href="https://ieeevis.org/year/2025/welcome" target="_blank">IEEE VIS 2023-2025</a>',
           '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024</a>',
-        ],
-      },
-      {
-        when: '审稿人',
-        descriptions: [
-          '<a href="https://ieeevis.org" target="_blank">IEEE VIS</a>',
-          '<a href="https://dl.acm.org/conference/chi" target="_blank">ACM Conference on Human Factors in Computing Systems (CHI)</a>',
-          '<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</a>',
-          '<a href="https://www.computer.org/csdl/magazine/cg" target="_blank">IEEE Computer Graphics and Applications (CG&A)</a>',
-          '<a href="https://www.springer.com/journal/12650" target="_blank">Journal of Visualization</a>',
-          '<a href="https://chinavis.org/" target="_blank">ChinaVis</a>',
-          '<a href="https://www.sciencedirect.com/journal/visual-informatics" target="_blank">Visual Informatics</a>',
-          '<a href="https://www.cgs-network.org/cgi24/" target="_blank">Computer Graphics International (CGI)</a>',
         ],
       },
     ],
