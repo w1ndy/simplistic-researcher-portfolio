@@ -7,4 +7,5 @@ export interface Paper {
   links: Record<string, string>
   featured_category?: string
   topics?: string[]
+  abstract?: string
 }
