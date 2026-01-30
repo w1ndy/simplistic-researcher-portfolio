@@ -1,11 +1,11 @@
 import { Paper } from '../types/paper'
 
 export enum PaperTopic {
-  GeospatialVisualAnalysis = 'Geospatial visual analysis',
-  TimeSeriesVisualAnalysis = 'Time series visual analysis',
-  DataWrangling = 'Data wrangling',
-  HumanLLM = 'Human-LLM interaction',
-  VisualizationAuthoring = 'Visualization authoring',
+  DataWrangling = 'data wrangling',
+  GeospatialVisualAnalysis = 'geospatial vis',
+  TimeSeriesVisualAnalysis = 'temporal vis',
+  HumanLLM = 'human-llm',
+  VisualizationAuthoring = 'vis authoring',
 }
 
 export const Filters: Record<

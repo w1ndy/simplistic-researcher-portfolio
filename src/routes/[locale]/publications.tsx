@@ -7,7 +7,7 @@ import { PaperEntry } from '~/components/PaperEntry'
 
 import { useLocale, useTranslator } from '~/config/locale'
 import PublicationEntries from '~/config/publications'
-import { Filters } from '~/config/filters'
+import { Filters, PaperTopic } from '~/config/filters'
 
 const Fa = clientOnly(() => import('solid-fa'))
 
@@ -52,38 +52,97 @@ export default function Publications() {
   return (
     <div class="overflow-y-scroll">
       <div class="max-w-5xl pr-3 pb-4">
-        <div class="flex flex-row pb-2">
-          <div class="font-bold flex-0">
-            <Fa
-              icon={faMagnifyingGlass}
-              class="inline-block scale-75"
-            ></Fa>{' '}
-            {t('filter_by')}
-          </div>
-          <div class="flex-1">
-            <For each={Object.entries(Filters)}>
-              {([key, { name }]) => (
+        <div class="flex flex-col pb-2 gap-1">
+          <div class="flex flex-row">
+            <div class="font-bold flex-0 w-24">
+              <Fa
+                icon={faMagnifyingGlass}
+                class="inline-block scale-75"
+              ></Fa>{' '}
+              {t('filter_by')}
+            </div>
+            <div class="flex-1">
+              <span class="font-semibold text-gray-600">Authorship:</span>
+              <span
+                class="ml-2 cursor-pointer select-none whitespace-nowrap"
+                classList={{
+                  'text-teal-700': filterActive['authorship'],
+                  'text-gray-400': !filterActive['authorship'],
+                }}
+                onClick={() => setFilterActive('authorship', !filterActive['authorship'])}
+              >
+                [
                 <span
-                  class="ml-2 cursor-pointer select-none whitespace-nowrap"
                   classList={{
-                    'text-teal-700': filterActive[key],
-                    'text-gray-400': !filterActive[key],
+                    'text-teal-700': filterActive['authorship'],
+                    'text-black': !filterActive['authorship'],
                   }}
-                  onClick={() => setFilterActive(key, !filterActive[key])}
                 >
-                  [
+                  {Filters['authorship'].name[l()]}
+                </span>{' '}
+                ({filterCounts()['authorship']})]
+              </span>
+            </div>
+          </div>
+          
+          <div class="flex flex-row">
+            <div class="flex-0 w-24"></div>
+            <div class="flex-1">
+              <span class="font-semibold text-gray-600">Venues:</span>
+              <For each={['vis', 'tvcg', 'chi', 'uist', 'kdd']}>
+                {(key) => (
                   <span
+                    class="ml-2 cursor-pointer select-none whitespace-nowrap"
                     classList={{
                       'text-teal-700': filterActive[key],
-                      'text-black': !filterActive[key],
+                      'text-gray-400': !filterActive[key],
                     }}
+                    onClick={() => setFilterActive(key, !filterActive[key])}
                   >
-                    {name[l()]}
-                  </span>{' '}
-                  ({filterCounts()[key]})]
-                </span>
-              )}
-            </For>
+                    [
+                    <span
+                      classList={{
+                        'text-teal-700': filterActive[key],
+                        'text-black': !filterActive[key],
+                      }}
+                    >
+                      {Filters[key].name[l()]}
+                    </span>{' '}
+                    ({filterCounts()[key]})]
+                  </span>
+                )}
+              </For>
+            </div>
+          </div>
+          
+          <div class="flex flex-row">
+            <div class="flex-0 w-24"></div>
+            <div class="flex-1">
+              <span class="font-semibold text-gray-600">Topics:</span>
+              <For each={Object.values(PaperTopic)}>
+                {(topic) => (
+                  <span
+                    class="ml-2 cursor-pointer select-none whitespace-nowrap"
+                    classList={{
+                      'text-teal-700': filterActive[topic],
+                      'text-gray-400': !filterActive[topic],
+                    }}
+                    onClick={() => setFilterActive(topic, !filterActive[topic])}
+                  >
+                    [
+                    <span
+                      classList={{
+                        'text-teal-700': filterActive[topic],
+                        'text-black': !filterActive[topic],
+                      }}
+                    >
+                      {Filters[topic].name[l()]}
+                    </span>{' '}
+                    ({filterCounts()[topic]})]
+                  </span>
+                )}
+              </For>
+            </div>
           </div>
         </div>
         <div class="italic mb-6  text-gray-500">{t('corresponding')}</div>

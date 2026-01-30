@@ -135,6 +135,21 @@ export function PaperEntry(props: { paper: Paper }) {
           <div class="text-gray-700 leading-relaxed">
             <strong>Abstract:</strong> {props.paper.abstract}
           </div>
+          <Show when={props.paper.topics && props.paper.topics.length > 0}>
+            <div class="mt-3 text-gray-600">
+              <strong>Topics:</strong>{' '}
+              <For each={props.paper.topics}>
+                {(topic, index) => (
+                  <>
+                    <span class="inline-block bg-gray-100 px-2 py-1 rounded mr-1">
+                      {topic}
+                    </span>
+                    {index() < props.paper.topics!.length - 1 && ' '}
+                  </>
+                )}
+              </For>
+            </div>
+          </Show>
         </div>
       </Show>
     </div>
