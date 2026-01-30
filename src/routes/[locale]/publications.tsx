@@ -53,11 +53,19 @@ export default function Publications() {
     <div class="overflow-y-scroll">
       <div class="max-w-5xl pr-3 pb-4">
         <div class="flex flex-col pb-2">
-          <div class="flex flex-col sm:flex-row sm:items-center">
+          <div class="font-bold mb-2">
+            <Fa
+              icon={faMagnifyingGlass}
+              class="inline-block scale-75"
+            ></Fa>{' '}
+            {t('filter_by')}
+          </div>
+
+          <div class="flex flex-col sm:flex-row sm:items-start">
             <div class="font-semibold text-gray-600 mb-1 sm:mb-0 sm:w-24 flex-shrink-0">Authorship:</div>
             <div class="flex flex-wrap">
               <span
-                class="mr-2 mb-1 cursor-pointer select-none whitespace-nowrap"
+                class="mr-2 cursor-pointer select-none whitespace-nowrap"
                 classList={{
                   'text-teal-700': filterActive['authorship'],
                   'text-gray-400': !filterActive['authorship'],
@@ -78,13 +86,13 @@ export default function Publications() {
             </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row sm:items-center">
+          <div class="flex flex-col sm:flex-row sm:items-start">
             <div class="font-semibold text-gray-600 mb-1 sm:mb-0 sm:w-24 flex-shrink-0">Venues:</div>
             <div class="flex flex-wrap">
               <For each={['vis', 'tvcg', 'chi', 'uist', 'kdd']}>
                 {(key) => (
                   <span
-                    class="mr-2 mb-1 cursor-pointer select-none whitespace-nowrap"
+                    class="mr-2 cursor-pointer select-none whitespace-nowrap"
                     classList={{
                       'text-teal-700': filterActive[key],
                       'text-gray-400': !filterActive[key],
@@ -107,13 +115,13 @@ export default function Publications() {
             </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row sm:items-center">
+          <div class="flex flex-col sm:flex-row sm:items-start">
             <div class="font-semibold text-gray-600 mb-1 sm:mb-0 sm:w-24 flex-shrink-0">Topics:</div>
             <div class="flex flex-wrap">
               <For each={Object.values(PaperTopic)}>
                 {(topic) => (
                   <span
-                    class="mr-2 mb-1 cursor-pointer select-none whitespace-nowrap"
+                    class="mr-2 cursor-pointer select-none whitespace-nowrap"
                     classList={{
                       'text-teal-700': filterActive[topic],
                       'text-gray-400': !filterActive[topic],
