@@ -62,7 +62,7 @@ export default [
           'Di Weng',
           'Yingcai Wu',
         ],
-        corresponding_authors: ['Di Weng'],
+        corresponding_authors: ['Dazhen Deng', 'Di Weng'],
         title:
           'A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component',
         venue: 'PacificVis 2026',

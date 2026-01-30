@@ -23,7 +23,7 @@ export default function App() {
         crossorigin=""
       />
       <Link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
         rel="stylesheet"
       />
       <Title>{PageTitle}</Title>
