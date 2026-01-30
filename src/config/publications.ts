@@ -110,7 +110,10 @@ export default [
           'RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
-        links: {},
+        links: {
+          pdf: '/pdf/rcinvestigator.pdf',
+          appendix: '/pdf/rcinvestigator_appendix.pdf',
+        },
         topics: [PaperTopic.TimeSeriesVisualAnalysis],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:
@@ -132,7 +135,10 @@ export default [
           'KEditVis: A Visual Analytics System for Knowledge Editing of Large Language Models',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
-        links: {},
+        links: {
+          pdf: '/pdf/visualke.pdf',
+          appendix: '/pdf/visualke_appendix.pdf',
+        },
         topics: [PaperTopic.HumanLLM],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:

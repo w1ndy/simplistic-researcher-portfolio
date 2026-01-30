@@ -53,14 +53,6 @@ export default function Publications() {
     <div class="overflow-y-scroll">
       <div class="max-w-5xl pr-3 pb-4">
         <div class="flex flex-col pb-2">
-          <div class="font-bold mb-2">
-            <Fa
-              icon={faMagnifyingGlass}
-              class="inline-block scale-75"
-            ></Fa>{' '}
-            {t('filter_by')}
-          </div>
-
           <div class="flex flex-col sm:flex-row sm:items-start">
             <div class="font-semibold text-gray-600 mb-1 sm:mb-0 sm:w-24 flex-shrink-0">Authorship:</div>
             <div class="flex flex-wrap">
