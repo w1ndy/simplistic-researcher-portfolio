@@ -18,6 +18,14 @@ export default function InfoSidebar(props: { class: string }) {
           'border-right': '1px solid var(--color-border)',
         }}
       >
+        <div class="flex-none md:hidden">
+          <img
+            src="/img/me.avif"
+            class="w-36 h-36 object-cover rounded-full mx-auto my-6"
+            alt={`Photo of ${info()?.name}`}
+          ></img>
+        </div>
+
         <div class="text-base font-bold">{info()?.name}</div>
 
         <For each={info()?.affiliations}>
