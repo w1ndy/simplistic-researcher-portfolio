@@ -32,7 +32,7 @@ const info: Record<Locale, Info> = {
     ],
     address: [
       '301, Building 6',
-      'Zhejiang University',
+      'Zhejiang University (Ningbo Campus)',
       '5 Xuefu Rd., Ningbo',
       'Zhejiang Province, P.R.China',
     ],
@@ -67,7 +67,7 @@ const info: Record<Locale, Info> = {
     affiliations: [
       [
         `<a href="http://www.cst.zju.edu.cn" target="_blank">浙江大学软件学院</a>`,
-        '“百人计划”研究员',
+        '百人计划研究员',
       ],
     ],
     address: [

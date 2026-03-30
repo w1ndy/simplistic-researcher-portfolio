@@ -3,8 +3,7 @@
     "publications": "论文",
     "students": "学生",
     "vita": "简历",
-    "news": "最新动态",
-    "featured_publications": "精选论文",
+"featured_publications": "精选论文",
     "see_all": "全部",
     "corresponding": "*：通讯论文以星号标记。",
     "filter_by": "过滤:",
@@ -26,5 +25,8 @@
     "master_students": "硕士研究生",
     "undergraduate_students": "本科生",
     "current": "当前",
-    "past": "已离组"
+    "past": "已离组",
+    "show_all": "全部显示",
+    "work_with_me": "招生信息",
+    "work_with_me_body": "课题组常年招收<b>博士研究生和硕士研究生</b>，研究方向包括<b>可视化、人机交互、大语言模型</b>等。如果你对构建交互式系统、探索数据理解的新方式、或融合 AI 与人类创造力感兴趣，欢迎联系我。请通过邮件发送你的简历及研究兴趣简述，并请至少阅读我的一篇论文并在邮件中提及，以便我更好地了解你的兴趣方向。"
 }

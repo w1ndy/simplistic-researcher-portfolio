@@ -1,5 +1,3 @@
-import { Suspense } from 'solid-js'
-
 import { Student } from '~/types/student'
 
 import { homepage } from '~/components/PaperEntry'
@@ -19,7 +17,7 @@ function generateEntries(when?: string, students?: Student[]) {
         (entry) =>
           `<b>${homepage(entry.name)(entry.name)}</b>${entry.coadvised ? '*' : ''
           } ${entry.description !== undefined
-            ? `&mdash; ${entry.description}`
+            ? `&nbsp;&nbsp;${entry.description}`
             : ''
           }`
       ),
@@ -33,7 +31,10 @@ export default function Students() {
   return (
     <>
       <div
-        class="mb-8 text-gray-500 italic"
+        class="mb-8 text-right italic"
+        style={{
+          color: 'var(--color-text-secondary)',
+        }}
         innerHTML={students()?.notes}
       ></div>
       <Section
@@ -44,17 +45,6 @@ export default function Students() {
         name={t('master_students')}
         entries={Object.entries(students()?.master).map(([key, stu]) => generateEntries(key, stu)).flat()}
       ></Section>
-      {/* <Section
-        name={t('undergraduate_students')}
-        entries={generateEntries(
-          t('current'),
-          students()?.undergraduates.current
-        ).concat(
-          students()?.undergraduates.past
-            ? generateEntries(t('past'), students()?.undergraduates.past)
-            : []
-        )}
-      ></Section> */}
     </>
   )
 }

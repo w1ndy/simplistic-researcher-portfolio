@@ -23,7 +23,9 @@ export default [
           'TSEditor: Interactive Time Series Editing for Privacy Preservation',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
-        links: {},
+        links: {
+          pdf: '/pdf/tseditor.pdf',
+        },
         topics: [PaperTopic.DataWrangling, PaperTopic.TimeSeriesVisualAnalysis],
         featured_category: FeaturedCategory.ACM_CHI_2026,
         abstract:
@@ -46,19 +48,23 @@ export default [
           'Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
-        links: {},
+        links: {
+          preprint: 'https://arxiv.org/abs/2603.21363',
+          pdf: '/pdf/cerebra.pdf',
+          code: 'https://github.com/zjuidg/CHI26-Cerebra',
+        },
         topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
         featured_category: FeaturedCategory.ACM_CHI_2026,
         abstract:
-          "LLM-driven tools have significantly lowered barriers to writing SQL queries. However, user instructions are often underspecified, assuming the model understands implicit knowledge, such as dataset schemas, domain conventions, and task-specific requirements, that isn't explicitly provided. This results in frequently erroneous scripts that require users to repeatedly clarify their intent. Additionally, users struggle to validate generated scripts because they cannot verify whether the model correctly applied implicit knowledge. We present Cerebra, an interactive NL-to-SQL tool that aligns implicit knowledge between users and LLMs during SQL authoring. Cerebra automatically retrieves implicit knowledge from historical SQL scripts based on user instructions, presents this knowledge in an interactive tree view for code review, and supports iterative refinement to improve generated scripts. To evaluate the effectiveness and usability of Cerebra, we conducted a user study with 16 participants, demonstrating its improved support for customized SQL authoring. The source code of Cerebra is available at https://github.com/zjuidg/CHI26-Cerebra.",
+          'LLM-driven tools have significantly lowered barriers to writing SQL queries. However, user instructions are often underspecified, assuming the model understands implicit knowledge, such as dataset schemas, domain conventions, and task-specific requirements, that isn\'t explicitly provided. This results in frequently erroneous scripts that require users to repeatedly clarify their intent. Additionally, users struggle to validate generated scripts because they cannot verify whether the model correctly applied implicit knowledge. We present <i>Cerebra</i>, an interactive NL-to-SQL tool that aligns implicit knowledge between users and LLMs during SQL authoring. <i>Cerebra</i> automatically retrieves implicit knowledge from historical SQL scripts based on user instructions, presents this knowledge in an interactive tree view for code review, and supports iterative refinement to improve generated scripts. To evaluate the effectiveness and usability of <i>Cerebra</i>, we conducted a user study with 16 participants, demonstrating its improved support for customized SQL authoring. The source code of <i>Cerebra</i> is available at <a href="https://github.com/zjuidg/CHI26-Cerebra">https://github.com/zjuidg/CHI26-Cerebra</a>.',
       },
       {
         image: '/img/papers/trajgram.avif',
         authors: [
           'Shifu Chen',
           'Xiaodan Miao',
-          'Zikun Deng',
           'Dazhen Deng',
+          'Zikun Deng',
           'Di Weng',
           'Yingcai Wu',
         ],
@@ -66,13 +72,15 @@ export default [
         title:
           'A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component',
         venue: 'PacificVis 2026',
-        links: {},
+        links: {
+          pdf: '/pdf/trajgram.pdf',
+        },
         topics: [
           PaperTopic.GeospatialVisualAnalysis,
           PaperTopic.VisualizationAuthoring,
         ],
         abstract:
-          'Trajectory visualizations play a crucial role in urban computing, supporting tasks from analyzing road networks and vehicle movements to informing transport policy. However, creating such visualizations  face usability and flexibility limitations in trajectory visualization scenarios: limited usability due to insufficient trajectory-specific specialization, and limited flexibility due to tightly-coupled interactions that are not treated as first-class components. To address these challenges, we first conduct a systematic review of prior work and define a comprehensive design space for interactive trajectory visualization across three key dimensions: transformation, display, and interaction. We then present TrajGram, a declarative grammar built upon this design space that streamlines the creation of diverse interactive trajectory visualizations. TrajGram enables rapid prototyping with rich interactions grounded in real-world traffic analysis needs, while remaining extensible for complex scenarios. We demonstrate the effectiveness, usability, and learning curve of TrajGram through two usage scenarios and a user study.',
+          'Trajectory visualizations play a crucial role in urban computing, supporting tasks from analyzing road networks and vehicle movements to informing transport policy. However, creating such visualizations faces usability and flexibility limitations in trajectory visualization scenarios: limited usability due to insufficient trajectory-specific specialization, and limited flexibility due to tightly-coupled interactions that are not treated as first-class components. To address these challenges, we first conduct a systematic review of prior work and define a comprehensive design space for interactive trajectory visualization across three key dimensions: transformation, display, and interaction. We then present TrajGram, a declarative grammar built upon this design space that streamlines the creation of diverse interactive trajectory visualizations. TrajGram enables rapid prototyping with rich interactions grounded in real-world traffic analysis needs, while remaining extensible for complex scenarios. We demonstrate the effectiveness, usability, and learning curve of TrajGram through two usage scenarios and a user study.',
       },
       {
         image: '/img/papers/trajcurer.avif',
@@ -86,7 +94,9 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'TrajectoryCurer: Visual Analysis of Trajectory Data Quality',
         venue: 'PacificVis 2026',
-        links: {},
+        links: {
+          pdf: '/pdf/trajcurer.pdf',
+        },
         topics: [PaperTopic.GeospatialVisualAnalysis, PaperTopic.DataWrangling],
         abstract:
           'Trajectory data record spatiotemporal information and related attributes of moving objects. High-quality trajectory data can accurately reflect behavior patterns, providing a reliable foundation for traffic management, logistics optimization, and smart city planning. However, existing research on trajectory data quality management remains limited, lacking interactive tools for addressing quality issues and making it difficult for users to explore and resolve problems in trajectory datasets. To address this gap, we present TrajectoryCurer, an interactive visual analytics system designed for trajectory data quality management. Through expert interviews and synthesis of preprocessing operations from 30 relevant articles on trajectory visualization and management, we construct a taxonomy of 19 trajectory data quality issues across six dimensions. Based on this taxonomy, we design a multilevel visualization approach encompassing Trajectory View, Point View, Map View, and Data View, enabling users to observe and address quality issues across multiple dimensions through an integrated interface. We demonstrate the effectiveness and usability of TrajectoryCurer through two usage scenarios and expert evaluations.',
@@ -144,11 +154,6 @@ export default [
         abstract:
           'Large Language Models (LLMs) demonstrate exceptional capabilities in factual question answering, yet they sometimes provide incorrect responses. To address this issue, knowledge editing techniques have emerged as effective methods for correcting factual information in LLMs. However, typical knowledge editing workflows struggle with identifying the optimal set of model layers for editing and rely on summary indicators that provide insufficient guidance. This lack of transparency hinders effective comparison and identification of optimal editing strategies. In this paper, we present KEditVis, a novel visual analytics system designed to assist users in gaining a deeper understanding of knowledge editing through interactive visualizations, improving editing outcomes, and discovering valuable insights for the future development of knowledge editing algorithms. With KEditVis, users can select appropriate layers as the editing target, explore the reasons behind ineffective edits, and perform more targeted and effective edits. Our evaluation, including usage scenarios, expert interviews, and a user study, validates the effectiveness and usability of the system.',
       },
-    ],
-  },
-  {
-    year: '2025',
-    papers: [
       {
         image: '/img/papers/visualtsc.avif',
         authors: ['Yuchen Yang', 'Jie Yu', 'Zihan Xu', 'Di Weng'],
@@ -156,7 +161,7 @@ export default [
         title:
           'A Visual Analytics Approach to Traffic Signal Control Optimization for Multiple Road Intersections',
         venue:
-          'Journal of Computer-Aided Design & Computer Graphics (Early Access), 2025',
+          'Journal of Computer-Aided Design & Computer Graphics (Early Access), 2026',
         links: {
           paper: 'https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2025-00260',
           'cn pdf': '/pdf/visualtsc.pdf',
@@ -165,6 +170,11 @@ export default [
         abstract:
           'Traffic lights have been widely used to alleviate traffic congestion and improve traffic efficiency. However, due to the complex variability of traffic conditions and interactions between intersections, formulating ef-fective traffic signal control strategies for multiple intersections is highly challenging. Aiming at issues in existing optimization methods which are adaptive and fixed-time, this paper proposes a visual analytics method for multi-intersection traffic signal control optimization. Through collaborative interviews with experts, the paper extracts the problems and demands related to identifying and optimizing inefficient traf-fic signal control strategies, and accordingly constructs a novel visual analytics system—VisualTSC. The implemented trajectory mining process, which integrates the extraction of inefficient intersections and generation of optimization strategies, assists experts to understand the traffic efficiency of intersections and provides feasible alternative control strategies via simulation combined with the visual analytics sys-tem. VisualTSC employs a multi-level contour map to visualize intersection relationships, and offers tabu-lar and trajectory views to support optimal strategies decision-making. The effectiveness of VisualTSC is verified via two application scenarios using real-world datasets and follow-up expert interviews, where experts reproduced the cases and provided positive qualitative evaluations on its performance.',
       },
+    ],
+  },
+  {
+    year: '2025',
+    papers: [
       {
         image: '/img/papers/chronodeck.avif',
         authors: [

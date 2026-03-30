@@ -11,52 +11,54 @@ export enum PaperTopic {
 export const Filters: Record<
   string,
   { name: { en: string; zh: string }; matcher: (paper: Paper) => boolean }
-> = {
-  authorship: {
-    name: {
-      en: 'First/corresponding-authored',
-      zh: '第一/通讯作者',
+>[] = [
+  {
+    vis: {
+      name: {
+        en: 'IEEE VIS',
+        zh: 'IEEE VIS',
+      },
+      matcher: (paper: Paper) => paper.venue.includes('IEEE VIS'),
     },
-    matcher: (paper: Paper) =>
-      paper.corresponding_authors?.includes('Di Weng') ||
-      paper.authors[0] == 'Di Weng',
-  },
-  vis: {
-    name: {
-      en: 'IEEE VIS',
-      zh: 'IEEE VIS',
+    tvcg: {
+      name: {
+        en: 'IEEE TVCG',
+        zh: 'IEEE TVCG',
+      },
+      matcher: (paper: Paper) => paper.venue.includes('TVCG'),
     },
-    matcher: (paper: Paper) => paper.venue.includes('IEEE VIS'),
-  },
-  tvcg: {
-    name: {
-      en: 'IEEE TVCG',
-      zh: 'IEEE TVCG',
+    chi: {
+      name: {
+        en: 'CHI',
+        zh: 'CHI',
+      },
+      matcher: (paper: Paper) => paper.venue.includes('CHI'),
     },
-    matcher: (paper: Paper) => paper.venue.includes('TVCG'),
-  },
-  chi: {
-    name: {
-      en: 'CHI',
-      zh: 'CHI',
+    uist: {
+      name: {
+        en: 'UIST',
+        zh: 'UIST',
+      },
+      matcher: (paper: Paper) => paper.venue.includes('UIST'),
     },
-    matcher: (paper: Paper) => paper.venue.includes('CHI'),
-  },
-  uist: {
-    name: {
-      en: 'UIST',
-      zh: 'UIST',
+    kdd: {
+      name: {
+        en: 'KDD',
+        zh: 'KDD',
+      },
+      matcher: (paper: Paper) => paper.venue.includes('KDD'),
     },
-    matcher: (paper: Paper) => paper.venue.includes('UIST'),
-  },
-  kdd: {
-    name: {
-      en: 'KDD',
-      zh: 'KDD',
+    authorship: {
+      name: {
+        en: 'First/corresponding-authored',
+        zh: '第一/通讯作者',
+      },
+      matcher: (paper: Paper) =>
+        paper.corresponding_authors?.includes('Di Weng') ||
+        paper.authors[0] == 'Di Weng',
     },
-    matcher: (paper: Paper) => paper.venue.includes('KDD'),
   },
-  ...Object.fromEntries(
+  Object.fromEntries(
     Object.values(PaperTopic).map((topic) => [
       topic,
       {
@@ -64,8 +66,8 @@ export const Filters: Record<
           en: topic,
           zh: topic,
         },
-        matcher: (paper: Paper) => paper.topics?.includes(topic),
+        matcher: (paper: Paper) => paper.topics?.includes(topic) ?? false,
       },
     ]),
   ),
-}
+]

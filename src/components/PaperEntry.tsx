@@ -64,13 +64,14 @@ function corresponding(
 export function PaperEntry(props: { paper: Paper }) {
   const t = useTranslator()
   const [showAbstract, setShowAbstract] = createSignal(false)
-  
+
   return (
-    <div class="flex flex-col">
+    <div>
       <div class="flex flex-col gap-3 sm:flex-row">
         <div class="flex-0">
           <img
-            class="border border-gray-300 mt-1 w-24 h-18 sm:w-40 sm:h-28 object-cover"
+            class="mt-0.5 w-24 h-18 sm:w-40 sm:h-28 object-cover rounded"
+            style={{ border: '1px solid var(--color-border)' }}
             src={props.paper.image}
             loading="lazy"
             alt={`Teaser image of paper "${props.paper.title}"`}
@@ -91,21 +92,29 @@ export function PaperEntry(props: { paper: Paper }) {
                   )
                 )
                 .join(', ')}
-            />
-            . <span class="italic">{props.paper.venue}</span>.
+            />{'. '}
+            <span>{props.paper.venue}</span>.
           </div>
-          <div>
+          <div class="mt-1.5 flex flex-wrap gap-1.5">
             <Show when={props.paper.abstract}>
-              <a
+              <span
                 onClick={() => setShowAbstract(!showAbstract())}
-                class="mr-3 uppercase tracking-wider text-sm underline cursor-pointer"
+                class="inline-flex items-center gap-1 px-2 py-0.5 rounded cursor-pointer select-none text-xs uppercase tracking-wider transition-colors no-underline"
+                style={{
+                  'background-color': showAbstract()
+                    ? 'var(--color-active-bg)'
+                    : 'var(--color-hover-bg)',
+                  color: showAbstract()
+                    ? 'var(--color-text)'
+                    : 'var(--color-text-secondary)',
+                }}
               >
                 <Fa
                   icon={faAlignLeft}
-                  class="inline-block mr-1"
+                  class="inline-block"
                 ></Fa>
-                ABSTRACT
-              </a>
+                Abstract
+              </span>
             </Show>
             <Show when={props.paper.links && Object.keys(props.paper.links).length > 0}>
               <For each={Object.entries(props.paper.links)}>
@@ -113,12 +122,16 @@ export function PaperEntry(props: { paper: Paper }) {
                   <a
                     href={link}
                     target="_blank"
-                    class="mr-3 uppercase tracking-wider text-sm underline"
+                    class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs uppercase tracking-wider transition-colors no-underline"
+                    style={{
+                      'background-color': 'var(--color-hover-bg)',
+                      color: 'var(--color-text-secondary)',
+                    }}
                   >
                     <Show when={IconMapping[name]}>
                       <Fa
                         icon={IconMapping[name]}
-                        class="inline-block mr-1"
+                        class="inline-block"
                       ></Fa>
                     </Show>
                     {t(name as any)}
@@ -129,11 +142,11 @@ export function PaperEntry(props: { paper: Paper }) {
           </div>
         </div>
       </div>
-      
+
       <Show when={showAbstract() && props.paper.abstract}>
         <div class="mt-4 pl-3 border-l-2 border-gray-200">
           <div class="text-gray-700 leading-relaxed">
-            <strong>Abstract:</strong> {props.paper.abstract}
+            <strong>Abstract:</strong> <span innerHTML={props.paper.abstract}></span>
           </div>
           <Show when={props.paper.topics && props.paper.topics.length > 0}>
             <div class="mt-3 text-gray-600">
@@ -141,7 +154,7 @@ export function PaperEntry(props: { paper: Paper }) {
               <For each={props.paper.topics}>
                 {(topic, index) => (
                   <>
-                    <span class="inline-block bg-gray-100 px-2 py-1 rounded mr-1">
+                    <span class="inline-block bg-gray-100 px-2 py-1 rounded mr-1 text-sm">
                       {topic}
                     </span>
                     {index() < props.paper.topics!.length - 1 && ' '}

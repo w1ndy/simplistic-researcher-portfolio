@@ -7,7 +7,7 @@ export default function Vita() {
   const vita = useVita()
   const t = useTranslator()
   return (
-    <div class="overflow-y-scroll">
+    <div>
       <Section
         name={t('education')}
         entries={vita()?.education}

@@ -4,11 +4,12 @@ import { A } from '@solidjs/router'
 import Publications from '~/config/publications'
 import { PaperEntry } from '~/components/PaperEntry'
 import { FeaturedCategories } from '~/config/featured'
-import { useTranslator } from '~/config/locale'
+import { useLocale, useTranslator } from '~/config/locale'
 import { Paper } from '~/types/paper'
 
 export default function FeaturedPublications() {
   const t = useTranslator()
+  const locale = useLocale()
 
   const groups = createMemo(() => {
     const categories: Record<string, Paper[]> = {}
@@ -26,24 +27,35 @@ export default function FeaturedPublications() {
   })
 
   return (
-    <div class="py-8">
-      <div class="mb-4">
-        <span class="uppercase tracking-wider font-bold">
+    <div class="mt-10">
+      <div
+        class="flex items-center justify-between pb-2 mb-6"
+        style={{ 'border-bottom': '1px solid var(--color-border)' }}
+      >
+        <span
+          class="font-bold text-sm uppercase tracking-wider"
+          style={{ color: 'var(--color-text-secondary)' }}
+        >
           {t('featured_publications')}
         </span>
         <A
-          href="/publications"
-          class="ml-2"
+          href={`/${locale()}/publications`}
+          style={{ color: 'var(--color-text-secondary)' }}
         >
-          [{t('see_all')}]
+          {t('see_all')} &rarr;
         </A>
       </div>
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-10">
         <For each={FeaturedCategories}>
           {(f) => (
             <div>
-              <div class="text-gray-500 font-bold mb-4">{f}</div>
-              <div class="flex flex-col gap-4">
+              <div
+                class="text-sm font-bold mb-4"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                {f}
+              </div>
+              <div class="flex flex-col gap-5">
                 <For each={groups()[f]}>
                   {(paper) => <PaperEntry paper={paper} />}
                 </For>

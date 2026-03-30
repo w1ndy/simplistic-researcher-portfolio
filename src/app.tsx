@@ -23,7 +23,7 @@ export default function App() {
         crossorigin=""
       />
       <Link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet"
       />
       <Title>{PageTitle}</Title>
@@ -34,12 +34,14 @@ export default function App() {
       <Router
         root={(props) => (
           <>
-            <div class="md:flex leading-6">
+            <div class="md:flex min-h-screen">
               <InfoSidebar class="flex-none" />
-              <div class="px-10 md:px-0 md:ml-2 md:pr-10 md:h-screen flex-grow flex flex-col">
-                <Nav class="flex-none" />
-                <Suspense>{props.children}</Suspense>
-              </div>
+              <main class="flex-1 min-w-0 md:h-screen md:overflow-y-auto">
+                <div class="max-w-6xl mx-auto px-8 md:px-16 py-6 md:py-10">
+                  <Nav />
+                  <Suspense>{props.children}</Suspense>
+                </div>
+              </main>
             </div>
           </>
         )}

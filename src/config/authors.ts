@@ -59,4 +59,5 @@ export default {
   'Haotian Li': 'https://haotian-li.com/',
   'Ke Xu': 'https://lukexuke.github.io/',
   'Yuan Tian': 'https://bebinca.github.io/home/',
+  'Dae Hyun Kim': 'https://dhkim16.github.io/',
 } as { [key: string]: string }

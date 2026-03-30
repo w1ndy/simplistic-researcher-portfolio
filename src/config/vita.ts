@@ -85,12 +85,21 @@ const vita: Record<
     ],
     teaching: [
       {
-        when: '',
+        when: 'Graduate',
         descriptions: [
-          '<b>Data Visualization Techniques</b> (PG), School of Software Tecnology, Zhejiang University',
-          '<b>Large Language Models: Principles and Techniques</b> (PG), School of Software Tecnology, Zhejiang University',
-          '<b>Introduction to Data Visualization</b> (UG, co-teach), College of Computer Science, Zhejiang University',
-          '<b>Cross-Media Data Visualization</b> (UG, co-teach), College of Computer Science, Zhejiang University',
+          '<b>Data Visualization Techniques</b> (2024 - Current)',
+          'School of Software Tecnology, Zhejiang University',
+          '<b>Large Language Models: Principles and Techniques</b> (2025 - Current)',
+          'School of Software Tecnology, Zhejiang University',
+        ],
+      },
+      {
+        when: 'Under&shy;graduate',
+        descriptions: [
+          '<b>Introduction to Data Visualization</b> (2024 - Current, co-teach)',
+          'College of Computer Science, Zhejiang University',
+          '<b>Cross-Media Data Visualization</b> (2024, co-teach)',
+          'College of Computer Science, Zhejiang University',
         ],
       },
     ],
@@ -124,11 +133,13 @@ const vita: Record<
         ],
       },
       {
-        when: 'Session Chairs',
+        when: 'Conferences',
         descriptions: [
-          'AI & Visual Analytics, <a href="https://pacificvis.github.io/pvis2024/" target="_blank">PacificVis 2024</a>',
-          'GeoVis session, <a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
-          'Application I session, <a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
+          'Web Chair, <a href="https://chinavis.org/2025/" target="_blank">ChinaVis 2025</a>',
+          'Web Chair, <a href="http://youth.csig.org.cn/CSIG2024/#/" target="_blank">CSIG Youth Scientist Conference 2024</a>',
+          'Session Chair (AI & Visual Analytics), <a href="https://pacificvis.github.io/pvis2024/" target="_blank">PacificVis 2024</a>',
+          'Session Chair (GeoVis), <a href="https://ieeevis.org/year/2023/welcome" target="_blank">IEEE VIS 2023</a>',
+          'Session Chair (Application I), <a href="https://chinavis.org/2023/" target="_blank">ChinaVis 2023</a>',
         ],
       },
       {
@@ -137,8 +148,8 @@ const vita: Record<
           '<a href="https://ieeevis.org/year/2025/welcome" target="_blank">IEEE VIS 2023-2025</a>',
           '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024</a>',
           'Computer Graphics International 2023-2026',
-          'ICHEC 2025',
           'CCF CAD&CG 2026',
+          'ICHEC 2025',
         ],
       },
     ],

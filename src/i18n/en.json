@@ -3,8 +3,7 @@
     "publications": "publications",
     "students": "students",
     "vita": "vita",
-    "news": "News",
-    "featured_publications": "Featured Publications",
+"featured_publications": "Featured Publications",
     "see_all": "see all",
     "corresponding": "*: corresponding-authored papers are marked with asterisk.",
     "filter_by": "filter by:",
@@ -26,5 +25,8 @@
     "master_students": "Master Students",
     "undergraduate_students": "Undergraduate Students",
     "current": "Current",
-    "past": "Past"
+    "past": "Past",
+    "show_all": "Show All",
+    "work_with_me": "Work with Me",
+    "work_with_me_body": "I'm actively looking for self-motivated <b>PhD and Master students</b> with interests in <b>Visualization, Human-Computer Interaction, and/or Large Language Models</b>. If you are passionate about building interactive systems, exploring novel ways to understand data, or bridging AI and human creativity, I'd love to hear from you. Feel free to reach out via email with your CV and a brief description of your research interests. Please also read at least one of my papers and mention it in your email so I can better understand your interests."
 }

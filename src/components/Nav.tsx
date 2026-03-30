@@ -1,55 +1,81 @@
-import { A, useCurrentMatches, useLocation, useParams } from '@solidjs/router'
+import { A, useLocation } from '@solidjs/router'
 import { Suspense } from 'solid-js'
 
 import { useLocale, useTranslator } from '~/config/locale'
 
-export default function Nav(props: { class: string }) {
+function NavLink(props: { href: string; children: any }) {
+  const location = useLocation()
+  const isActive = () => location.pathname.startsWith(props.href)
+  return (
+    <A
+      href={props.href}
+      class="px-2.5 py-1 rounded transition-colors no-underline"
+      style={{
+        'background-color': isActive()
+          ? 'var(--color-active-bg)'
+          : 'transparent',
+        color: isActive()
+          ? 'var(--color-text)'
+          : 'var(--color-text-secondary)',
+        'font-weight': isActive() ? '500' : '400',
+      }}
+    >
+      {props.children}
+    </A>
+  )
+}
+
+export default function Nav() {
   const location = useLocation()
   const locale = useLocale()
   const t = useTranslator()
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div
-        class={`max-w-5xl flex flex-col gap-4 sm:flex-row justify-between sm:mt-10 mb-6  ${props.class}`}
-      >
-        <div class={`space-x-4`}>
-          <A
-            activeClass="font-bold"
-            href={`/${locale()}/about`}
-          >
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center justify-between mb-8">
+        <div class="flex gap-0.5">
+          <NavLink href={`/${locale()}/about`}>
             {t('about')}
-          </A>
-          <A
-            activeClass="font-bold"
-            href={`/${locale()}/publications`}
-          >
+          </NavLink>
+          <NavLink href={`/${locale()}/publications`}>
             {t('publications')}
-          </A>
-          <A
-            activeClass="font-bold"
-            href={`/${locale()}/students`}
-          >
+          </NavLink>
+          <NavLink href={`/${locale()}/students`}>
             {t('students')}
-          </A>
-          <A
-            activeClass="font-bold"
-            href={`/${locale()}/vita`}
-          >
+          </NavLink>
+          <NavLink href={`/${locale()}/vita`}>
             {t('vita')}
-          </A>
+          </NavLink>
         </div>
-        <div class="flex flex-row gap-4">
+        <div class="flex gap-0.5">
           <A
-            activeClass="font-bold"
             href={location.pathname.replace('/en', '/zh')}
+            class="px-2 py-1 rounded transition-colors no-underline"
+            style={{
+              color: locale() === 'zh'
+                ? 'var(--color-text)'
+                : 'var(--color-text-secondary)',
+              'background-color': locale() === 'zh'
+                ? 'var(--color-active-bg)'
+                : 'transparent',
+              'font-weight': locale() === 'zh' ? '500' : '400',
+            }}
           >
-            [中文]
+            中文
           </A>
           <A
-            activeClass="font-bold"
             href={location.pathname.replace('/zh', '/en')}
+            class="px-2 py-1 rounded transition-colors no-underline"
+            style={{
+              color: locale() === 'en'
+                ? 'var(--color-text)'
+                : 'var(--color-text-secondary)',
+              'background-color': locale() === 'en'
+                ? 'var(--color-active-bg)'
+                : 'transparent',
+              'font-weight': locale() === 'en' ? '500' : '400',
+            }}
           >
-            [English]
+            EN
           </A>
         </div>
       </div>

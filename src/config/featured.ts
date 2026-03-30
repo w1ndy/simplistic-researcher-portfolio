@@ -18,5 +18,4 @@ export const FeaturedCategories: FeaturedCategory[] = [
   FeaturedCategory.IEEE_TVCG_2026,
   FeaturedCategory.ACM_UIST_2025,
   FeaturedCategory.IEEE_TVCG_2025,
-  FeaturedCategory.ACM_CHI_2025,
 ]
