@@ -146,8 +146,8 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
         links: {
-          pdf: '/pdf/visualke.pdf',
-          appendix: '/pdf/visualke_appendix.pdf',
+          pdf: '/pdf/keditvis.pdf',
+          appendix: '/pdf/keditvis_appendix.pdf',
         },
         topics: [PaperTopic.HumanLLM],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
