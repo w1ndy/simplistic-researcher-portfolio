@@ -170,6 +170,20 @@ export default [
         abstract:
           'Traffic lights have been widely used to alleviate traffic congestion and improve traffic efficiency. However, due to the complex variability of traffic conditions and interactions between intersections, formulating ef-fective traffic signal control strategies for multiple intersections is highly challenging. Aiming at issues in existing optimization methods which are adaptive and fixed-time, this paper proposes a visual analytics method for multi-intersection traffic signal control optimization. Through collaborative interviews with experts, the paper extracts the problems and demands related to identifying and optimizing inefficient traf-fic signal control strategies, and accordingly constructs a novel visual analytics system—VisualTSC. The implemented trajectory mining process, which integrates the extraction of inefficient intersections and generation of optimization strategies, assists experts to understand the traffic efficiency of intersections and provides feasible alternative control strategies via simulation combined with the visual analytics sys-tem. VisualTSC employs a multi-level contour map to visualize intersection relationships, and offers tabu-lar and trajectory views to support optimal strategies decision-making. The effectiveness of VisualTSC is verified via two application scenarios using real-world datasets and follow-up expert interviews, where experts reproduced the cases and provided positive qualitative evaluations on its performance.',
       },
+      {
+        image: '/img/papers/easlt.avif',
+        authors: ['Guobin Tu', 'Di Weng'],
+        corresponding_authors: ['Di Weng'],
+        title: 'EASLT: Emotion-Aware Sign Language Translation',
+        venue: 'arXiv Preprint, 2026',
+        links: {
+          preprint: 'https://arxiv.org/abs/2601.03549',
+          pdf: '/pdf/easlt.pdf',
+        },
+        topics: [PaperTopic.Accessibility],
+        abstract:
+          'Sign Language Translation (SLT) is a complex cross-modal task requiring the integration of Manual Signals (MS) and Non-Manual Signals (NMS). While recent gloss-free SLT methods have made strides in translating manual gestures, they frequently overlook the semantic criticality of facial expressions, resulting in ambiguity when distinct concepts share identical manual articulations. To address this, we present <b>EASLT</b> (<b>E</b>motion-<b>A</b>ware <b>S</b>ign <b>L</b>anguage <b>T</b>ranslation), a framework that treats facial affect not as auxiliary information, but as a robust semantic anchor. Unlike methods that relegate facial expressions to a secondary role, EASLT incorporates a dedicated emotional encoder to capture continuous affective dynamics. These representations are integrated via a novel <b>Emotion-Aware Fusion</b> (EAF) module, which adaptively recalibrates spatio-temporal sign features based on affective context to resolve semantic ambiguities. Extensive evaluations on the PHOENIX14T and CSL-Daily benchmarks demonstrate that EASLT establishes advanced performance among gloss-free methods, achieving BLEU-4 scores of 26.15 and 22.80, and BLEURT scores of 61.0 and 57.8, respectively. Ablation studies confirm that explicitly modeling emotion effectively decouples affective semantics from manual dynamics, significantly enhancing translation fidelity.',
+      },
     ],
   },
   {

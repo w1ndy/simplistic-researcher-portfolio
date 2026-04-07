@@ -6,6 +6,7 @@ export enum PaperTopic {
   TimeSeriesVisualAnalysis = 'temporal vis',
   HumanLLM = 'human-llm',
   VisualizationAuthoring = 'vis authoring',
+  Accessibility = 'accessibility',
 }
 
 export const Filters: Record<
