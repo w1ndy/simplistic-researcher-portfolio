@@ -9,6 +9,7 @@ import {
   faCode,
   faDesktop,
   faAlignLeft,
+  faAward,
 } from '@fortawesome/free-solid-svg-icons'
 
 import type { Paper } from '~/types/paper'
@@ -96,6 +97,26 @@ export function PaperEntry(props: { paper: Paper }) {
             <span>{props.paper.venue}</span>.
           </div>
           <div class="mt-1.5 flex flex-wrap gap-1.5">
+            <Show when={props.paper.awards && props.paper.awards.length > 0}>
+              <For each={props.paper.awards}>
+                {(award) => (
+                  <span
+                    class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs tracking-wide"
+                    style={{
+                      'background-color': 'var(--color-selection)',
+                      color: 'var(--color-accent)',
+                      'font-weight': '500',
+                    }}
+                  >
+                    <Fa
+                      icon={faAward}
+                      class="inline-block"
+                    ></Fa>
+                    {award}
+                  </span>
+                )}
+              </For>
+            </Show>
             <Show when={props.paper.abstract}>
               <span
                 onClick={() => setShowAbstract(!showAbstract())}

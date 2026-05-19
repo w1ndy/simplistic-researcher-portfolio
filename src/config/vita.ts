@@ -105,6 +105,14 @@ const vita: Record<
     ],
     awards: [
       {
+        when: '2026',
+        what: 'Honorable Mention Award',
+        where: 'IEEE PacificVis 2026',
+        descriptions: [
+          '<span class="italic">A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component</span>',
+        ],
+      },
+      {
         when: '2020',
         what: 'National Scholarship',
         where: 'Ministry of Education, P.R.C.',
@@ -135,6 +143,7 @@ const vita: Record<
       {
         when: 'Conferences',
         descriptions: [
+          'Organizing Committee Vice Chair, Chinagraph 2026',
           'Web Chair, <a href="https://chinavis.org/2025/" target="_blank">ChinaVis 2025</a>',
           'Web Chair, <a href="http://youth.csig.org.cn/CSIG2024/#/" target="_blank">CSIG Youth Scientist Conference 2024</a>',
           'Session Chair (AI & Visual Analytics), <a href="https://pacificvis.github.io/pvis2024/" target="_blank">PacificVis 2024</a>',
@@ -146,7 +155,7 @@ const vita: Record<
         when: 'PC Members',
         descriptions: [
           '<a href="https://ieeevis.org/year/2025/welcome" target="_blank">IEEE VIS 2023-2025</a>',
-          '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024</a>',
+          '<a href="https://chinavis.org/2024/" target="_blank">ChinaVis 2022-2024, 2026</a>',
           'Computer Graphics International 2023-2026',
           'CCF CAD&CG 2026',
           'ICHEC 2025',
@@ -227,6 +236,14 @@ const vita: Record<
       },
     ],
     awards: [
+      {
+        when: '2026',
+        what: 'IEEE PacificVis 2026 荣誉提名奖',
+        where: 'IEEE PacificVis 2026',
+        descriptions: [
+          '<span class="italic">A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component</span>',
+        ],
+      },
       {
         when: '2020',
         what: '国家奖学金',

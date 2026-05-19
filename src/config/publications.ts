@@ -88,6 +88,7 @@ export default [
         title:
           'A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component',
         venue: 'PacificVis 2026',
+        awards: ['IEEE PacificVis 2026 Honorable Mention'],
         links: {
           pdf: '/pdf/trajgram.pdf',
         },
