@@ -2,8 +2,9 @@ import { Paper } from '../types/paper'
 
 export enum PaperTopic {
   DataWrangling = 'data wrangling',
-  GeospatialVisualAnalysis = 'geospatial vis',
-  TimeSeriesVisualAnalysis = 'temporal vis',
+  Geospatial = 'geospatial',
+  Temporal = 'temporal',
+  VisualAnalytics = 'visual analytics',
   HumanLLM = 'human-llm',
   VisualizationAuthoring = 'vis authoring',
   Accessibility = 'accessibility',
@@ -41,6 +42,13 @@ export const Filters: Record<
         zh: 'UIST',
       },
       matcher: (paper: Paper) => paper.venue.includes('UIST'),
+    },
+    icml: {
+      name: {
+        en: 'ICML',
+        zh: 'ICML',
+      },
+      matcher: (paper: Paper) => paper.venue.includes('ICML'),
     },
     kdd: {
       name: {

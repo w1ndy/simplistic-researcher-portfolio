@@ -74,7 +74,7 @@ export function PaperEntry(props: { paper: Paper }) {
             style={{ border: '1px solid var(--color-border)' }}
             src={props.paper.image}
             loading="lazy"
-            alt={`Teaser image of paper "${props.paper.title}"`}
+            alt={`Teaser image of paper ${props.paper.title}`}
           />
         </div>
 
