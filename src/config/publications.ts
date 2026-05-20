@@ -7,6 +7,55 @@ export default [
     year: '2026',
     papers: [
       {
+        image: '/img/papers/geoauthor.avif',
+        authors: [
+          'Zhenning Chen',
+          'Hanbei Zhan',
+          'Shifu Chen',
+          'Zikun Deng',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'GeoAuthor: Linking Text and Visualization for Geographic Article Authoring',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
+        links: {},
+        topics: [
+          PaperTopic.Geospatial,
+          PaperTopic.VisualizationAuthoring,
+          PaperTopic.HumanLLM,
+        ],
+        featured_category: FeaturedCategory.IEEE_TVCG_2026,
+        abstract:
+          'Articles containing geographic information are widely distributed and commonly used in daily life, frequently incorporating geographic visualizations as illustrations. However, the creation of such articles remains cumbersome, necessitating authors to switch between authoring text and illustrations, thereby disrupting immersive writing. Our interviews corroborated this observation and revealed the primary challenge in the traditional process stems from the low synchronization frequency between text and geographic visualizations during creation, coupled with weak visual links, forcing users to mentally maintain this synchronization and thereby increasing their cognitive burden. In response, we developed GeoAuthor, which facilitates the interactive creation of geographic articles by automatically synchronizing text creation with geographic visualizations with rich visual links. This bidirectional approach ensures that the written content and visual representations remain consistent and mutually informative throughout the creation process. Our evaluation demonstrated the efficacy of GeoAuthor, indicating its capacity to streamline the process of creating geographic articles.',
+      },
+      {
+        image: '/img/papers/rulescope.avif',
+        authors: [
+          'Zhongsu Luo',
+          'Di Weng',
+          'Jiawen Zhu',
+          'Shuhan Liu',
+          'Xiwen Cai',
+          'Ran Chen',
+          'Kai Xiong',
+          'Jiajun Zhu',
+          'Xinhuan Shu',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'RuleScope: Semantic-aware Authoring of Data Validation Rules',
+        venue:
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
+        links: {},
+        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        featured_category: FeaturedCategory.IEEE_TVCG_2026,
+        abstract:
+          "Data validation is a crucial step in data analytics workflows that assesses and ensures the reliability of data flowing into analytical processes. One common approach to data validation involves defining validation rules, which provide explicit constraints and conditions that data must satisfy. However, creating accurate and effective validation rules remains challenging for many practitioners. This challenge stems from the need for practitioners to understand both data structures and their domain-specific semantic relationships. Recent studies have proposed automated approaches to generate validation rules by deriving patterns from data properties. However, these approaches generate rules with limited interpretability and lack support for rule verification and modification, making the rules difficult to understand and adapt. To address these limitations in current validation rule authoring approaches, we present RuleScope, an interactive system for authoring data validation rules through semantic-aware rule generation, visualization, and refinement. RuleScope employs an LLM-based workflow to generate interpretable rules by analyzing data semantics and incorporating domain knowledge. To facilitate rule comprehension, we design a matrix-based visualization that helps users understand rules and analyze validation results. Additionally, RuleScope enables users to interactively refine rules. We evaluate the LLM-based workflow through model evaluation on datasets from different domains and assess RuleScope's usability and effectiveness through two case studies and a user study.",
+      },
+      {
         image: '/img/papers/tmoe.avif',
         authors: ['Jiawen Zhu', 'Shuhan Liu', 'Di Weng', 'Yingcai Wu'],
         corresponding_authors: ['Di Weng'],
@@ -88,14 +137,12 @@ export default [
         title:
           'A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component',
         venue: 'PacificVis 2026',
-        awards: ['IEEE PacificVis 2026 Honorable Mention'],
+        awards: ['Honorable Mention'],
         links: {
           pdf: '/pdf/trajgram.pdf',
+          code: 'https://github.com/BenStone44/TrajGram',
         },
-        topics: [
-          PaperTopic.Geospatial,
-          PaperTopic.VisualizationAuthoring,
-        ],
+        topics: [PaperTopic.Geospatial, PaperTopic.VisualizationAuthoring],
         abstract:
           'Trajectory visualizations play a crucial role in urban computing, supporting tasks from analyzing road networks and vehicle movements to informing transport policy. However, creating such visualizations faces usability and flexibility limitations in trajectory visualization scenarios: limited usability due to insufficient trajectory-specific specialization, and limited flexibility due to tightly-coupled interactions that are not treated as first-class components. To address these challenges, we first conduct a systematic review of prior work and define a comprehensive design space for interactive trajectory visualization across three key dimensions: transformation, display, and interaction. We then present TrajGram, a declarative grammar built upon this design space that streamlines the creation of diverse interactive trajectory visualizations. TrajGram enables rapid prototyping with rich interactions grounded in real-world traffic analysis needs, while remaining extensible for complex scenarios. We demonstrate the effectiveness, usability, and learning curve of TrajGram through two usage scenarios and a user study.',
       },
@@ -142,6 +189,7 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
         links: {
+          paper: 'https://ieeexplore.ieee.org/document/11523645/',
           pdf: '/pdf/rcinvestigator.pdf',
           appendix: '/pdf/rcinvestigator_appendix.pdf',
         },
@@ -167,6 +215,7 @@ export default [
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
         links: {
+          paper: 'https://ieeexplore.ieee.org/document/11523566',
           pdf: '/pdf/keditvis.pdf',
           appendix: '/pdf/keditvis_appendix.pdf',
         },
@@ -174,55 +223,6 @@ export default [
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:
           'Large Language Models (LLMs) demonstrate exceptional capabilities in factual question answering, yet they sometimes provide incorrect responses. To address this issue, knowledge editing techniques have emerged as effective methods for correcting factual information in LLMs. However, typical knowledge editing workflows struggle with identifying the optimal set of model layers for editing and rely on summary indicators that provide insufficient guidance. This lack of transparency hinders effective comparison and identification of optimal editing strategies. In this paper, we present KEditVis, a novel visual analytics system designed to assist users in gaining a deeper understanding of knowledge editing through interactive visualizations, improving editing outcomes, and discovering valuable insights for the future development of knowledge editing algorithms. With KEditVis, users can select appropriate layers as the editing target, explore the reasons behind ineffective edits, and perform more targeted and effective edits. Our evaluation, including usage scenarios, expert interviews, and a user study, validates the effectiveness and usability of the system.',
-      },
-      {
-        image: '/img/papers/geoauthor.avif',
-        authors: [
-          'Zhenning Chen',
-          'Hanbei Zhan',
-          'Shifu Chen',
-          'Zikun Deng',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title:
-          'GeoAuthor: Linking Text and Visualization for Geographic Article Authoring',
-        venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
-        links: {},
-        topics: [
-          PaperTopic.Geospatial,
-          PaperTopic.VisualizationAuthoring,
-          PaperTopic.HumanLLM,
-        ],
-        featured_category: FeaturedCategory.IEEE_TVCG_2026,
-        abstract:
-          'Articles containing geographic information are widely distributed and commonly used in daily life, frequently incorporating geographic visualizations as illustrations. However, the creation of such articles remains cumbersome, necessitating authors to switch between authoring text and illustrations, thereby disrupting immersive writing. Our interviews corroborated this observation and revealed the primary challenge in the traditional process stems from the low synchronization frequency between text and geographic visualizations during creation, coupled with weak visual links, forcing users to mentally maintain this synchronization and thereby increasing their cognitive burden. In response, we developed GeoAuthor, which facilitates the interactive creation of geographic articles by automatically synchronizing text creation with geographic visualizations with rich visual links. This bidirectional approach ensures that the written content and visual representations remain consistent and mutually informative throughout the creation process. Our evaluation demonstrated the efficacy of GeoAuthor, indicating its capacity to streamline the process of creating geographic articles.',
-      },
-      {
-        image: '/img/papers/rulescope.avif',
-        authors: [
-          'Zhongsu Luo',
-          'Di Weng',
-          'Jiawen Zhu',
-          'Shuhan Liu',
-          'Xiwen Cai',
-          'Ran Chen',
-          'Kai Xiong',
-          'Jiajun Zhu',
-          'Xinhuan Shu',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title: 'RuleScope: Semantic-aware Authoring of Data Validation Rules',
-        venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
-        links: {},
-        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
-        featured_category: FeaturedCategory.IEEE_TVCG_2026,
-        abstract:
-          'Data validation is a crucial step in data analytics workflows that assesses and ensures the reliability of data flowing into analytical processes. One common approach to data validation involves defining validation rules, which provide explicit constraints and conditions that data must satisfy. However, creating accurate and effective validation rules remains challenging for many practitioners. This challenge stems from the need for practitioners to understand both data structures and their domain-specific semantic relationships. Recent studies have proposed automated approaches to generate validation rules by deriving patterns from data properties. However, these approaches generate rules with limited interpretability and lack support for rule verification and modification, making the rules difficult to understand and adapt. To address these limitations in current validation rule authoring approaches, we present RuleScope, an interactive system for authoring data validation rules through semantic-aware rule generation, visualization, and refinement. RuleScope employs an LLM-based workflow to generate interpretable rules by analyzing data semantics and incorporating domain knowledge. To facilitate rule comprehension, we design a matrix-based visualization that helps users understand rules and analyze validation results. Additionally, RuleScope enables users to interactively refine rules. We evaluate the LLM-based workflow through model evaluation on datasets from different domains and assess RuleScope\'s usability and effectiveness through two case studies and a user study.',
       },
       {
         image: '/img/papers/visualtsc.avif',
@@ -440,10 +440,7 @@ export default [
         links: {
           pdf: 'https://chinavis.org/2025/papers/GeoAnimation%20A%20Grammar%20for%20Animated%20Geographic%20Visualization.pdf',
         },
-        topics: [
-          PaperTopic.Geospatial,
-          PaperTopic.VisualizationAuthoring,
-        ],
+        topics: [PaperTopic.Geospatial, PaperTopic.VisualizationAuthoring],
         abstract:
           'In recent years, animated geographical visualization has arisen as an intuitive narrative medium for presenting and disseminating geographic information, with extensive applications across various domains. However, existing approaches to creating geographic animations often face trade-offs among learning curve, ease of use, the complexity of output videos and other limitations. To further lower the barrier for producing geographic animations, we first conducted a survey of 50 geographic data animations and synthesized a design space that outlines the key elements in geographic animation presentation. Based on this, we designed a declarative grammar targeted at geographic animations. Then we developed an interactive tool called GeoAnimation to enable animators to create geographic animations efficiently and effectively. Finally, we verified the usefulness of our tool through two use cases and expert interviews conducted with two experts. The results indicate that GeoAnimation enables animators to quickly and conveniently create satisfactory geographic animations, effectively reducing the barriers, tedium, and inconvenience associated with creating such animations.',
       },
@@ -779,10 +776,7 @@ export default [
           pdf: '/pdf/geochron.pdf',
           video: 'https://youtu.be/jc7aeiszPQM?si=SeRLpmTIg4z7GDFN',
         },
-        topics: [
-          PaperTopic.Geospatial,
-          PaperTopic.Temporal,
-        ],
+        topics: [PaperTopic.Geospatial, PaperTopic.Temporal],
         abstract:
           'In geo-related fields such as urban informatics, atmospheric science, and geography, large-scale spatial time (ST) series (i.e., geo-referred time series) are collected for monitoring and understanding important spatiotemporal phenomena. ST series visualization is an effective means of understanding the data and reviewing spatiotemporal phenomena, which is a prerequisite for in-depth data analysis. However, visualizing these series is challenging due to their large scales, inherent dynamics, and spatiotemporal nature. In this study, we introduce the notion of patterns of evolution in ST series. Each evolution pattern is characterized by 1) a set of ST series that are close in space and 2) a time period when the trends of these ST series are correlated. We then leverage Storyline techniques by considering an analogy between evolution patterns and sessions, and finally design a novel visualization called GeoChron, which is capable of visualizing large-scale ST series in an evolution pattern-aware and narrative-preserving manner. GeoChron includes a mining framework to extract evolution patterns and two-level visualizations to enhance its visual scalability. We evaluate GeoChron with two case studies, an informal user study, an ablation study, parameter analysis, and running time analysis.',
       },
@@ -864,10 +858,7 @@ export default [
           pdf: '/pdf/geocamera.pdf',
           video: 'https://youtu.be/SFBmBSHjKpA?si=jzOIhS7yADsegrh3',
         },
-        topics: [
-          PaperTopic.Geospatial,
-          PaperTopic.VisualizationAuthoring,
-        ],
+        topics: [PaperTopic.Geospatial, PaperTopic.VisualizationAuthoring],
         abstract:
           'In geographic data videos, camera movements are frequently used and combined to present information from multiple perspectives. However, creating and editing camera movements requires significant time and professional skills. This work aims to lower the barrier of crafting diverse camera movements for geographic data videos. First, we analyze a corpus of 66 geographic data videos and derive a design space of camera movements with a dimension for geospatial targets and one for narrative purposes. Based on the design space, we propose a set of adaptive camera shots and further develop an interactive tool called GeoCamera. This interactive tool allows users to flexibly design camera movements for geographic visualizations. We verify the expressiveness of our tool through case studies and evaluate its usability with a user study. The participants find that the tool facilitates the design of camera movements.',
       },
