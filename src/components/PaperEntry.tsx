@@ -29,6 +29,25 @@ const IconMapping: Record<string, IconDefinition> = {
   demo: faDesktop,
 }
 
+const CcfAVenueMatchers = [
+  (venue: string) => venue.includes('TVCG'),
+  (venue: string) => venue.includes('IEEE VIS') && !venue.includes('@ IEEE VIS'),
+  (venue: string) => venue.includes('ICML'),
+  (venue: string) => venue.includes('KDD'),
+  (venue: string) => venue.includes('CHI'),
+  (venue: string) => venue.includes('UIST'),
+]
+
+function isCcfAPaper(paper: Paper) {
+  const venue = paper.venue
+  const lowerVenue = venue.toLowerCase()
+
+  return (
+    !lowerVenue.includes('workshop') &&
+    CcfAVenueMatchers.some((matcher) => matcher(venue))
+  )
+}
+
 export function homepage(author: string) {
   return (original: string) => {
     if (AuthorHomepages[author]) {
@@ -103,8 +122,8 @@ export function PaperEntry(props: { paper: Paper }) {
                   <span
                     class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs tracking-wide"
                     style={{
-                      'background-color': 'var(--color-selection)',
-                      color: 'var(--color-accent)',
+                      'background-color': 'rgba(235, 87, 87, 0.14)',
+                      color: 'var(--color-red)',
                       'font-weight': '500',
                     }}
                   >
@@ -116,6 +135,18 @@ export function PaperEntry(props: { paper: Paper }) {
                   </span>
                 )}
               </For>
+            </Show>
+            <Show when={isCcfAPaper(props.paper)}>
+              <span
+                class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs tracking-wide"
+                style={{
+                  'background-color': 'var(--color-selection)',
+                  color: 'var(--color-accent)',
+                  'font-weight': '500',
+                }}
+              >
+                CCF-A
+              </span>
             </Show>
             <Show when={props.paper.abstract}>
               <span
