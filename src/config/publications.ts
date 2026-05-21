@@ -7,6 +7,24 @@ export default [
     year: '2026',
     papers: [
       {
+        image: '/img/papers/gtriplex_mb.avif',
+        authors: [
+          'Ling-Li Zhao',
+          'Jiale Li',
+          'Ruo-Yao Cui',
+          'Jian Wang',
+          'Di Weng',
+          'Dewen Zhang',
+        ],
+        corresponding_authors: ['Ling-Li Zhao', 'Di Weng', 'Dewen Zhang'],
+        title:
+          'Sequence-Engineered G-Triplex/Methylene Blue System as a Label-Free Electrochemical Signal Module for Biosensor',
+        venue: 'Analytical Chemistry (to appear), 2026',
+        links: {},
+        abstract:
+          'G-triplexes are non-canonical DNA structures formed by three guanine tracts, but their sequence design rules for small-molecule binding remain unclear. In this work, we carried out a systematic sequence screening to optimize G-triplex sequences for improved interaction with methylene blue (MB), and applied the best sequence in an electrochemical biosensor for melamine detection. Over 80 candidate sequences were designed by varying loop nucleotides, 5&prime;-flanking bases, and strand length, and were evaluated by square wave voltammetry. The optimal sequence F9 (5&prime;-ATGGGAGGGTGGG-3&prime;) achieved the highest current suppression (&Delta;I/I<sub>0</sub> &asymp; 0.81), outperforming all tested G-triplex and several well-known G-quadruplex sequences. Circular dichroism confirmed that F9 folds into a parallel G-triplex with a melting temperature of 65.1 &deg;C, which increased to 70.0 &deg;C upon MB binding. Electrochemical titration gave a 1:1 binding ratio with an association constant of 9.37 &times; 10<sup>5</sup> M<sup>&minus;1</sup>. Molecular dynamics simulations showed that MB binds to the 5&prime;-face of the G-triplex by &pi;&ndash;&pi; stacking, with a computed binding free energy of &minus;151.9 kJ/mol. A hairpin probe (MelaPin) combining the F9 sequence with a poly-T melamine recognition region was then constructed. The resulting biosensor showed a linear response over 1&ndash;100 &mu;M melamine with a detection limit of 0.74 &mu;M, and a recovery of 96.0 &plusmn; 0.8% in spiked infant formula. This work provides a practical framework for G-triplex sequence design and shows that the G-triplex/MB system can serve as a simple, label-free signal module for electrochemical sensing.',
+      },
+      {
         image: '/img/papers/geoauthor.avif',
         authors: [
           'Zhenning Chen',
