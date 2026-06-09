@@ -7,24 +7,6 @@ export default [
     year: '2026',
     papers: [
       {
-        image: '/img/papers/gtriplex_mb.avif',
-        authors: [
-          'Ling-Li Zhao',
-          'Jiale Li',
-          'Ruo-Yao Cui',
-          'Jian Wang',
-          'Di Weng',
-          'Dewen Zhang',
-        ],
-        corresponding_authors: ['Ling-Li Zhao', 'Di Weng', 'Dewen Zhang'],
-        title:
-          'Sequence-Engineered G-Triplex/Methylene Blue System as a Label-Free Electrochemical Signal Module for Biosensor',
-        venue: 'Analytical Chemistry (to appear), 2026',
-        links: {},
-        abstract:
-          'G-triplexes are non-canonical DNA structures formed by three guanine tracts, but their sequence design rules for small-molecule binding remain unclear. In this work, we carried out a systematic sequence screening to optimize G-triplex sequences for improved interaction with methylene blue (MB), and applied the best sequence in an electrochemical biosensor for melamine detection. Over 80 candidate sequences were designed by varying loop nucleotides, 5&prime;-flanking bases, and strand length, and were evaluated by square wave voltammetry. The optimal sequence F9 (5&prime;-ATGGGAGGGTGGG-3&prime;) achieved the highest current suppression (&Delta;I/I<sub>0</sub> &asymp; 0.81), outperforming all tested G-triplex and several well-known G-quadruplex sequences. Circular dichroism confirmed that F9 folds into a parallel G-triplex with a melting temperature of 65.1 &deg;C, which increased to 70.0 &deg;C upon MB binding. Electrochemical titration gave a 1:1 binding ratio with an association constant of 9.37 &times; 10<sup>5</sup> M<sup>&minus;1</sup>. Molecular dynamics simulations showed that MB binds to the 5&prime;-face of the G-triplex by &pi;&ndash;&pi; stacking, with a computed binding free energy of &minus;151.9 kJ/mol. A hairpin probe (MelaPin) combining the F9 sequence with a poly-T melamine recognition region was then constructed. The resulting biosensor showed a linear response over 1&ndash;100 &mu;M melamine with a detection limit of 0.74 &mu;M, and a recovery of 96.0 &plusmn; 0.8% in spiked infant formula. This work provides a practical framework for G-triplex sequence design and shows that the G-triplex/MB system can serve as a simple, label-free signal module for electrochemical sensing.',
-      },
-      {
         image: '/img/papers/geoauthor.avif',
         authors: [
           'Zhenning Chen',
@@ -39,7 +21,11 @@ export default [
           'GeoAuthor: Linking Text and Visualization for Geographic Article Authoring',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
-        links: {},
+        links: {
+          paper: 'https://ieeexplore.ieee.org/document/11535320',
+          pdf: '/pdf/geoauthor.pdf',
+          appendix: '/pdf/geoauthor_appendix.pdf',
+        },
         topics: [
           PaperTopic.Geospatial,
           PaperTopic.VisualizationAuthoring,
@@ -67,11 +53,33 @@ export default [
         title: 'RuleScope: Semantic-aware Authoring of Data Validation Rules',
         venue:
           'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
-        links: {},
+        links: {
+          paper: 'https://ieeexplore.ieee.org/document/11535324',
+          pdf: '/pdf/rulescope.pdf',
+          code: 'https://github.com/rulescopevis/RuleScope',
+        },
         topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:
           "Data validation is a crucial step in data analytics workflows that assesses and ensures the reliability of data flowing into analytical processes. One common approach to data validation involves defining validation rules, which provide explicit constraints and conditions that data must satisfy. However, creating accurate and effective validation rules remains challenging for many practitioners. This challenge stems from the need for practitioners to understand both data structures and their domain-specific semantic relationships. Recent studies have proposed automated approaches to generate validation rules by deriving patterns from data properties. However, these approaches generate rules with limited interpretability and lack support for rule verification and modification, making the rules difficult to understand and adapt. To address these limitations in current validation rule authoring approaches, we present RuleScope, an interactive system for authoring data validation rules through semantic-aware rule generation, visualization, and refinement. RuleScope employs an LLM-based workflow to generate interpretable rules by analyzing data semantics and incorporating domain knowledge. To facilitate rule comprehension, we design a matrix-based visualization that helps users understand rules and analyze validation results. Additionally, RuleScope enables users to interactively refine rules. We evaluate the LLM-based workflow through model evaluation on datasets from different domains and assess RuleScope's usability and effectiveness through two case studies and a user study.",
+      },
+      {
+        image: '/img/papers/gtriplex_mb.avif',
+        authors: [
+          'Ling-Li Zhao',
+          'Jiale Li',
+          'Ruo-Yao Cui',
+          'Jian Wang',
+          'Di Weng',
+          'Dewen Zhang',
+        ],
+        corresponding_authors: ['Ling-Li Zhao', 'Di Weng', 'Dewen Zhang'],
+        title:
+          'Sequence-Engineered G-Triplex/Methylene Blue System as a Label-Free Electrochemical Signal Module for Biosensor',
+        venue: 'Analytical Chemistry (to appear), 2026',
+        links: {},
+        abstract:
+          'G-triplexes are non-canonical DNA structures formed by three guanine tracts, but their sequence design rules for small-molecule binding remain unclear. In this work, we carried out a systematic sequence screening to optimize G-triplex sequences for improved interaction with methylene blue (MB), and applied the best sequence in an electrochemical biosensor for melamine detection. Over 80 candidate sequences were designed by varying loop nucleotides, 5&prime;-flanking bases, and strand length, and were evaluated by square wave voltammetry. The optimal sequence F9 (5&prime;-ATGGGAGGGTGGG-3&prime;) achieved the highest current suppression (&Delta;I/I<sub>0</sub> &asymp; 0.81), outperforming all tested G-triplex and several well-known G-quadruplex sequences. Circular dichroism confirmed that F9 folds into a parallel G-triplex with a melting temperature of 65.1 &deg;C, which increased to 70.0 &deg;C upon MB binding. Electrochemical titration gave a 1:1 binding ratio with an association constant of 9.37 &times; 10<sup>5</sup> M<sup>&minus;1</sup>. Molecular dynamics simulations showed that MB binds to the 5&prime;-face of the G-triplex by &pi;&ndash;&pi; stacking, with a computed binding free energy of &minus;151.9 kJ/mol. A hairpin probe (MelaPin) combining the F9 sequence with a poly-T melamine recognition region was then constructed. The resulting biosensor showed a linear response over 1&ndash;100 &mu;M melamine with a detection limit of 0.74 &mu;M, and a recovery of 96.0 &plusmn; 0.8% in spiked infant formula. This work provides a practical framework for G-triplex sequence design and shows that the G-triplex/MB system can serve as a simple, label-free signal module for electrochemical sensing.',
       },
       {
         image: '/img/papers/tmoe.avif',
