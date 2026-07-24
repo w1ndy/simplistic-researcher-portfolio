@@ -7,6 +7,22 @@ export default [
     year: '2026',
     papers: [
       {
+        image: '/img/papers/geoanimation.avif',
+        authors: ['Jie Yu', 'Zhenning Chen', 'Di Weng', 'Yingcai Wu'],
+        corresponding_authors: ['Di Weng'],
+        title: 'GeoAnimation: A Grammar for Animated Geographic Visualization',
+        venue:
+          'Journal of Visualization, 2026 (also accepted by ChinaVis 2025)',
+        links: {
+          paper:
+            'https://link.springer.com/article/10.1007/s12650-026-01146-0',
+          pdf: '/pdf/geoanimation.pdf',
+        },
+        topics: [PaperTopic.Geospatial, PaperTopic.VisualizationAuthoring],
+        abstract:
+          'Animated geographic visualization is a common way to communicate spatial processes and narratives. However, authoring such animations often requires tradeoffs among learnability, control, and production effort. To explore a structured authoring approach, we analyzed 64 source videos containing geographic animation segments and synthesized a design space for geographic animation targets, attributes, and effects. Based on this analysis, we designed GeoAnimation, a domain-specific declarative grammar and interactive prototype for authoring common point, line, and region animations. We examined the prototype through two use cases and expert interviews with two visualization researchers. The results provide preliminary evidence that GeoAnimation is feasible for the studied authoring tasks, while broader usability, expressiveness, and performance require further evaluation.',
+      },
+      {
         image: '/img/papers/geoauthor.avif',
         authors: [
           'Zhenning Chen',
@@ -442,19 +458,6 @@ export default [
         topics: [PaperTopic.VisualizationAuthoring],
         abstract:
           'Scrollytelling, which tightly integrates dynamic content and narrative text, has become popular for its effective conveyance of complex insights. However, the complex transition animations driven by scrolling make it challenging for journalists and designers to create scrollytelling articles. To address this challenge, there are two key sub-steps: 1) designing an interactive creative workflow to help designers produce expressive scrollytelling, and 2) determining which type of system would make such a workflow more efficient for designers. For the first sub-step, we propose a creative workflow that treats text as the backbone of the article and gradually adds complex charts and animations. By integrating existing chart and animation design spaces with interactive tools, we have developed an interactive process for creating expressive scrollytelling. For the second sub-step, we analyzed existing creation systems and categorized them into static keyframe-based and what you see is what you get (WYSIWYG) methods. Based on the WYSIWYG approach, we designed the creation tool, Scroller. It includes a MiniMap view to display changes in charts and other elements during scrolling and a Bi-LSTM model to revise the design of elements in the article. By comparing Scroller with a static keyframe-based baseline, we demonstrate that WYSIWYG-based tools offer significant advantages in scrollytelling creation. We also conducted case studies and an expert interview to show the usability and efficiency of Scroller.',
-      },
-      {
-        image: '/img/papers/geoanimation.avif',
-        authors: ['Jie Yu', 'Zhenning Chen', 'Di Weng', 'Yingcai Wu'],
-        corresponding_authors: ['Di Weng'],
-        title: 'GeoAnimation: A Grammar for Animated Geographic Visualization',
-        venue: 'ChinaVis 2025',
-        links: {
-          pdf: 'https://chinavis.org/2025/papers/GeoAnimation%20A%20Grammar%20for%20Animated%20Geographic%20Visualization.pdf',
-        },
-        topics: [PaperTopic.Geospatial, PaperTopic.VisualizationAuthoring],
-        abstract:
-          'In recent years, animated geographical visualization has arisen as an intuitive narrative medium for presenting and disseminating geographic information, with extensive applications across various domains. However, existing approaches to creating geographic animations often face trade-offs among learning curve, ease of use, the complexity of output videos and other limitations. To further lower the barrier for producing geographic animations, we first conducted a survey of 50 geographic data animations and synthesized a design space that outlines the key elements in geographic animation presentation. Based on this, we designed a declarative grammar targeted at geographic animations. Then we developed an interactive tool called GeoAnimation to enable animators to create geographic animations efficiently and effectively. Finally, we verified the usefulness of our tool through two use cases and expert interviews conducted with two experts. The results indicate that GeoAnimation enables animators to quickly and conveniently create satisfactory geographic animations, effectively reducing the barriers, tedium, and inconvenience associated with creating such animations.',
       },
       {
         image: '/img/papers/codelin.avif',
