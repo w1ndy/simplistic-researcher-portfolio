@@ -2,20 +2,165 @@ import { Paper } from '../types/paper'
 import { FeaturedCategory } from './featured'
 import { PaperTopic } from './filters'
 
+const byPublicationDateDesc = (a: Paper, b: Paper) =>
+  (b.publication_date ?? '').localeCompare(a.publication_date ?? '')
+
 export default [
   {
     year: '2026',
     papers: [
+      {
+        image: '/img/papers/veriscope.avif',
+        authors: [
+          'Lingyu Meng',
+          'Hanbei Zhan',
+          'Yuan Tian',
+          'Yuchen He',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'Veriscope: Provenance-Aware Verification of LLM Reasoning Artifacts in Conversational Data Analysis',
+        venue:
+          'ACM Symposium on User Interface Software and Technology (UIST), 13 pages, 2026',
+        publication_date: '2026-11-02',
+        links: {
+          paper: 'https://doi.org/10.1145/3830398.3830599',
+          pdf: '/pdf/veriscope.pdf',
+        },
+        topics: [PaperTopic.VisualAnalytics, PaperTopic.LLM],
+        featured_category: FeaturedCategory.ACM_UIST_2026,
+        abstract:
+          'Large language models (LLMs) are increasingly adopted by data analysts to perform various analytical tasks within conversational interfaces, owing to their capabilities in code generation and analytical reasoning. Conversational LLMs generate diverse artifacts through multiple reasoning steps and summarize analytical results into insights. Verifying such analysis remains essential yet challenging, as it requires examining both diverse artifacts and the underlying complex reasoning logic, which is not fully addressed by previous work. To facilitate validating LLM-generated results, we present a claim-centered view of analytic provenance and introduce Veriscope, an interactive system that supports fine-grained verification across interconnected artifacts, on-demand tracing of analytic provenance, and modification of analytical results. We formulated our design considerations based on findings derived from a formative study conducted with data analysts (N=6) who have prior experience in verification. We evaluated the effectiveness and usability of our method through a user study (N=18), which demonstrated that Veriscope substantially improves the efficiency of verifying analytical results produced by LLMs. The reliability of LLM-based features was assessed through a technical evaluation.',
+      },
+      {
+        image: '/img/papers/chronomantic.avif',
+        authors: [
+          'Yangtian Liu',
+          'Shuhan Liu',
+          'Guobin Tu',
+          'Yunfan Zhou',
+          'Xiwen Cai',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'ChronoMantic: A Natural Language Interface for Interactive Time Series Pattern Query',
+        venue:
+          'ACM Symposium on User Interface Software and Technology (UIST), 13 pages, 2026',
+        publication_date: '2026-11-02',
+        links: {
+          paper: 'https://doi.org/10.1145/3830398.3830491',
+          pdf: '/pdf/chronomantic.pdf',
+          code: 'https://github.com/SunskyLau/ChronoMantic',
+        },
+        topics: [
+          PaperTopic.Temporal,
+          PaperTopic.VisualAnalytics,
+          PaperTopic.LLM,
+        ],
+        featured_category: FeaturedCategory.ACM_UIST_2026,
+        abstract:
+          "Finding time series patterns is an important problem in finance, healthcare, climatology, and manufacturing, where temporal data analysis informs critical decision-making processes. Existing approaches use examples, sketches, and natural language (NL) for time series pattern querying, but precisely formulating complex queries, inspecting query interpretations, and refining queries iteratively remain challenging. Nevertheless, NL is a promising modality for pattern specification, balancing expressiveness and preciseness while providing an intuitive means of articulating query intent. This paper introduces ChronoMantic, an NL-driven interactive interface for time series pattern querying. The tool provides glyph-based feedback on query interpretation and supports iterative querying through by-example refinement. We illustrate ChronoMantic's workflow through two usage scenarios, assess its retrieval performance on a manually annotated benchmark, and evaluate its query effectiveness and usability via a two-stage user study.",
+      },
+      {
+        image: '/img/papers/fea-slt.avif',
+        authors: ['Guobin Tu', 'Di Weng'],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'FEA-SLT: A Gloss-Free End-to-End Framework for Facial-Expression-Aware Sign Language Translation',
+        venue: 'arXiv preprint arXiv:2601.03549, 2026',
+        publication_date: '2026-01-07',
+        links: {
+          preprint: 'https://arxiv.org/abs/2601.03549',
+          pdf: '/pdf/fea-slt.pdf',
+          code: 'https://github.com/TuGuobin/FEA-SLT',
+        },
+        topics: [PaperTopic.Accessibility, PaperTopic.LLM],
+        abstract:
+          'Sign Language Translation (SLT) is a challenging cross-modal task requiring joint modeling of manual articulations and non-manual signals. Existing gloss-free SLT methods effectively capture gestural dynamics but often underutilize facial expressions, which play crucial grammatical and disambiguating roles. This limitation can cause semantic degradation when distinct concepts share similar manual configurations. To address this issue, we propose FEA-SLT (Facial-Expression-Aware Sign Language Translation), a gloss-free end-to-end framework that uses facial dynamics as semantic anchors for resolving manual ambiguity. FEA-SLT employs a domain-transferred facial encoder to extract expression-sensitive representations and integrates them with manual features through a linguistically constrained Facial-Expression-Aware Fusion (FEAF) module. FEAF captures reciprocal dependencies between manual and facial channels via bidirectional modulation, enhancing syntactic fidelity. Experiments on PHOENIX14T and CSL-Daily show that FEA-SLT achieves state-of-the-art BLEU performance among gloss-free methods, while targeted analyses confirm improved translation of facial-sensitive utterances.',
+      },
+      {
+        image: '/img/papers/poem.avif',
+        authors: [
+          'Jiawen Zhu',
+          'Shuhan Liu',
+          'Shengxuan Li',
+          'Qiming Shi',
+          'Di Weng',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'POEM: Phase-Aware SO(2) Feature Rotation for Time Series Forecasting Under Periodicity Drift',
+        venue: 'arXiv preprint arXiv:2608.03630, 2026',
+        publication_date: '2026-08-04',
+        links: {
+          preprint: 'https://arxiv.org/abs/2608.03630',
+          pdf: '/pdf/poem.pdf',
+        },
+        topics: [PaperTopic.Temporal],
+        abstract:
+          'Deep learning has advanced time series forecasting, but periodicity drift, in which cycle timing and phase vary over time, remains a challenging problem. Existing methods predominantly model these sequences on fixed time grids, suffering from a limited ability to accommodate phase-related variation. To address this limitation, we propose POEM, a phase-aware forecasting framework based on latent feature rotation using the special orthogonal group in two dimensions, denoted by SO(2). POEM aims to reduce the phase-related variability by learning a phase-correction coordinate and applying an invertible SO(2)-based rotation to paired latent features. To extrapolate this correction coordinate, Directional Phase Increment Attention (DPIA) retrieves historical phase increments from similar temporal contexts and integrates them into future phase corrections. Experiments demonstrate that POEM achieves competitive performance, while qualitative visualizations suggest that the learned phase-aware transformation makes latent trajectories more regular.',
+      },
+      {
+        image: '/img/papers/skill-kd.avif',
+        authors: [
+          'Qiming Shi',
+          'Yibo Dou',
+          'Jiawen Zhu',
+          'Yulong Tao',
+          'Linbo Jin',
+          'Zhaolu Kang',
+          'Yunfan Zhou',
+          'Di Weng',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title: 'SKILL-KD: Contrastive Skill Distillation for LLM Agents',
+        venue: 'arXiv preprint arXiv:2607.28048, 2026',
+        publication_date: '2026-07-30',
+        links: {
+          preprint: 'https://arxiv.org/abs/2607.28048',
+          pdf: '/pdf/skill-kd.pdf',
+        },
+        topics: [PaperTopic.LLM],
+        abstract:
+          'Skill-based prompting has become a practical mechanism for improving large language model (LLM) agents, yet existing skill acquisition methods often treat skills as experience summaries, memory entries, or direct summaries of successful demonstrations. This creates a mismatch for weaker student agents: when a student fails because it lacks task knowledge or operational strategy, its failed trajectory may not contain enough evidence to infer the missing behavior, while the teacher trajectory may be too implicit to be internalized as reusable guidance. We propose SKILL-KD, a contrastive skill distillation framework that treats skills as an explicit distillation medium between agents of different capabilities. Given a student failure and the teacher trajectory on the same task, SKILL-KD distills their actionable discrepancy into a textual skill patch, evaluates the patch by re-running the student, and iteratively refines the patch when the student still fails. To prevent repeated local updates from causing skill drift, SKILL-KD further maintains trace-linked edit histories and performs Drift-Aware Skill Consolidation, deciding whether each patch should add a new rule, delete or modify an existing rule, or be skipped. Across five agent benchmarks and two student settings, SKILL-KD consistently improves frozen student agents over fixed-model adaptation baselines.',
+      },
+      {
+        image: '/img/papers/spader.avif',
+        authors: [
+          'Qiming Shi',
+          'Zhaolu Kang',
+          'Yunfan Zhou',
+          'Di Weng',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Di Weng'],
+        title:
+          'SPADER: Step-wise Peer Advantage with Diversity-Aware Exploration Rewards for Multi-Answer Question Answering',
+        venue: 'arXiv preprint arXiv:2606.00593, 2026',
+        publication_date: '2026-05-30',
+        links: {
+          preprint: 'https://arxiv.org/abs/2606.00593',
+          pdf: '/pdf/spader.pdf',
+          code: 'https://github.com/KhanCold/spader',
+        },
+        topics: [PaperTopic.LLM],
+        abstract:
+          'Large language models are increasingly deployed as tool-augmented agents to acquire information beyond parametric knowledge. While recent work has improved long-horizon tool-use reasoning, most approaches focus on tasks with a single correct answer. In contrast, many real-world queries require discovering a comprehensive set of valid answers, a setting known as Multi-Answer QA. This setting raises two challenges: fine-grained credit assignment over long search trajectories and reward alignment for sustained exploration beyond easy high-frequency entities. We propose SPADER, a reinforcement learning framework for long-horizon tool use in Multi-Answer QA. SPADER includes Step-wise Peer Advantage (SPA), a critic-free step-level credit assignment mechanism that aligns parallel trajectories by decision step and estimates advantages from peer returns. It also includes a diversity-aware exploration reward that promotes long-tail entity discovery by upweighting rare findings and downweighting redundant ones. Experiments on QAMPARI, Mintaka, WebQSP, and QUEST show that SPADER generally improves recall and overall F1 over prompting-based agents, outcome-supervised RL methods, and recent step-level supervision approaches.',
+      },
       {
         image: '/img/papers/geoanimation.avif',
         authors: ['Jie Yu', 'Zhenning Chen', 'Di Weng', 'Yingcai Wu'],
         corresponding_authors: ['Di Weng'],
         title: 'GeoAnimation: A Grammar for Animated Geographic Visualization',
         venue:
-          'Journal of Visualization, 2026 (also accepted by ChinaVis 2025)',
+          'Journal of Visualization, vol. 29, pp. 827-838, 2026 (also accepted by ChinaVis 2025)',
+        publication_date: '2026-08-01',
         links: {
-          paper:
-            'https://link.springer.com/article/10.1007/s12650-026-01146-0',
+          paper: 'https://link.springer.com/article/10.1007/s12650-026-01146-0',
           pdf: '/pdf/geoanimation.pdf',
         },
         topics: [PaperTopic.Geospatial, PaperTopic.VisualizationAuthoring],
@@ -36,7 +181,8 @@ export default [
         title:
           'GeoAuthor: Linking Text and Visualization for Geographic Article Authoring',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 32, no. 7, pp. 7273-7287, July 2026',
+        publication_date: '2026-07-01',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/11535320',
           pdf: '/pdf/geoauthor.pdf',
@@ -45,7 +191,7 @@ export default [
         topics: [
           PaperTopic.Geospatial,
           PaperTopic.VisualizationAuthoring,
-          PaperTopic.HumanLLM,
+          PaperTopic.LLM,
         ],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:
@@ -68,13 +214,14 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'RuleScope: Semantic-aware Authoring of Data Validation Rules',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 32, no. 8, pp. 7500-7516, August 2026',
+        publication_date: '2026-08-01',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/11535324',
           pdf: '/pdf/rulescope.pdf',
           code: 'https://github.com/rulescopevis/RuleScope',
         },
-        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        topics: [PaperTopic.DataWrangling, PaperTopic.LLM],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:
           "Data validation is a crucial step in data analytics workflows that assesses and ensures the reliability of data flowing into analytical processes. One common approach to data validation involves defining validation rules, which provide explicit constraints and conditions that data must satisfy. However, creating accurate and effective validation rules remains challenging for many practitioners. This challenge stems from the need for practitioners to understand both data structures and their domain-specific semantic relationships. Recent studies have proposed automated approaches to generate validation rules by deriving patterns from data properties. However, these approaches generate rules with limited interpretability and lack support for rule verification and modification, making the rules difficult to understand and adapt. To address these limitations in current validation rule authoring approaches, we present RuleScope, an interactive system for authoring data validation rules through semantic-aware rule generation, visualization, and refinement. RuleScope employs an LLM-based workflow to generate interpretable rules by analyzing data semantics and incorporating domain knowledge. To facilitate rule comprehension, we design a matrix-based visualization that helps users understand rules and analyze validation results. Additionally, RuleScope enables users to interactively refine rules. We evaluate the LLM-based workflow through model evaluation on datasets from different domains and assess RuleScope's usability and effectiveness through two case studies and a user study.",
@@ -92,8 +239,11 @@ export default [
         corresponding_authors: ['Ling-Li Zhao', 'Di Weng', 'Dewen Zhang'],
         title:
           'Sequence-Engineered G-Triplex/Methylene Blue System as a Label-Free Electrochemical Signal Module for Biosensor',
-        venue: 'Analytical Chemistry (to appear), 2026',
-        links: {},
+        venue: 'Analytical Chemistry, vol. 98, no. 22, pp. 16708-16716, 2026',
+        publication_date: '2026-06-09',
+        links: {
+          paper: 'https://pubs.acs.org/doi/10.1021/acs.analchem.6c02876',
+        },
         abstract:
           'G-triplexes are non-canonical DNA structures formed by three guanine tracts, but their sequence design rules for small-molecule binding remain unclear. In this work, we carried out a systematic sequence screening to optimize G-triplex sequences for improved interaction with methylene blue (MB), and applied the best sequence in an electrochemical biosensor for melamine detection. Over 80 candidate sequences were designed by varying loop nucleotides, 5&prime;-flanking bases, and strand length, and were evaluated by square wave voltammetry. The optimal sequence F9 (5&prime;-ATGGGAGGGTGGG-3&prime;) achieved the highest current suppression (&Delta;I/I<sub>0</sub> &asymp; 0.81), outperforming all tested G-triplex and several well-known G-quadruplex sequences. Circular dichroism confirmed that F9 folds into a parallel G-triplex with a melting temperature of 65.1 &deg;C, which increased to 70.0 &deg;C upon MB binding. Electrochemical titration gave a 1:1 binding ratio with an association constant of 9.37 &times; 10<sup>5</sup> M<sup>&minus;1</sup>. Molecular dynamics simulations showed that MB binds to the 5&prime;-face of the G-triplex by &pi;&ndash;&pi; stacking, with a computed binding free energy of &minus;151.9 kJ/mol. A hairpin probe (MelaPin) combining the F9 sequence with a poly-T melamine recognition region was then constructed. The resulting biosensor showed a linear response over 1&ndash;100 &mu;M melamine with a detection limit of 0.74 &mu;M, and a recovery of 96.0 &plusmn; 0.8% in spiked infant formula. This work provides a practical framework for G-triplex sequence design and shows that the G-triplex/MB system can serve as a simple, label-free signal module for electrochemical sensing.',
       },
@@ -104,6 +254,7 @@ export default [
         title:
           'Dynamic TMoE: A Drift-Aware Dynamic Mixture of Experts Framework for Non-Stationary Time Series Forecasting',
         venue: 'International Conference on Machine Learning (ICML), 2026',
+        publication_date: '2026-07-06',
         links: {
           pdf: '/pdf/tmoe.pdf',
           code: 'https://github.com/andone-07/Dynamic-TMoE',
@@ -130,6 +281,7 @@ export default [
           'TSEditor: Interactive Time Series Editing for Privacy Preservation',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
+        publication_date: '2026-04-13',
         links: {
           pdf: '/pdf/tseditor.pdf',
         },
@@ -155,12 +307,13 @@ export default [
           'Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring',
         venue:
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
+        publication_date: '2026-04-13',
         links: {
           preprint: 'https://arxiv.org/abs/2603.21363',
           pdf: '/pdf/cerebra.pdf',
           code: 'https://github.com/zjuidg/CHI26-Cerebra',
         },
-        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        topics: [PaperTopic.DataWrangling, PaperTopic.LLM],
         featured_category: FeaturedCategory.ACM_CHI_2026,
         abstract:
           'LLM-driven tools have significantly lowered barriers to writing SQL queries. However, user instructions are often underspecified, assuming the model understands implicit knowledge, such as dataset schemas, domain conventions, and task-specific requirements, that isn\'t explicitly provided. This results in frequently erroneous scripts that require users to repeatedly clarify their intent. Additionally, users struggle to validate generated scripts because they cannot verify whether the model correctly applied implicit knowledge. We present <i>Cerebra</i>, an interactive NL-to-SQL tool that aligns implicit knowledge between users and LLMs during SQL authoring. <i>Cerebra</i> automatically retrieves implicit knowledge from historical SQL scripts based on user instructions, presents this knowledge in an interactive tree view for code review, and supports iterative refinement to improve generated scripts. To evaluate the effectiveness and usability of <i>Cerebra</i>, we conducted a user study with 16 participants, demonstrating its improved support for customized SQL authoring. The source code of <i>Cerebra</i> is available at <a href="https://github.com/zjuidg/CHI26-Cerebra">https://github.com/zjuidg/CHI26-Cerebra</a>.',
@@ -179,8 +332,10 @@ export default [
         title:
           'A Declarative Grammar for Interactive Trajectory Visualization: Interaction as First-Class Component',
         venue: 'PacificVis 2026',
+        publication_date: '2026-04-20',
         awards: ['Honorable Mention'],
         links: {
+          paper: 'https://ieeexplore.ieee.org/document/11558623',
           pdf: '/pdf/trajgram.pdf',
           code: 'https://github.com/BenStone44/TrajGram',
         },
@@ -200,7 +355,9 @@ export default [
         corresponding_authors: ['Di Weng'],
         title: 'TrajectoryCurer: Visual Analysis of Trajectory Data Quality',
         venue: 'PacificVis 2026',
+        publication_date: '2026-04-20',
         links: {
+          paper: 'https://ieeexplore.ieee.org/document/11558607',
           pdf: '/pdf/trajcurer.pdf',
         },
         topics: [
@@ -229,7 +386,8 @@ export default [
         title:
           'RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 32, no. 6, pp. 4894-4904, June 2026 (PacificVis 2026 TVCG Journal Track)',
+        publication_date: '2026-06-01',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/11523645/',
           pdf: '/pdf/rcinvestigator.pdf',
@@ -255,13 +413,14 @@ export default [
         title:
           'KEditVis: A Visual Analytics System for Knowledge Editing of Large Language Models',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (PacificVis 2026 TVCG Journal Track)',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 32, no. 6, pp. 4818-4828, June 2026 (PacificVis 2026 TVCG Journal Track)',
+        publication_date: '2026-06-01',
         links: {
           paper: 'https://ieeexplore.ieee.org/document/11523566',
           pdf: '/pdf/keditvis.pdf',
           appendix: '/pdf/keditvis_appendix.pdf',
         },
-        topics: [PaperTopic.HumanLLM, PaperTopic.VisualAnalytics],
+        topics: [PaperTopic.LLM, PaperTopic.VisualAnalytics],
         featured_category: FeaturedCategory.IEEE_TVCG_2026,
         abstract:
           'Large Language Models (LLMs) demonstrate exceptional capabilities in factual question answering, yet they sometimes provide incorrect responses. To address this issue, knowledge editing techniques have emerged as effective methods for correcting factual information in LLMs. However, typical knowledge editing workflows struggle with identifying the optimal set of model layers for editing and rely on summary indicators that provide insufficient guidance. This lack of transparency hinders effective comparison and identification of optimal editing strategies. In this paper, we present KEditVis, a novel visual analytics system designed to assist users in gaining a deeper understanding of knowledge editing through interactive visualizations, improving editing outcomes, and discovering valuable insights for the future development of knowledge editing algorithms. With KEditVis, users can select appropriate layers as the editing target, explore the reasons behind ineffective edits, and perform more targeted and effective edits. Our evaluation, including usage scenarios, expert interviews, and a user study, validates the effectiveness and usability of the system.',
@@ -273,20 +432,47 @@ export default [
         title:
           'A Visual Analytics Approach to Traffic Signal Control Optimization for Multiple Road Intersections',
         venue:
-          'Journal of Computer-Aided Design & Computer Graphics (Early Access), 2026',
+          'Journal of Computer-Aided Design & Computer Graphics, vol. 38, no. 1, pp. 165-177, 2026',
+        publication_date: '2026-01-01',
         links: {
-          paper: 'https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2025-00260',
+          paper: 'https://dx.doi.org/10.3724/SP.J.1089.2025-00260',
           'cn pdf': '/pdf/visualtsc.pdf',
         },
         topics: [PaperTopic.Geospatial, PaperTopic.VisualAnalytics],
         abstract:
           'Traffic lights have been widely used to alleviate traffic congestion and improve traffic efficiency. However, due to the complex variability of traffic conditions and interactions between intersections, formulating ef-fective traffic signal control strategies for multiple intersections is highly challenging. Aiming at issues in existing optimization methods which are adaptive and fixed-time, this paper proposes a visual analytics method for multi-intersection traffic signal control optimization. Through collaborative interviews with experts, the paper extracts the problems and demands related to identifying and optimizing inefficient traf-fic signal control strategies, and accordingly constructs a novel visual analytics system—VisualTSC. The implemented trajectory mining process, which integrates the extraction of inefficient intersections and generation of optimization strategies, assists experts to understand the traffic efficiency of intersections and provides feasible alternative control strategies via simulation combined with the visual analytics sys-tem. VisualTSC employs a multi-level contour map to visualize intersection relationships, and offers tabu-lar and trajectory views to support optimal strategies decision-making. The effectiveness of VisualTSC is verified via two application scenarios using real-world datasets and follow-up expert interviews, where experts reproduced the cases and provided positive qualitative evaluations on its performance.',
       },
-    ],
+    ].sort(byPublicationDateDesc),
   },
   {
     year: '2025',
     papers: [
+      {
+        image: '/img/papers/ruler-bench.avif',
+        authors: [
+          'Xuming He',
+          'Zehao Fan',
+          'Hengjia Li',
+          'Fan Zhuo',
+          'Hankun Xu',
+          'Senlin Cheng',
+          'Di Weng',
+          'Haifeng Liu',
+          'Can Ye',
+          'Boxi Wu',
+        ],
+        title:
+          'RULER-Bench: Probing Rule-based Reasoning Abilities of Next-level Video Generation Models for Vision Foundation Intelligence',
+        venue: 'arXiv preprint arXiv:2512.02622, 2025',
+        publication_date: '2025-12-02',
+        links: {
+          preprint: 'https://arxiv.org/abs/2512.02622',
+          pdf: '/pdf/ruler-bench.pdf',
+          project: 'https://hexmseeu.github.io/RULER-Bench-proj/',
+        },
+        abstract:
+          'Recent advances in video generation have enabled the synthesis of videos with strong temporal consistency and impressive visual quality, marking a crucial step toward vision foundation models. To evaluate these video generation models, existing benchmarks primarily focus on factors related to visual perception and understanding, like visual aesthetics, instruction adherence, and temporal coherence. However, the rule-based reasoning capabilities of video generation models remain largely unexplored. Although recent studies have carried out preliminary explorations into whether video models can serve as zero-shot learners, they still lack a fine-grained decomposition of reasoning capabilities and a comprehensive evaluation protocol. To address this gap, we introduce RULER-Bench, a benchmark designed to evaluate the reasoning ability of video generation models from the perspective of cognitive rules. Built upon two fundamental paradigms: text-to-video and image-to-video, RULER-Bench covers 40 representative tasks spanning six rule categories with 622 high-quality annotated instances. For the evaluation of each generated video, we construct a checklist covering four metrics and leverage GPT-o3 to assign scores to each question, achieving 85% alignment with human judgements. Extensive experiments show that the state-of-the-art model achieves only 48.87% on the rule coherence metric, highlighting significant room for improvement in the reasoning capability of next-level video models. We expect that the insight obtained from RULER-Bench will facilitate further development of reasoning-aware video generation, advancing video generation models toward vision foundation intelligence.',
+      },
       {
         image: '/img/papers/chronodeck.avif',
         authors: [
@@ -361,7 +547,7 @@ export default [
           pdf: '/pdf/visegpt.pdf',
           video: 'https://www.youtube.com/watch?v=zT1rYn0vf2o',
         },
-        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        topics: [PaperTopic.DataWrangling, PaperTopic.LLM],
         featured_category: FeaturedCategory.ACM_UIST_2025,
         abstract:
           "Large language models (LLMs) enable the rapid generation of data-wrangling scripts based on natural language instructions, but these scripts may not fully adhere to user-specified requirements, necessitating careful inspection and iterative refinement. Existing approaches primarily assist users in understanding script logic and spotting potential issues themselves, rather than providing direct validation of correctness. To enhance debugging efficiency and optimize the user experience, we develop ViseGPT, a tool that automatically extracts constraints from user prompts to generate comprehensive test cases for verifying script reliability. The test results are then transformed into a tailored Gantt chart, allowing users to intuitively assess alignment with semantic requirements and iteratively refine their scripts. Our design decisions are informed by a formative study (N=8) that explores user practices and challenges. We further evaluate the effectiveness and usability of ViseGPT through a user study (N=18). Results indicate that ViseGPT significantly improves debugging efficiency for LLM-generated data-wrangling scripts, enhances users' ability to detect and correct issues, and streamlines the workflow experience.",
@@ -526,7 +712,7 @@ export default [
         featured_category: FeaturedCategory.ACM_CHI_2025,
         topics: [
           PaperTopic.DataWrangling,
-          PaperTopic.HumanLLM,
+          PaperTopic.LLM,
           PaperTopic.VisualAnalytics,
         ],
         abstract:
@@ -583,7 +769,7 @@ export default [
           code: 'https://github.com/CHI25-Xavier/Xavier',
         },
         featured_category: FeaturedCategory.ACM_CHI_2025,
-        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        topics: [PaperTopic.DataWrangling, PaperTopic.LLM],
         abstract:
           "Data analysts frequently employ code completion tools in writing custom scripts to tackle complex tabular data wrangling tasks. However, existing tools do not sufficiently link the data contexts such as schemas and values with the code being edited. This not only leads to poor code suggestions, but also frequent interruptions in coding processes as users need additional code to locate and understand relevant data. We introduce Xavier, a tool designed to enhance data wrangling script authoring in computational notebooks. Xavier maintains users' awareness of data contexts while providing data-aware code suggestions. It automatically highlights the most relevant data based on the user's code, integrates both code and data contexts for more accurate suggestions, and instantly previews data transformation results for easy verification. To evaluate the effectiveness and usability of Xavier, we conducted a user study with 16 data analysts, showing its potential to streamline data wrangling scripts authoring.",
       },
@@ -717,7 +903,7 @@ export default [
           video: 'https://youtu.be/qjjKAykyDZU',
         },
         featured_category: FeaturedCategory.IEEE_TVCG_2024,
-        topics: [PaperTopic.DataWrangling, PaperTopic.HumanLLM],
+        topics: [PaperTopic.DataWrangling, PaperTopic.LLM],
         abstract:
           "Tables are a ubiquitous data format for insight communication. However, transforming data into consumable tabular views remains a challenging and time-consuming task. To lower the barrier of such a task, research efforts have been devoted to developing interactive approaches for data transformation, but many approaches still presume that their users have considerable knowledge of various data transformation concepts and functions. In this study, we leverage natural language (NL) as the primary interaction modality to improve the accessibility of average users to performing complex data transformation and facilitate intuitive table generation and editing. Designing an NL-driven data transformation approach introduces two challenges: 1) NL-driven synthesis of interpretable pipelines and 2) incremental refinement of synthesized tables. To address these challenges, we present NL2Rigel, an interactive tool that assists users in synthesizing and improving tables from semi-structured text with NL instructions. Based on a large language model and prompting techniques, NL2Rigel can interpret the given NL instructions into a table synthesis pipeline corresponding to Rigel specifications, a declarative language for tabular data transformation. An intuitive interface is designed to visualize the synthesis pipeline and the generated tables, helping users understand the transformation process and refine the results efficiently with targeted NL instructions. The comprehensiveness of NL2Rigel is demonstrated with an example gallery, and we further confirmed NL2Rigel's usability with a comparative user study by showing that the task completion time with NL2Rigel is significantly shorter than that with the original version of Rigel with comparable completion rates.",
       },

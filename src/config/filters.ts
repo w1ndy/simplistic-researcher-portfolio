@@ -5,7 +5,7 @@ export enum PaperTopic {
   Geospatial = 'geospatial',
   Temporal = 'temporal',
   VisualAnalytics = 'visual analytics',
-  HumanLLM = 'human-llm',
+  LLM = 'llm',
   VisualizationAuthoring = 'vis authoring',
   Accessibility = 'accessibility',
 }

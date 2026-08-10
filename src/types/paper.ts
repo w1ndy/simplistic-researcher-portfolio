@@ -4,6 +4,7 @@ export interface Paper {
   corresponding_authors?: string[]
   title: string
   venue: string
+  publication_date?: string
   awards?: string[]
   links: Record<string, string>
   featured_category?: string
