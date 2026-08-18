@@ -265,6 +265,34 @@ export default [
           'Non-stationary time series forecasting is challenged by evolving distribution shifts that static models struggle to capture. While Mixture-of-Experts (MoE) architectures offer a promising paradigm for decoupling complex drift patterns, existing approaches are limited by fixed expert pools and memoryless routing, hampering their ability to adapt to abrupt regime shifts. To address this, we propose Dynamic TMoE, a framework that unifies architectural evolution with temporal continuity during learning phase. By detecting distribution shifts via Maximum Mean Discrepancy (MMD), we dynamically instantiate heterogeneous experts and prune redundant ones to optimize capacity. Additionally, a temporal memory router leverages recurrent states and an anomaly repository to ensure stable, context-aware expert selection without requiring test-time updates. Experiments on nine benchmarks demonstrate state-of-the-art performance, reducing MSE by 10.4% and MAE by 7.8%.',
       },
       {
+        image: '/img/papers/pds.avif',
+        authors: [
+          'Buwei Zhou',
+          'Shuhan Liu',
+          'Songela Nur',
+          'HaoBo Zheng',
+          'Junzhe Zhang',
+          'Jiayu Wan',
+          'Yang Liu',
+          'Di Weng',
+          'Tan Tang',
+          'Yingcai Wu',
+        ],
+        corresponding_authors: ['Tan Tang', 'Yingcai Wu'],
+        title:
+          'Leveraging Probabilistic Degradation States for Early-Stage Lifetime Prediction of Lithium-ion Batteries',
+        venue: 'SSRN preprint, 2026',
+        publication_date: '2026-07-03',
+        links: {
+          preprint:
+            'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7050591',
+          pdf: '/pdf/pds.pdf',
+        },
+        topics: [PaperTopic.Temporal],
+        abstract:
+          'While lithium-ion batteries (LIBs) are playing crucial roles in modern energy storage, the accurate and explainable prediction of their lifetimes remains challenging due to their complex and nonlinear degradation patterns. To accommodate these issues, we have investigated the electrochemical principles governing degradation to define distinct states and modeled the statistical transitions between them. In light of this, we propose the innovative probabilistic degradation states (PDSs) framework, which provides a universal architecture for enhancing the performance of any base model in early-stage LIB lifetime prediction. By leveraging probabilistic transitions between discrete degradation states, the PDS method delivers accurate and physically interpretable battery lifetime predictions, outperforming fifteen state-of-the-art benchmarks by achieving a prediction root-mean-squared error (RMSE) of 59.02 cycles. The extensive experiments across three independent datasets further demonstrate the superior performance of PDS over strong baselines in data-scarce scenarios. Through providing insights into the underlying aging mechanisms, the proposed method offers a dual solution for achieving both appropriate degradation representation and effective LIB lifetime prediction.',
+      },
+      {
         image: '/img/papers/tseditor.avif',
         authors: [
           'Zihan Xu',
@@ -1033,11 +1061,11 @@ export default [
         venue:
           'ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), pp 467-477, 2023',
         links: {
-          paper: 'https://doi.org/10.1145/3447548.3467232',
+          paper: 'https://dl.acm.org/doi/abs/10.1145/3580305.3599794',
         },
         topics: [],
         abstract:
-          'The vertices in many graphs are weighted unequally in real scenarios, but the previous studies on the maximum independent set (MIS) ignore the weights of vertices. Therefore, the weight of an MIS may not necessarily be the largest. In this paper, we study the problem of maximum weighted independent set (MWIS) that is defined as the set of independent vertices with the largest weight. Since it is intractable to deliver the exact solution for large graphs, we design a reducing and tie-breaking framework to compute a near-maximum weighted independent set. The reduction rules are critical to reduce the search space for both exact and greedy algorithms as they determine the vertices that are definitely (or not) in the MWIS while preserving the correctness of solutions. We devise a set of novel reductions including low-degree reductions and high-degree reductions for general weighted graphs. Extensive experimental studies over real graphs confirm that our proposed method outperforms the state-of-the-arts significantly in terms of both effectiveness and efficiency.',
+          'As cloud computing continues to expand globally, the need for effective management of decommissioned cloud assets in data centers becomes increasingly important. This work focuses on predicting the physical decommissioning date of cloud assets as a crucial component in reverse cloud supply chain management and data center warehouse operation. The decommissioning process is modeled as a contextual self-attentive temporal point process, which incorporates contextual information to model sequences with parallel events and provides more accurate predictions with more seen historical data. We conducted extensive offline and online experiments in 20 sampled data centers. The results show that the proposed methodology achieves the best performance compared with baselines and improves remarkable 94% prediction accuracy in online experiments. This modeling methodology can be extended to other domains with similar workflow-like processes.',
       },
       {
         image: '/img/papers/geocamera.avif',
