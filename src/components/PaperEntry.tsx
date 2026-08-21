@@ -48,6 +48,12 @@ function isCcfAPaper(paper: Paper) {
   )
 }
 
+function isCoreAStarPaper(paper: Paper) {
+  return (
+    paper.venue.includes('EMNLP') && paper.venue.includes('Main Conference')
+  )
+}
+
 export function homepage(author: string) {
   return (original: string) => {
     if (AuthorHomepages[author]) {
@@ -146,6 +152,18 @@ export function PaperEntry(props: { paper: Paper }) {
                 }}
               >
                 CCF-A
+              </span>
+            </Show>
+            <Show when={isCoreAStarPaper(props.paper)}>
+              <span
+                class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs tracking-wide"
+                style={{
+                  'background-color': 'var(--color-selection)',
+                  color: 'var(--color-accent)',
+                  'font-weight': '500',
+                }}
+              >
+                CORE A*
               </span>
             </Show>
             <Show when={props.paper.abstract}>

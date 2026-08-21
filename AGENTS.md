@@ -61,3 +61,4 @@ To update site content (add publications, news, etc.), edit the corresponding co
 - Build prerenders all routes listed in `app.config.ts` as static HTML
 - Output goes to `.output/` (`.output/public` for static assets, `.output/server` for node server)
 - The `solid-fa` icon component is wrapped in `clientOnly()` wherever used to avoid SSR hydration issues
+- Cloudflare Pages limits each site asset to 25 MiB (26,214,400 bytes). Before adding or replacing paper PDFs, run `find public -type f -size +26214400c -print`; any reported asset must be reduced below the limit or hosted externally before deployment.

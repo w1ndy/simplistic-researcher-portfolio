@@ -1,5 +1,6 @@
 export enum FeaturedCategory {
   ACM_UIST_2026 = 'ACM UIST 2026',
+  EMNLP_2026 = 'EMNLP 2026',
   ICML_2026 = 'ICML 2026',
   ACM_CHI_2026 = 'ACM CHI 2026',
   IEEE_TVCG_2026 = 'IEEE TVCG 2026',
@@ -17,6 +18,7 @@ export enum FeaturedCategory {
 
 export const FeaturedCategories: FeaturedCategory[] = [
   FeaturedCategory.ACM_UIST_2026,
+  FeaturedCategory.EMNLP_2026,
   FeaturedCategory.ICML_2026,
   FeaturedCategory.ACM_CHI_2026,
   FeaturedCategory.IEEE_TVCG_2026,

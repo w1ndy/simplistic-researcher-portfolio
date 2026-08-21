@@ -54,6 +54,7 @@ export default [
         links: {
           paper: 'https://doi.org/10.1145/3830398.3830491',
           pdf: '/pdf/chronomantic.pdf',
+          code: 'https://github.com/SunskyLau/ChronoMantic',
         },
         topics: [
           PaperTopic.Temporal,
@@ -65,45 +66,19 @@ export default [
           "Finding time series patterns is an important problem in finance, healthcare, climatology, and manufacturing, where temporal data analysis informs critical decision-making processes. Existing approaches use examples, sketches, and natural language (NL) for time series pattern querying, but precisely formulating complex queries, inspecting query interpretations, and refining queries iteratively remain challenging. Nevertheless, NL is a promising modality for pattern specification, balancing expressiveness and preciseness while providing an intuitive means of articulating query intent. This paper introduces ChronoMantic, an NL-driven interactive interface for time series pattern querying. The tool provides glyph-based feedback on query interpretation and supports iterative querying through by-example refinement. We illustrate ChronoMantic's workflow through two usage scenarios, assess its retrieval performance on a manually annotated benchmark, and evaluate its query effectiveness and usability via a two-stage user study.",
       },
       {
-        image: '/img/papers/adalens.avif',
-        authors: [
-          'Yangtian Liu',
-          'Yan Miao',
-          'Shuhan Liu',
-          'Yunfan Zhou',
-          'Dae Hyun Kim',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        corresponding_authors: ['Di Weng'],
-        title:
-          'AdaLens: Interactive Storyline for Monitoring and Steering Long-Running Agentic Data Analysis',
-        venue: 'arXiv preprint arXiv:2608.17834, 2026',
-        publication_date: '2026-08-18',
-        links: {
-          preprint: 'https://arxiv.org/abs/2608.17834',
-          pdf: '/pdf/adalens.pdf',
-        },
-        topics: [PaperTopic.VisualAnalytics, PaperTopic.LLM],
-        abstract:
-          "Large language models are pushing data science toward increasingly autonomous and agentic workflows, with recent systems already supporting multi-step and long-running analyses. As these workflows become more autonomous, conventional interfaces no longer provide adequate support for two critical requirements: observability for understanding an agent's evolving reasoning and evidence, and steerability for redirecting low-value directions or deepening promising ones during execution. Existing interactive approaches improve process visibility and open intervention points, but they remain largely designed for discrete, turn-by-turn exchanges rather than the parallel branches and evolving decision structures of long-running agentic analysis. We study this need as interactive oversight in long-running agentic data analysis and present AdaLens, an interactive system for monitoring and steering ongoing runs. AdaLens combines a storyline-based representation that unifies analytical plans, execution progress, intermediate findings, and data-column involvement with steering interactions grounded in these analytical elements for directional guidance and execution control. We evaluate AdaLens through two case studies and a user study, examining how it supports analysts in monitoring and steering long-running agentic data analysis.",
-      },
-      {
         image: '/img/papers/fea-slt.avif',
         authors: ['Guobin Tu', 'Di Weng'],
         corresponding_authors: ['Di Weng'],
         title:
           'FEA-SLT: A Gloss-Free End-to-End Framework for Facial-Expression-Aware Sign Language Translation',
-        venue:
-          'Conference on Empirical Methods in Natural Language Processing (EMNLP), Main Conference, 2026',
-        publication_date: '2026-10-24',
+        venue: 'arXiv preprint arXiv:2601.03549, 2026',
+        publication_date: '2026-01-07',
         links: {
           preprint: 'https://arxiv.org/abs/2601.03549',
           pdf: '/pdf/fea-slt.pdf',
           code: 'https://github.com/TuGuobin/FEA-SLT',
         },
         topics: [PaperTopic.Accessibility, PaperTopic.LLM],
-        featured_category: FeaturedCategory.EMNLP_2026,
         abstract:
           'Sign Language Translation (SLT) is a challenging cross-modal task requiring joint modeling of manual articulations and non-manual signals. Existing gloss-free SLT methods effectively capture gestural dynamics but often underutilize facial expressions, which play crucial grammatical and disambiguating roles. This limitation can cause semantic degradation when distinct concepts share similar manual configurations. To address this issue, we propose FEA-SLT (Facial-Expression-Aware Sign Language Translation), a gloss-free end-to-end framework that uses facial dynamics as semantic anchors for resolving manual ambiguity. FEA-SLT employs a domain-transferred facial encoder to extract expression-sensitive representations and integrates them with manual features through a linguistically constrained Facial-Expression-Aware Fusion (FEAF) module. FEAF captures reciprocal dependencies between manual and facial channels via bidirectional modulation, enhancing syntactic fidelity. Experiments on PHOENIX14T and CSL-Daily show that FEA-SLT achieves state-of-the-art BLEU performance among gloss-free methods, while targeted analyses confirm improved translation of facial-sensitive utterances.',
       },
@@ -154,37 +129,6 @@ export default [
           'Skill-based prompting has become a practical mechanism for improving large language model (LLM) agents, yet existing skill acquisition methods often treat skills as experience summaries, memory entries, or direct summaries of successful demonstrations. This creates a mismatch for weaker student agents: when a student fails because it lacks task knowledge or operational strategy, its failed trajectory may not contain enough evidence to infer the missing behavior, while the teacher trajectory may be too implicit to be internalized as reusable guidance. We propose SKILL-KD, a contrastive skill distillation framework that treats skills as an explicit distillation medium between agents of different capabilities. Given a student failure and the teacher trajectory on the same task, SKILL-KD distills their actionable discrepancy into a textual skill patch, evaluates the patch by re-running the student, and iteratively refines the patch when the student still fails. To prevent repeated local updates from causing skill drift, SKILL-KD further maintains trace-linked edit histories and performs Drift-Aware Skill Consolidation, deciding whether each patch should add a new rule, delete or modify an existing rule, or be skipped. Across five agent benchmarks and two student settings, SKILL-KD consistently improves frozen student agents over fixed-model adaptation baselines.',
       },
       {
-        image: '/img/papers/merchantbench.avif',
-        authors: [
-          'Qiming Shi',
-          'Yulong Tao',
-          'Linbo Jin',
-          'Zhaolu Kang',
-          'Yibo Dou',
-          'Jiawen Zhu',
-          'Tianjun Pan',
-          'Shaokang Fu',
-          'Chengyu Wang',
-          'Siyue Li',
-          'Yaping Cheng',
-          'Di Weng',
-          'Chengfu Huo',
-        ],
-        corresponding_authors: ['Linbo Jin', 'Di Weng'],
-        title:
-          'MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations',
-        venue: 'arXiv preprint arXiv:2607.28956, 2026',
-        publication_date: '2026-07-31',
-        links: {
-          preprint: 'https://arxiv.org/abs/2607.28956',
-          pdf: '/pdf/merchantbench.pdf',
-          code: 'https://github.com/KhanCold/merchantbench',
-        },
-        topics: [PaperTopic.LLM],
-        abstract:
-          'Large language model agents are increasingly evaluated as autonomous tool users, yet most benchmarks focus on bounded tasks with immediate success criteria. Real-world deployments often require Long-Term Coherence, the capacity to preserve purposeful behavior across extended horizons while adapting decisions to accumulated evidence. Evaluating this capacity requires a persistent environment in which actions constrain future choices, feedback arrives at heterogeneous delays, and incoherent behavior produces measurable cumulative effects. Seller-side e-commerce provides a suitable setting for this evaluation through recurrent and interdependent decisions over Product Sourcing, Listing and Pricing Control, Cash-Flow Management, and Mixed-Latency Feedback Adaptation. We introduce MerchantBench, a 365-day order-level simulation grounded in 98,843 real e-commerce product records and equipped with 26 tools for agent interaction. MerchantBench couples promptly observable Upstream Supplier Events with delayed Downstream Order Outcomes, requiring agents to follow individual order lifecycles and revisit earlier decisions. We evaluate eight LLMs under two agent frameworks in 48 runs, each spanning 365 simulated days. Our results reveal a substantial gap between even the latest LLMs and human participants, with the best LLM configuration attaining only 27.3% of the mean final net assets achieved by human participants.',
-      },
-      {
         image: '/img/papers/spader.avif',
         authors: [
           'Qiming Shi',
@@ -196,37 +140,16 @@ export default [
         corresponding_authors: ['Di Weng'],
         title:
           'SPADER: Step-wise Peer Advantage with Diversity-Aware Exploration Rewards for Multi-Answer Question Answering',
-        venue:
-          'Conference on Empirical Methods in Natural Language Processing (EMNLP), Main Conference, 2026',
-        publication_date: '2026-10-24',
+        venue: 'arXiv preprint arXiv:2606.00593, 2026',
+        publication_date: '2026-05-30',
         links: {
           preprint: 'https://arxiv.org/abs/2606.00593',
           pdf: '/pdf/spader.pdf',
           code: 'https://github.com/KhanCold/spader',
         },
         topics: [PaperTopic.LLM],
-        featured_category: FeaturedCategory.EMNLP_2026,
         abstract:
           'Large language models are increasingly deployed as tool-augmented agents to acquire information beyond parametric knowledge. While recent work has improved long-horizon tool-use reasoning, most approaches focus on tasks with a single correct answer. In contrast, many real-world queries require discovering a comprehensive set of valid answers, a setting known as Multi-Answer QA. This setting raises two challenges: fine-grained credit assignment over long search trajectories and reward alignment for sustained exploration beyond easy high-frequency entities. We propose SPADER, a reinforcement learning framework for long-horizon tool use in Multi-Answer QA. SPADER includes Step-wise Peer Advantage (SPA), a critic-free step-level credit assignment mechanism that aligns parallel trajectories by decision step and estimates advantages from peer returns. It also includes a diversity-aware exploration reward that promotes long-tail entity discovery by upweighting rare findings and downweighting redundant ones. Experiments on QAMPARI, Mintaka, WebQSP, and QUEST show that SPADER generally improves recall and overall F1 over prompting-based agents, outcome-supervised RL methods, and recent step-level supervision approaches.',
-      },
-      {
-        image: '/img/papers/bird-history.avif',
-        authors: [
-          'Yunfan Zhou',
-          'Qiming Shi',
-          'Yizhou Yang',
-          'Di Weng',
-          'Yingcai Wu',
-        ],
-        title:
-          'BIRD-History: A Benchmark for History-Driven Text-to-SQL with Fine-Grained Knowledge Annotations',
-        venue: 'Findings of the Association for Computational Linguistics: EMNLP, 2026',
-        publication_date: '2026-10-24',
-        links: {},
-        topics: [PaperTopic.LLM],
-        featured_category: FeaturedCategory.EMNLP_2026,
-        abstract:
-          "While recent Large Language Model (LLM)-based text-to-SQL systems achieve impressive performance on standard benchmarks, they struggle when user queries implicitly rely on domain-specific knowledge, such as business logic, data conventions, and analytical practices, that is neither captured by the schema nor explicitly stated in the natural language question. Historical SQL query logs offer a valuable source of such knowledge, yet existing benchmarks do not adequately support evaluation of history-driven approaches. To address this gap, we introduce BIRD-History, a benchmark consisting of 1,393 tasks across 11 databases, designed to evaluate text-to-SQL systems' ability to ground underspecified natural language questions using historical SQL scripts. Each task is annotated with ground-truth labels specifying which historical queries contain relevant knowledge and which SQL clauses encode it, enabling systematic evaluation of both retrieval effectiveness and knowledge utilization. Alongside the benchmark, we propose a plug-in retriever that extracts five types of external knowledge from historical SQL scripts, then retrieves and reranks relevant fragments for query generation. The retriever integrates seamlessly into existing few-shot text-to-SQL pipelines without requiring prompt modifications. Experiments demonstrate consistent improvements across four text-to-SQL systems, highlighting the value of leveraging historical query logs for handling underspecified queries.",
       },
       {
         image: '/img/papers/geoanimation.avif',
@@ -333,7 +256,6 @@ export default [
         venue: 'International Conference on Machine Learning (ICML), 2026',
         publication_date: '2026-07-06',
         links: {
-          paper: 'https://icml.cc/virtual/2026/poster/64808',
           pdf: '/pdf/tmoe.pdf',
           code: 'https://github.com/andone-07/Dynamic-TMoE',
         },
@@ -389,7 +311,6 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
         publication_date: '2026-04-13',
         links: {
-          paper: 'https://dl.acm.org/doi/10.1145/3772318.3790885',
           pdf: '/pdf/tseditor.pdf',
         },
         topics: [PaperTopic.DataWrangling, PaperTopic.Temporal],
@@ -416,7 +337,6 @@ export default [
           'ACM Conference on Human Factors in Computing Systems (CHI), 2026',
         publication_date: '2026-04-13',
         links: {
-          paper: 'https://dl.acm.org/doi/10.1145/3772318.3790974',
           preprint: 'https://arxiv.org/abs/2603.21363',
           pdf: '/pdf/cerebra.pdf',
           code: 'https://github.com/zjuidg/CHI26-Cerebra',
