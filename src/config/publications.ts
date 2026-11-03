@@ -222,7 +222,9 @@ export default [
           'BIRD-History: A Benchmark for History-Driven Text-to-SQL with Fine-Grained Knowledge Annotations',
         venue: 'Findings of the Association for Computational Linguistics: EMNLP, 2026',
         publication_date: '2026-10-24',
-        links: {},
+        links: {
+          preprint: 'https://arxiv.org/abs/2608.29345',
+        },
         topics: [PaperTopic.LLM],
         featured_category: FeaturedCategory.EMNLP_2026,
         abstract:
@@ -1432,7 +1434,7 @@ export default [
         ],
         title: 'Towards Better Bus Networks: A Visual Analytics Approach',
         venue:
-          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 27, no. 2, pp. 817-827, 2021',
+          'IEEE Transactions on Visualization and Computer Graphics (TVCG), vol. 27, no. 2, pp. 817-827, 2021 (also accepted by IEEE VIS 2020)',
         links: {
           paper: 'https://doi.org/10.1109/TVCG.2020.3030458',
           pdf: '/pdf/bnva.pdf',
